@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      AllWyse Sessions & Integrations: Streamline Coaching with Google Calendar,
+      Docs & Meet
+    </title>
+    <meta
+      name="description"
+      content="AllWyse streamlines your coaching sessions with Google Calendar and Meet integrations, real-time document sharing via Google Docs, and powerful analytics for data-driven growth. Optimize productivity, manage session details, and provide a seamless experience for clients—all in one professional, easy-to-use platform."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <div class="w-full h-auto lg:h-screen overflow-hidden">
+      <!-- navbar -->
+      <div
+        class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
+      >
+        <!-- Logo -->
+        <div class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="AllWyse Logo"
+            class="w-28 lg:w-auto"
+          />
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex nav-links flex gap-12">
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold text-primary"
+              >Product</a
+            >
+          </div>
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 bg-black rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold">Contact</a>
+          </div>
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 bg-black rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold">Pricing</a>
+          </div>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex gap-2">
+          <button
+            class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
+          >
+            Login
+          </button>
+          <button
+            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
+          >
+            Grab Free Account
+          </button>
+        </div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="flex lg:hidden items-center">
+          <button id="hamburger" class="text-black text-3xl">☰</button>
+        </div>
+      </div>
+
+      <!-- Sliding Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-20"
+      >
+        <div class="flex justify-between items-center py-8 px-5">
+          <!-- Close Button -->
+          <div class="logo">
+            <img
+              src="./assets/images/logo.png"
+              alt="AllWyse Logo"
+              class="w-28 lg:w-auto"
+            />
+          </div>
+          <button id="closeMenu" class="text-black text-5xl">×</button>
+        </div>
+
+        <div class="flex flex-col">
+          <!-- Mobile Menu Links -->
+
+          <div class="flex flex-col items-start">
+            <div
+              class="border-[#D9D9D9] border-t border-b w-full px-5 py-3 mbl-link"
+            >
+              <a href="/" class="text-xl font-semibold">Home</a>
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold">Sign In</a>
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold"
+                >Grab free account</a
+              >
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold"
+                >Contact us</a
+              >
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center pb-20 mt-10">
+            <!-- Action Button -->
+            <button
+              class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
+            >
+              Get Started
+            </button>
+            <button
+              class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
+            >
+              Login
+            </button>
+
+            <div class="flex gap-3 items-center justify-center mt-5">
+              <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/images/icons/Instagram.svg"
+                  alt="AllWyse Instagram Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/LinkedIn.svg"
+                  alt="AllWyse LinkedIn Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/TwitterX.svg"
+                  alt="AllWyse Twitter Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/YouTube.svg"
+                  alt="AllWyse YouTube Channel"
+                  class="w-6 h-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="product-header h-full w-full">
+        <div class="pt-36 pb-20 px-4 md:px-5 lg:px-10 xl:px-20">
+          <h1 class="text-sm gray-black-gradient">Product Overview</h1>
+
+          <h2
+            class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-10 text-white font-bold"
+          >
+            How can we help you?
+          </h2>
+          <h2
+            class="text-3xl md:text-4xl lg:text-5xl xl:text-6.5xl text-white font-bold"
+          >
+            Discovering <span class="blue-green-gradient-text"> Allwyse</span>
+          </h2>
+
+          <form class="max-w-md mt-10">
+            <div class="relative">
+              <div
+                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
+              >
+                <svg
+                  class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                  />
+                </svg>
+              </div>
+              <input
+                type="search"
+                id="default-search"
+                class="block w-full p-4 ps-10 text-base text-gray-900 border border-gray-300 rounded-lg bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                placeholder="Product Search"
+                required
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="p-2 xl:p-10">
+      <div class="buttons flex gap-6 my-4">
+        <div class="swiper pb-16 px-5">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button active-tab"
+                onclick="showDiv('sessions',this)"
+              >
+                <img
+                  src="./assets/images/Session.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Sessions</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button"
+                onclick="showDiv('integrations',this)"
+              >
+                <img
+                  src="./assets/images/Integration.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Integrations</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button"
+                onclick="showDiv('Agenda',this)"
+              >
+                <img
+                  src="./assets/images/Agenda.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Agenda</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button"
+                onclick="showDiv('Analytics',this)"
+              >
+                <img
+                  src="./assets/images/Analytics.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Analytics</h2>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button"
+                onclick="showDiv('Services',this)"
+              >
+                <img
+                  src="./assets/images/Service.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Your Services</h2>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="py-2 md:py-3 lg:py-4 xl:py-5 px-2 md:px-3 lg:px-4 xl:px-6 flex flex-col gap-2 md:gap-4 xl:gap-6 border rounded-2xl cursor-pointer tab-button"
+                onclick="showDiv('Chat',this)"
+              >
+                <img
+                  src="./assets/images/Chat.svg"
+                  alt=""
+                  class="w-1/2 lg:w-2/3 mx-auto"
+                />
+                <h2 class="text-lg font-semibold text-center">Chat</h2>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="px-2 xl:px-5 content slide-up slide-up-active" id="sessions">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Sessions
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Benefits
+            </h2>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                1.Manage every session detail:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                2.Focus on your client worries:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                3.Easy peasy communication:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+            <div>
+              <img
+                src="./assets/images/meet.svg"
+                alt="Google Meet integration with AllWyse"
+                class="min-w-[50px] xl:min-w-[80px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"
+              >
+                Google Meet + Allwyse:
+              </h2>
+              <p
+                class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+              >
+                The integration between Google Meet and Allwyse simplifies the
+                process of conducting video calls and virtual meetings. Directly
+                from Allwyse, you can create and sync your meetings,
+                automatically sending invites to your clients.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-2 xl:px-5 content slide-up hidden" id="integrations">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Integrations
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Your favorite tools
+            </h2>
+
+            <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+              <div>
+                <img
+                  src="./assets/images/Docs2.svg"
+                  alt="Google Docs integration with AllWyse"
+                  class="min-w-[50px] xl:min-w-[80px]"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold gradient-text"
+                >
+                  Google Docs + Allwyse:
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+                >
+                  With Allwyse's integration with Google Docs, managing your
+                  coaching documentation becomes a breeze. You can create,
+                  organize, and share documents and folders directly from
+                  Allwyse, ensuring all your coaching materials are easily
+                  accessible and well-organized. This feature is invaluable for
+                  sharing tailored coaching materials with clients,
+                  collaborating on documents in real-time, and maintaining a
+                  central repository of all coaching resources.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+              <div>
+                <img
+                  src="./assets/images/calendar.svg"
+                  alt="Google Calendar integration with AllWyse"
+                  class="min-w-[50px] xl:min-w-[80px]"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold gradient-text"
+                >
+                  Google Calendar + Allwyse:
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+                >
+                  Allwyse integrates seamlessly with Google Calendar, enabling
+                  coaches to synchronize their calendars, create events, and
+                  manage appointments efficiently. This integration allows you
+                  to send event invites directly to your clients, ensuring both
+                  parties are well-informed and prepared for upcoming sessions.
+                  Administrative tasks are significantly reduced as you can view
+                  and manage all your events from within Allwyse, providing a
+                  unified platform that saves time and avoids scheduling
+                  conflicts.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+              <div>
+                <img
+                  src="./assets/images/meet.svg"
+                  alt="Google Meet integration with AllWyse"
+                  class="min-w-[50px] xl:min-w-[80px]"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold gradient-text"
+                >
+                  Google Meet + Allwyse:
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+                >
+                  The integration between Google Meet and Allwyse simplifies the
+                  process of conducting video calls and virtual meetings.
+                  Directly from Allwyse, you can create and sync your meetings,
+                  automatically sending invites to your clients. This ensures
+                  that you never miss a meeting and that all video calls are
+                  aligned with your scheduled appointments on Google Calendar.
+                  This feature enhances the reliability of your coaching
+                  sessions, providing a professional and seamless meeting
+                  experience for both you and your clients.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+              <div>
+                <img
+                  src="./assets/images/More.svg"
+                  alt="More integration with AllWyse"
+                  class="min-w-[50px] xl:min-w-[80px]"
+                />
+              </div>
+              <div class="flex flex-col gap-4">
+                <h2
+                  class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold gradient-text"
+                >
+                  More integrations:
+                </h2>
+                <p
+                  class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+                >
+                  By integrating popular and powerful technologies such as
+                  Google Calendar, Google Docs, and Google Meet, we facilitate
+                  seamless administrative workflows. However, our commitment
+                  does not stop there. We are always exploring new technological
+                  avenues to enhance our platform's capabilities, driven by our
+                  commitment to our users' success and satisfaction.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction. We are not only proactive in updating
+              our features but also highly responsive to the needs and proposals
+              of our users. We actively encourage our community of coaches to
+              share their insights and suggest new integrations or improvements.
+              <br />
+              <br />
+              This open-dialogue approach ensures that Allwyse evolves in
+              alignment with the specific needs of coaching professionals,
+              helping them drive more value and make a more significant impact
+              in their clients' lives.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-2 xl:px-5 content slide-up hidden" id="Agenda">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Calendar
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Sync-everything
+            </h2>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                1.Never miss a event-session:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                2.Track your time and productivity:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                3.Manage request from clients:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+            <div>
+              <img
+                src="./assets/images/calendar.svg"
+                alt="Google Calendar integration with AllWyse"
+                class="min-w-[50px] xl:min-w-[80px] xl:min-w-[80px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"
+              >
+                Google Calendar + Allwyse:
+              </h2>
+              <p
+                class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+              >
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-2 xl:px-5 content slide-up hidden" id="Analytics">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Analytics
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Strategy and Value-Data
+            </h2>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                1.Manage every interaction:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                2.Data value analysis:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                3.Manage request from clients:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.Allwyse integrates seamlessly with Google Calendar,
+                enabling coaches to synchronize their calendars, create events,
+                and manage appointments efficiently.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-center w-full my-20">
+            <div>
+              <img
+                src="./assets/images/Analytics-stack.svg"
+                alt="AllWyse analytics"
+                class="w-full"
+              />
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-2 xl:px-5 content slide-up hidden" id="Services">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              My Services
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Strategy and Value-Data
+            </h2>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                1.Manage every interaction:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                2.Data value analysis:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                3.Manage request from clients:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.Allwyse integrates seamlessly with Google Calendar,
+                enabling coaches to synchronize their calendars, create events,
+                and manage appointments efficiently.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex justify-center w-full my-20">
+            <div>
+              <img
+                src="./assets/images/service-product.png"
+                alt="AllWyse services"
+                class="w-full"
+              />
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-2 xl:px-5 content slide-up hidden" id="Chat">
+        <iframe
+          src="https://www.youtube.com/embed/67mB0_NJ2iQ?si=KjAA0mtsarQCJHrU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+          class="w-full min-h-[350px] lg:h-[650px] rounded-lg"
+        ></iframe>
+
+        <div class="px-5 xl:px-14 mt-12 lg:mt-24">
+          <div>
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Chat
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              At AllWyse, we are deeply committed to empowering online workers
+              with the necessary technologies to achieve optimal performance. We
+              understand the dynamic nature of online businesses and the
+              critical role of technology in enhancing efficiency and
+              effectiveness. Our platform connects with the tools you use every
+              day, making it easier to manage your workflow smoothly.
+            </p>
+          </div>
+
+          <div class="mt-12 lg:mt-24">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Stay communicate
+            </h2>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                1.Manage every interaction:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                2.Data value analysis:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+
+            <div>
+              <h3
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-inter font-semibold my-7 lg:my-10"
+              >
+                3.Manage request from clients:
+              </h3>
+              <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+                Allwyse integrates seamlessly with Google Calendar, enabling
+                coaches to synchronize their calendars, create events, and
+                manage appointments efficiently. This integration allows you to
+                send event invites directly to your clients, ensuring both
+                parties are well-informed and prepared for upcoming sessions.
+                Administrative tasks are significantly reduced as you can view
+                and manage all your events from within Allwyse, providing a
+                unified platform that saves time and avoids scheduling
+                conflicts.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex gap-8 xl:gap-16 items-start my-20 mx-auto">
+            <div>
+              <img
+                src="./assets/images/gmail.svg"
+                alt="Email integration with AllWyse"
+                class="min-w-[50px] xl:min-w-[80px]"
+              />
+            </div>
+            <div class="flex flex-col gap-4">
+              <h2
+                class="text-base md:text-lg lg:text-xl xl:text-2xl font-semibold"
+              >
+                Email + Allwyse:
+              </h2>
+              <p
+                class="text-sm md:text-base lg:text-lg xl:text-xl w-full xl:w-4/5"
+              >
+                The integration between Google Meet and Allwyse simplifies the
+                process of conducting video calls and virtual meetings. Directly
+                from Allwyse, you can create and sync your meetings,
+                automatically sending invites to your clients. This ensures that
+                you never miss a meeting and that all video calls are aligned
+                with your scheduled appointments on Google Calendar.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-10">
+            <h2
+              class="text-3xl lg:text-4xl xl:text-5xl font-bold mb-2 lg:mb-12"
+            >
+              Our commitment
+            </h2>
+            <p class="text-sm md:text-base lg:text-lg xl:text-xl font-inter">
+              Our platform is continuously updated to incorporate the latest
+              advancements and ensure that our tools remain at the cutting edge.
+              We are always exploring new technological avenues to enhance our
+              platform's capabilities, driven by our commitment to our users'
+              success and satisfaction.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- get started -->
+
+    <div class="hidden lg:flex px-36 py-20 relative flex bg-gray-gradient">
+      <div class="w-1/2">
+        <img
+          src="./assets/images/getstarted.png"
+          alt="get started with AllWyse"
+          loading="lazy"
+        />
+      </div>
+      <div class="w-1/2 flex justify-center flex-col">
+        <h3 class="text-5xl font-semibold mb-10">
+          Get started
+          <span class="gray-gradient-text"> today</span>
+        </h3>
+
+        <div class="flex flex-col gap-2">
+          <input
+            type="email"
+            name="email"
+            id="contactEmail"
+            placeholder="Example@gmail.com"
+            class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-xl border-black tracking-widest"
+            required
+          />
+          <p class="text-base px-2 hidden" id="emailResponse"></p>
+        </div>
+
+        <div class="flex mt-14 gap-4">
+          <button
+            class="py-3 lg:px-12 xl:px-16 text-base font-bold rounded-3xl bg-primary text-white text-center"
+            onclick="sendEmail()"
+            id="subscribeBtn"
+          >
+            Subscribe
+          </button>
+          <a href="/product.html">
+            <button
+              class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+            >
+              Product Tour
+              <img src="./assets/images/icons/link.png" alt="" />
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- get started mobile -->
+    <div
+      class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
+    >
+      <div>
+        <img
+          src="./assets/images/getstarted-mbl.png"
+          alt="get started with AllWyse"
+          class="mx-auto"
+          loading="lazy"
+        />
+      </div>
+
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center">
+          Get started with
+        </h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center">
+          <span class="gradient-text">Allwyse</span>
+          <span class="gray-gradient-text">today</span>
+        </h2>
+      </div>
+
+      <div class="flex flex-col mt-14 gap-4 w-max mx-auto">
+        <button
+          class="py-3 px-16 text-sm font-bold rounded-3xl bg-primary text-white text-center w-full"
+        >
+          Get Started for free
+        </button>
+        <a href="/product.html">
+          <button
+            class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
+          >
+            Product Tour
+            <img src="./assets/images/icons/link.png" alt="" />
+          </button>
+        </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="hidden lg:flex justify-center py-20 lg:px-20 xl:px-32 bg-white">
+      <div class="flex lg:gap-5 xl:gap-10 lg:justify-evenly w-full">
+        <div class="w-2/6 flex flex-col gap-2 mr-20 justify-center">
+          <img src="./assets/images/logo-large.svg" alt="AllWyse Logo" />
+          <h3 class="text-sm font-medium text-center">
+            Allwyse Copyright 2024 ©️
+          </h3>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Security</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Sessions</a>
+            <a href="text-lg font-medium">Chat </a>
+            <a href="text-lg font-medium">Invoice</a>
+            <a href="text-lg font-medium">Your Services</a>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Sections</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Book a Demo</a>
+            <a href="text-lg font-medium">Client Data </a>
+            <a href="text-lg font-medium">Invoice</a>
+            <a href="text-lg font-medium">Request</a>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Terms</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Pricing</a>
+            <a href="text-lg font-medium">Subscription</a>
+            <a href="text-lg font-medium">File Manager</a>
+          </div>
+        </div>
+
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Social Media</h2>
+
+          <div class="flex">
+            <img
+              src="./assets/images/icons/Instagram.svg"
+              alt="AllWyse Instagram"
+            />
+            <img
+              src="./assets/images/icons/LinkedIn.svg"
+              alt="AllWyse LinkedIn"
+            />
+            <img
+              src="./assets/images/icons/TwitterX.svg"
+              alt="AllWyse TwitterX"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-mbl -->
+    <div class="block lg:hidden mx-5 py-14 bg-white">
+      <div class="flex flex-col">
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Products</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Sections</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Integration</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Help Center</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-between my-10">
+        <div class="flex flex-col">
+          <img
+            src="./assets/images/logo-large.svg"
+            alt="AllWyse Logo"
+            class="w-2/5 mb-1"
+          />
+          <h3 class="text-xs">Allwyse Copyright 2024 ©️</h3>
+          <div class="flex gap-1">
+            <a href="/product.html" class="text-xs underline">Security</a>
+            <a href="/product.html" class="text-xs underline">Terms</a>
+            <a href="/product.html" class="text-xs underline">Privacy</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+          <div class="flex">
+            <img
+              src="./assets/images/icons/Instagram.svg"
+              alt="AllWyse Instagram"
+              class="w-1/4"
+            />
+            <img
+              src="./assets/images/icons/LinkedIn.svg"
+              alt="AllWyse LinkedIn"
+              class="w-1/4"
+            />
+            <img
+              src="./assets/images/icons/TwitterX.svg"
+              alt="AllWyse TwitterX"
+              class="w-1/4"
+            />
+            <img
+              src="./assets/images/icons/YouTube.svg"
+              alt="AllWyse YouTube"
+              class="w-1/4"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+
+    <script src="./assets/js/navbar.js"></script>
+
+    <script src="./assets/js/product-slider.js" defer></script>
+    <script src="./assets/js/email.js" defer></script>
+  </body>
+</html>

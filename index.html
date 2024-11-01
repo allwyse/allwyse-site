@@ -1,0 +1,2000 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AllWyse: Empowering Coaches with Advanced Workflow Solutions</title>
+    <meta name="description" content='AllWyse empowers coaches with professional, customizable tools to streamline workflows, manage services, sync calendars, analyze performance, and enhance client collaboration. Transition easily, increase productivity, and grow your coaching business with advanced security and 24/7 support. Start achieving success with AllWyse.'>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./assets/js/tailwind-config.js"></script>
+  </head>
+  <body class="overflow-x-hidden">
+    <!-- Header -->
+    <div class="w-full h-auto lg:h-screen overflow-hidden">
+      <!-- navbar -->
+      <div
+        class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
+      >
+        <!-- Logo -->
+        <div class="logo">
+          <img
+            src="./assets/images/logo.png"
+            alt="AllWyse Logo"
+            class="w-28 lg:w-auto"
+          />
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <div class="hidden lg:flex nav-links flex gap-12">
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold text-primary">Product</a>
+          </div>
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 bg-black rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold">Contact</a>
+          </div>
+          <div class="nav-link flex gap-2 items-center">
+            <div class="w-2 h-2 bg-black rounded-full"></div>
+            <a href="/product.html" class="text-sm font-semibold">Pricing</a>
+          </div>
+        </div>
+
+        <!-- Desktop Buttons -->
+        <div class="hidden lg:flex gap-2">
+          <button
+            class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
+          >
+            Login
+          </button>
+          <button
+            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
+          >
+            Grab Free Account
+          </button>
+        </div>
+
+        <!-- Hamburger Icon for Mobile -->
+        <div class="flex lg:hidden items-center">
+          <button id="hamburger" class="text-black text-3xl">☰</button>
+        </div>
+      </div>
+
+      <!-- Sliding Mobile Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-20"
+      >
+        <div
+          class="flex justify-between items-center py-8 px-5 "
+        >
+          <!-- Close Button -->
+          <div class="logo">
+            <img
+              src="./assets/images/logo.png"
+              alt="AllWyse Logo"
+              class="w-28 lg:w-auto"
+            />
+          </div>
+          <button id="closeMenu" class="text-black text-5xl">×</button>
+        </div>
+
+        <div class="flex flex-col">
+          <!-- Mobile Menu Links -->
+
+          <div class="flex flex-col items-start">
+            <div
+              class="border-[#D9D9D9] border-t border-b w-full px-5 py-3 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold">Home</a>
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold">Sign In</a>
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold">Grab free account</a>
+            </div>
+            <div
+              class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+            >
+              <a href="/product.html" class="text-xl font-semibold">Contact us</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col justify-center pb-20 mt-10">
+            <!-- Action Button -->
+            <button
+              class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
+            >
+              Get Started
+            </button>
+            <button
+              class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
+            >
+              Login
+            </button>
+
+            <div class="flex gap-3 items-center justify-center mt-5">
+              <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+              <div class="flex gap-2">
+                <img
+                  src="./assets/images/icons/Instagram.svg"
+                  alt="AllWyse Instagram Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/LinkedIn.svg"
+                  alt="AllWyse LinkedIn Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/TwitterX.svg"
+                  alt="AllWyse Twitter Profile"
+                  class="w-6 h-6"
+                />
+                <img
+                  src="./assets/images/icons/YouTube.svg"
+                  alt="AllWyse YouTube Channel"
+                  class="w-6 h-6"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header-content -->
+
+      <div class="header-content overflow-x-hidden relative w-full h-full">
+        <img
+          src="./assets/images/green-shadow.png"
+          alt=""
+          class="hidden md:block absolute h-full w-full z-0 top-0 left-0"
+          loading="lazy"
+        />
+
+        <div class="w-full lg:w-1/2 mx-auto pt-20 z-10 relative">
+          <h1
+            class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl gray-gradient-text text-center font-bold leading-tight tracking-wider"
+          >
+            Boost your coaching
+          </h1>
+          <h2
+            class="text-5xl md:text-5xl lg:text-6xl xl:text-7xl text-black text-center font-bold leading-tight tracking-wider"
+          >
+            workflow with <span class="gradient-text">Allwyse</span>
+          </h2>
+
+          <p class="text-xl xl:px-28 py-6 text-center leading-9">
+            The starting point for your success as a coach. Easy customization
+            helps you offer services efficiently and better.
+          </p>
+
+          <div class="flex gap-3 items-center justify-center">
+            <div class="flex -space-x-1 overflow-hidden">
+              <img
+                class="inline-block h-9 w-9 rounded-full"
+                src="./assets/images/avatars/avatar1.png"
+                alt=""
+              />
+              <img
+                class="inline-block h-9 w-9 rounded-full"
+                src="./assets/images/avatars/avatar2.png"
+                alt=""
+              />
+              <img
+                class="inline-block h-9 w-9 rounded-full"
+                src="./assets/images/avatars/avatar3.png"
+                alt=""
+              />
+            </div>
+
+            <p class="text-base text-black font-semibold">
+              100+ Happy Customers
+            </p>
+          </div>
+
+          <div
+            class="flex gap-4 py-10 items-center lg:justify-center flex-col lg:flex-row"
+          >
+            <button
+              class="w-2/3 lg:w-max py-3 px-14 bg-black text-white rounded-3xl font-bold"
+            >
+              Get Started
+            </button>
+            <a href="/product.html" class='w-2/3 lg:w-max'>
+            <button
+              class="w-full lg:w-max py-3 px-12 border-[#000] border rounded-3xl flex items-center justify-center gap-4"
+            >
+              <u>Product Tour</u>
+              <img src="./assets/images/icons/link.png" alt="" />
+            </button>
+          </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- What's in Allwyse section -->
+
+    <div
+      class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 flex flex-col lg:flex-row"
+    >
+      <div class="w-full lg:w-1/2">
+        <h2 class="text-sm text-secondary mb-6 font-bold">
+          Visualizing Success
+        </h2>
+        <h2 class="text-4xl lg:text-4xl xl:text-5xl font-extrabold">
+          What's in <span class="gray-gradient-text">Allwyse?</span>
+        </h2>
+
+        <div class="mt-16">
+          <div class="flex items-start gap-6 mb-12">
+            <img
+              src="./assets/images/icons/ic-user.svg"
+              alt="Professional Software"
+              loading="lazy"
+            />
+            <div class="flex flex-col">
+              <h3 class="font-semibold text-lg">Professional Software</h3>
+              <p class="text-secondaryGray text-base">
+                Workflow solutions for coaches makes it easy to growth your own
+                business.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 mb-12">
+            <img src="./assets/images/icons/money.svg" alt="Coaching Values" loading="lazy" />
+            <div class="flex flex-col">
+              <h3 class="font-semibold text-lg">Coaching Values</h3>
+              <p class="text-secondaryGray text-base">
+                The platform is built on the principles of the International
+                coaching federation values.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-6 mb-12">
+            <img
+              src="./assets/images/icons/diploma.svg"
+              alt="Advanced Tool bundle"
+              loading="lazy"
+            />
+            <div class="flex flex-col">
+              <h3 class="font-semibold text-lg">Advanced Tool bundle</h3>
+              <p class="text-secondaryGray text-base">
+                Easy to use and customise, saving you time and money.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full lg:w-1/2">
+        <div class="flex items-start justify-center -mt-16">
+          <img
+            src="./assets/images/I.svg"
+            alt="What is AllWyse?"
+            class="circle w-full"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- services builder section -->
+
+    <div class="py-20 bg-gray-gradient w-full">
+      <div class="px-5 md:px-10 lg:px-20 xl:px-36 flex flex-col">
+        <h2 class="text-lg font-bold mb-10">Services builder</h2>
+        <h3
+          class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10"
+        >
+          Create, edit & manage everything about your coaching
+          <span class="green-gradient-text"> Services</span> .
+        </h3>
+      </div>
+      <div class="mx-12">
+        <img
+          src="./assets/images/Photo-services.svg"
+          alt="AllWyse Service Builder"
+          class="hidden lg:block w-full"
+          loading="lazy"
+        />
+
+        <img
+          src="./assets/images/Foto services-mobile.png"
+          alt="AllWyse Service Builder"
+          class="block lg:hidden w-full"
+          loading="lazy"
+        />
+      </div>
+    </div>
+
+    <!-- CALENDAR  SYNC Section -->
+
+    <div class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 bg-white w-full">
+      <h2 class="text-lg font-bold mb-10">CALENDAR SYNC</h2>
+      <h3
+        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10"
+      >
+        Focus on your clients, never miss a meeting with
+        <span class="text-primaryDark"> Calendar-sync</span> .
+      </h3>
+      <img
+        src="./assets/images/Photo-calendar.svg"
+        alt="AllWyse calendar sync"
+        class="hidden lg:block w-full z-20"
+        loading="lazy"
+      />
+      <img
+        src="./assets/images/Calendar-mobile.png"
+        alt="AllWyse calendar sync"
+        class="block lg:hidden w-full z-20"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- Analytics Section -->
+
+    <div
+      class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 bg-gray-gradient w-full z-10 mt-0 lg:-mt-32"
+    >
+      <h2 class="text-lg font-bold mb-10">Analytics</h2>
+      <h3
+        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10"
+      >
+        Scale your coaching business with advanced
+        <span class="text-primaryDark"> Analytics</span> .
+      </h3>
+      <img
+        src="./assets/images/Photo-Analytics.svg"
+        alt="AllWyse analytics"
+        class="hidden lg:block w-full"
+        loading="lazy"
+      />
+      <img
+        src="./assets/images/Analytics-mobile.png"
+        alt="AllWyse analytics"
+        class="block lg:hidden w-full"
+        loading="lazy"
+      />
+    </div>
+
+    <!-- testimonials section -->
+
+    <div
+      class="px-5 md:px-10 lg:px-20 py-10 xl:px-36 bg-white overflow-x-hidden"
+    >
+      <h3 class="text-sm font-bold mb-2 text-center text-secondary">
+        TESTIMONIALS
+      </h3>
+      <h3
+        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
+      >
+        Rumors are flying
+        <span class="gray-gradient-text"> that...</span>
+      </h3>
+
+      <div class="mt-32">
+        <!-- Slider main container -->
+        <div class="swiper !pb-20">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+              <div
+                class="w-full review flex flex-col justify-between min-h-[250px]"
+              >
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col items-center lg:items-start gap-2">
+                    <div class="flex">
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h3 class="text-sm font-bold">Design Quality</h3>
+                  </div>
+                  <p
+                    class="text-base truncate-text text-center lg:text-start text-center lg:text-start"
+                  >
+                    The quality of this template is very good, the TypeScript
+                    files are neat and the communication with the team behind
+                    this template is very good! I would recommend this template
+                    for any kind of project, as they implement new features
+                    every now and then and enhance their design. I will
+                    definitely be using more templates from this team and
+                    re-purchasing this template for other projects.
+                  </p>
+                </div>
+                <div class="flex gap-3 justify-center lg:justify-start">
+                  <img
+                    src="./assets/images/avatars/img_avatar1.png"
+                    alt="AllWyse testimonial"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-bold">Ivan</h3>
+                    <p class="text-sm text-secondary">Life Coach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full review flex flex-col justify-between min-h-[250px]"
+              >
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col items-center lg:items-start gap-2">
+                    <div class="flex">
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h3 class="text-sm font-bold">Design Quality</h3>
+                  </div>
+                  <p class="text-base truncate-text text-center lg:text-start">
+                    Amazing. I've never purchased complete front ends before,
+                    but I'll definitely be doing this again!
+                  </p>
+                </div>
+                <div class="flex gap-3 justify-center lg:justify-start">
+                  <img
+                    src="./assets/images/avatars/img_avatar2.png"
+                    alt="AllWyse testimonial"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-bold">Michelle</h3>
+                    <p class="text-sm text-secondary">Business Coach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full review flex flex-col justify-between min-h-[250px]"
+              >
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col items-center lg:items-start gap-2">
+                    <div class="flex">
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h3 class="text-sm font-bold">Design Quality</h3>
+                  </div>
+                  <p class="text-base truncate-text text-center lg:text-start">
+                    Clean & Complete (Design & Code). Thansk Minimal team :)
+                  </p>
+                </div>
+
+                <div class="flex gap-3 justify-center lg:justify-start">
+                  <img
+                    src="./assets/images/avatars/img_avatar3.png"
+                    alt="AllWyse testimonial"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-bold">Anne</h3>
+                    <p class="text-sm text-secondary">Business Coach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full review flex flex-col justify-between min-h-[250px]"
+              >
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col items-center lg:items-start gap-2">
+                    <div class="flex">
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h3 class="text-sm font-bold">Design Quality</h3>
+                  </div>
+                  <p class="text-base truncate-text text-center lg:text-start">
+                    Thanks to Minimal for customer support with email. I solved
+                    the problem. And the code quality is good, too.
+                  </p>
+                </div>
+                <div class="flex gap-3 justify-center lg:justify-start">
+                  <img
+                    src="./assets/images/avatars/img_avatar4.png"
+                    alt="AllWyse testimonial"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-bold">Maxwell</h3>
+                    <p class="text-sm text-secondary">Fitness Coach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div
+                class="w-full review flex flex-col justify-between min-h-[250px]"
+              >
+                <div class="flex flex-col gap-6">
+                  <div class="flex flex-col items-center lg:items-start gap-2">
+                    <div class="flex">
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <img
+                        src="./assets/images/icons/star.png"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                    </div>
+                    <h3 class="text-sm font-bold">Design Quality</h3>
+                  </div>
+                  <p class="text-base truncate-text text-center lg:text-start">
+                    The quality of this template is very good, the TypeScript
+                    files are neat and the communication with the team behind
+                    this template is very good! I would recommend this template
+                    for any kind of project, as they implement new features
+                    every now and then and enhance their design. I will
+                    definitely be using more templates from this team and
+                    re-purchasing this template for other projects.
+                  </p>
+                </div>
+                <div class="flex gap-3 justify-center lg:justify-start">
+                  <img
+                    src="./assets/images/avatars/img_avatar1.png"
+                    alt="AllWyse testimonial"
+                    class="w-12 h-12 rounded-full"
+                  />
+                  <div class="flex flex-col">
+                    <h3 class="text-base font-bold">Ivan</h3>
+                    <p class="text-sm text-secondary">Life Coach</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- stats section -->
+
+    <div
+      class="flex lg:hidden px-5 md:px-10 lg:px-20 py-10 xl:px-36 bg-white flex-col items-center gap-10"
+    >
+      <div class="bg-gradient-border h-[1px] w-full opacity-30 my-5"></div>
+      <div class="flex flex-col gap-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">200+</h2>
+        <p class="gray-gradient-text text-base md:text-lg font-semibold">
+          Subscriptions order
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">160+</h2>
+        <p class="gray-gradient-text text-base md:text-lg font-semibold">
+          Happy customers
+        </p>
+      </div>
+      <div class="flex flex-col gap-2">
+        <h2 class="text-3xl md:text-4xl font-bold text-center">4.9</h2>
+        <p class="gray-gradient-text text-base md:text-lg font-semibold">
+          Review rate
+        </p>
+      </div>
+      <div class="bg-gradient-border h-[1px] w-full opacity-30 my-5"></div>
+    </div>
+
+    <!-- Plans -->
+    <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 relative">
+      <div
+        class="w-2/3 h-1/2 bg-primary blur-[400px] absolute -bottom-10 -right-20 opacity-10"
+      ></div>
+
+      <h3 class="text-sm font-bold mb-2 text-center text-secondary">PLANS</h3>
+      <h3
+        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-2 text-center"
+      >
+        Transparent
+        <span class="gray-gradient-text"> pricing</span>
+      </h3>
+      <p class="text-base text-secondaryGray text-center hidden lg:block">
+        Choose from flexible pricing options designed to fit your business needs
+        and budget, with no hidden fees.
+      </p>
+
+      <div class="mt-20 flex">
+        <div class="price w-full lg:w-1/3 py-8 px-12">
+          <div class="flex gap-10 items-end mb-12">
+            <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+            <p class="text-grayText text-base">/month</p>
+          </div>
+
+          <h3 class="text-2.5xl font-bold">Team</h3>
+          <p class="text-grayText text-lg mb-10">Next Launch.</p>
+
+          <div class="flex gap-6 flex-col">
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Public Profile</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">
+                Services & Courses
+              </p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Calendar Admin</p>
+            </div>
+
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Invoice Creator</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">File Manager</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">More...</p>
+            </div>
+          </div>
+
+          <button
+            class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div class="price-active relative w-full lg:w-1/3 py-8 px-12">
+          <div class="absolute top-0 right-7">
+            <h2
+              class="opacity-40 rounded-full bg-primary px-5 py-2 text-white text-sm font-bold w-max"
+            >
+              Most Popular
+            </h2>
+          </div>
+          <div class="flex gap-4 items-end mb-3">
+            <h2 class="text-3xl text-white font-bold">$ 0</h2>
+            <p class="text-grayText text-base monthText">/month</p>
+          </div>
+
+          <h3 class="text-4.5xl font-bold text-white mb-8">Professional</h3>
+
+          <div class="flex gap-3 flex-col">
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">
+                Public professional
+              </p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">Services builder</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">Agenda management</p>
+            </div>
+
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">
+                Analytics dashboard
+              </p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">Client management</p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">
+                Email notification
+              </p>
+            </div>
+            <div class="flex gap-3 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5"
+              />
+              <p class="text-grayText text-xl font-medium">IT - Support 24/7</p>
+            </div>
+          </div>
+
+          <button
+            class="bg-primary text-2xl font-bold text-white px-18 py-4 rounded-full w-full mt-6"
+          >
+            Get Started
+          </button>
+        </div>
+
+        <div class="price w-full lg:w-1/3 py-8 px-12">
+          <div class="flex gap-10 items-end mb-12">
+            <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+            <p class="text-grayText text-base">/month</p>
+          </div>
+
+          <h3 class="text-2.5xl font-bold">Team</h3>
+          <p class="text-grayText text-lg mb-10">Next Launch.</p>
+
+          <div class="flex gap-6 flex-col">
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Public Profile</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">
+                Services & Courses
+              </p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Calendar Admin</p>
+            </div>
+
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">Invoice Creator</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">File Manager</p>
+            </div>
+            <div class="flex gap-6 items-center">
+              <img
+                src="./assets/images/icons/check-circle.svg"
+                alt=""
+                class="w-5 h-5 opacity-30"
+              />
+              <p class="text-grayText text-sm font-semibold">More...</p>
+            </div>
+          </div>
+
+          <button
+            class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
+          >
+            Get Started
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Plans Mbl -->
+    <div class="block lg:hidden px-5 md:px-10 lg:px-20 xl:px-36 relative">
+      <div
+        class="text-sm font-medium text-center text-gray-500 border-b-2 border-[#D9D9D9] mx-5 md:mx-10"
+      >
+        <ul
+          class="flex"
+          id="default-tab"
+          data-tabs-toggle="#default-tab-content"
+          role="tablist"
+        >
+          <li class="w-1/3 rounded-t-lg" role="tab">
+            <button
+              role="presentation"
+              class="inline-block p-4 font-bold text-black"
+              id="base-tab"
+              data-tabs-target="#base"
+              type="button"
+              aria-controls="base"
+              aria-selected="false"
+            >
+              Base
+            </button>
+          </li>
+          <li class="w-1/3" role="tab">
+            <button
+              role="presentation"
+              class="inline-block p-4 rounded-t-lg"
+              id="pro-tab"
+              data-tabs-target="#pro"
+              type="button"
+              aria-controls="pro"
+              aria-selected="false"
+            >
+              Pro
+            </button>
+          </li>
+          <li class="w-1/3" role="tab">
+            <button
+              role="presentation"
+              class="inline-block p-4 rounded-t-lg"
+              id="team-tab"
+              data-tabs-target="#team"
+              type="button"
+              aria-controls="team"
+              aria-selected="false"
+            >
+              Team
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div id="default-tab-content" class="block lg:hidden my-10 mx-5 md:mx-10">
+        <div
+          class="p-4 rounded-lg"
+          id="base"
+          role="tabpanel"
+          aria-labelledby="base-tab"
+        >
+          <div class="price bg-gray-50 w-full lg:w-1/3 p-5">
+            <div class="flex gap-10 items-end mb-12">
+              <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+              <p class="text-grayText text-base">/month</p>
+            </div>
+
+            <h3 class="text-2.5xl font-bold text-start">Team</h3>
+            <p class="text-grayText text-lg mb-10 text-start">Next Launch.</p>
+
+            <div class="flex gap-6 flex-col">
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Public Profile
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Services & Courses
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Calendar Admin
+                </p>
+              </div>
+
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Invoice Creator
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">File Manager</p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">More...</p>
+              </div>
+            </div>
+
+            <button
+              class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div
+          class="p-4 rounded-lg hidden"
+          id="pro"
+          role="tabpanel"
+          aria-labelledby="pro-tab"
+        >
+          <div class="price-active relative w-full lg:w-1/3 p-5">
+            <div class="absolute top-4 right-3">
+              <h2
+                class="opacity-70 rounded-full bg-primary px-5 py-2 text-white text-xs md:text-sm font-bold w-max"
+              >
+                Most Popular
+              </h2>
+            </div>
+            <div class="flex gap-4 items-end mb-3">
+              <h2 class="text-3xl text-white font-bold">$ 0</h2>
+              <p class="text-grayText text-base monthText">/month</p>
+            </div>
+
+            <h3 class="text-4.5xl font-bold text-white mb-8">Professional</h3>
+
+            <div class="flex gap-3 flex-col">
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Public professional
+                </p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Services builder
+                </p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Agenda management
+                </p>
+              </div>
+
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Analytics dashboard
+                </p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Client management
+                </p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  Email notification
+                </p>
+              </div>
+              <div class="flex gap-3 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5"
+                />
+                <p class="text-grayText text-xl font-medium">
+                  IT - Support 24/7
+                </p>
+              </div>
+            </div>
+
+            <button
+              class="bg-primary text-2xl font-bold text-white px-18 py-4 rounded-full w-full mt-6"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+        <div
+          class="p-4 rounded-lg hidden"
+          id="base"
+          role="tabpanel"
+          aria-labelledby="base-tab"
+        >
+          <div class="price bg-gray-50 w-full lg:w-1/3 p-5">
+            <div class="flex gap-10 items-end mb-12">
+              <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+              <p class="text-grayText text-base">/month</p>
+            </div>
+
+            <h3 class="text-2.5xl font-bold text-start">Team</h3>
+            <p class="text-grayText text-lg mb-10 text-start">Next Launch.</p>
+
+            <div class="flex gap-6 flex-col">
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Public Profile
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Services & Courses
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Calendar Admin
+                </p>
+              </div>
+
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">
+                  Invoice Creator
+                </p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">File Manager</p>
+              </div>
+              <div class="flex gap-6 items-center">
+                <img
+                  src="./assets/images/icons/check-circle.svg"
+                  alt=""
+                  class="w-5 h-5 opacity-30"
+                />
+                <p class="text-grayText text-sm font-semibold">More...</p>
+              </div>
+            </div>
+
+            <button
+              class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
+            >
+              Get Started
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BENEFITS -->
+
+    <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative">
+      <div
+        class="w-2/3 h-1/2 bg-primary blur-[400px] absolute top-0 -right-20 opacity-10"
+      ></div>
+
+      <div
+        class="w-2/3 h-1/2 bg-primary blur-[400px] absolute bottom-0 -left-20 opacity-10"
+      ></div>
+
+      <h3 class="text-sm font-bold mb-2 text-center text-secondary">
+        BENEFITS
+      </h3>
+      <h3
+        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-28 text-center"
+      >
+        High-performing benefit you
+        <span class="gray-gradient-text"> with allwyse.</span>
+      </h3>
+      <div class="w-full flex gap-6">
+        <div class="hidden lg:block w-2/3">
+          <div class="w-full flex drop-shadow-custom-lg">
+            <div class="w-1/5">
+              <img
+                src="./assets/images/benifit1.png"
+                alt="AllWyse security benefit"
+                class="h-full w-full rounded-xl rounded-tr-none rounded-br-none"
+              />
+            </div>
+            <div
+              class="w-4/5 bg-white rounded-xl rounded-tl-none rounded-bl-none p-6 py-10"
+            >
+              <div class="!bg-greenLight rounded-full py-1 px-6 w-max mb-6">
+                <p class="text-green text-sm font-bold">SECURITY</p>
+              </div>
+              <h2 class="text-4xl font-semibold mb-3">Self-Serve</h2>
+
+              <p class="text-sm text-secondaryGray mb-10">
+                Set up the perfect Workspace and transition your team into
+                Allwyse with resources that make it easy to onboard at your own
+                pace.
+              </p>
+
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Flexible Onboarding: Transition at your own pace.
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Easy Setup: Create and customize your services quickly.
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Boosted Productivity: Maximize efficiency from day one.
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                    loading="lazy"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Enhanced Collaboration: Communication with your clients
+                    effortlessly.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full flex drop-shadow-custom-lg mt-6">
+            <div class="w-1/5">
+              <img
+                src="./assets/images/benifit2.png"
+                alt="AllWyse community benefit"
+                class="h-full w-full rounded-xl rounded-tr-none rounded-br-none"
+                loading="lazy"
+              />
+            </div>
+            <div
+              class="w-4/5 bg-white rounded-xl rounded-tl-none rounded-bl-none p-6 py-10"
+            >
+              <div class="!bg-greenLight rounded-full py-1 px-6 w-max mb-6">
+                <p class="text-green text-sm font-bold">COMMUNITY</p>
+              </div>
+              <h2 class="text-4xl font-semibold mb-3">Guided</h2>
+
+              <p class="text-sm text-secondaryGray mb-10">
+                Get 24/7 one-on-one support from our Customer success Team to
+                guide you through your journey.
+              </p>
+
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Step-by-step coaching for setup and Workspace suggestions
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Access to a SME to advise on custom solutions
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Best practices from thousands of other Coaches-Workspaces
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Access to everything in our self-serve option
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w-full lg:w-1/3">
+          <div class="w-full flex flex-col drop-shadow-custom-lg h-full">
+            <div class="w-full">
+              <img
+                src="./assets/images/benifit3.png"
+                alt="AllWyse values benefit"
+                class="w-full rounded-xl rounded-bl-none rounded-br-none"
+              />
+            </div>
+            <div
+              class="bg-white h-full rounded-xl rounded-tr-none rounded-tl-none p-6"
+            >
+              <div
+                class="!bg-greenLight rounded-full py-1 px-6 w-max mb-6 mt-1"
+              >
+                <p class="text-green text-sm font-bold">OUR VALUES</p>
+              </div>
+              <h2 class="text-4xl font-semibold mb-3">Coaching Business</h2>
+
+              <p class="text-sm text-secondaryGray mb-10">
+                Technology can make work easier, faster, and more productive,
+                and in general improve the quality of life.
+              </p>
+
+              <div class="flex flex-col gap-4">
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Policies and processes to resolve all issues
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Easy for coaches to access and navigate
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Low-complexity interactions
+                  </p>
+                </div>
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Measure coaching effectiveness
+                  </p>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Continuous improvements - ITUpdates
+                  </p>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Access to content and tools that support the coaching
+                    process
+                  </p>
+                </div>
+
+                <div class="flex gap-3 items-center">
+                  <img
+                    src="./assets/images/icons/check-circle.svg"
+                    alt=""
+                    class="w-5 h-5 opacity-30"
+                  />
+                  <p class="text-grayText text-sm font-semibold">
+                    Data Security and protection
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex flex-col-reverse flex-col">
+      <!--  Security -->
+
+      <div
+        class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative overflow-x-hidden"
+      >
+        <div
+          class="w-1/2 h-4/5 bg-primary blur-[400px] absolute top-0 -left-[20%] opacity-10 z-0 rounded-full"
+        ></div>
+
+        <h3 class="text-sm font-bold mb-2 text-center text-secondary">
+          SECURITY
+        </h3>
+        <h3
+          class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-20 text-center"
+        >
+          Advanced Protection,
+          <span class="gray-gradient-text"> Reliable Support..</span>
+        </h3>
+
+        <div class="hidden lg:flex lg:gap-20 xl:gap-28 z-10 relative">
+          <div class="flex flex-col w-full lg:w-1/3 items-center">
+            <img
+              src="./assets/images/security1.svg"
+              alt="AllWyse secured by Data Encryption"
+              class="w-1/2"
+              loading="lazy"
+            />
+            <h2 class="text-2xl font-semibold mt-4 mb-6">Data Encryption</h2>
+            <p class="text-lg text-center">
+              Our platform protects your sessions, files, and communications
+              with advanced encryption protocols.
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full lg:w-1/3 items-center">
+            <img
+              src="./assets/images/security2.svg"
+              alt="AllWyse secured by Software Maintenance"
+              class="w-1/2"
+              loading="lazy"
+            />
+            <h2 class="text-2xl font-semibold mt-4 mb-6">
+              Software Maintenance
+            </h2>
+            <p class="text-lg text-center">
+              We're continuously improving to support you with troubleshooting,
+              system updates, or platform inquires.
+            </p>
+          </div>
+
+          <div class="flex flex-col w-full lg:w-1/3 items-center">
+            <img
+              src="./assets/images/security3.svg"
+              alt="AllWyse secured by 24/7 Team Support"
+              class="w-1/2"
+              loading="lazy"
+            />
+            <h2 class="text-2xl font-semibold mt-4 mb-6">24/7 Team Support</h2>
+            <p class="text-lg text-center">
+              Learn from experienced experts who guide you through every part of
+              your online practice.
+            </p>
+          </div>
+        </div>
+
+        <!-- security mbl -->
+        <div class="block lg:hidden">
+          <div class="swiper2 pb-20">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="flex flex-col w-full lg:w-1/3 items-center">
+                  <img
+                    src="./assets/images/security1.svg"
+                    alt="AllWyse secured by Data Encryption"
+                    class="w-1/2"
+                    loading="lazy"
+                  />
+                  <h2 class="text-2xl font-semibold mt-4 mb-6">
+                    Data Encryption
+                  </h2>
+                  <p class="text-lg text-center">
+                    Our platform protects your sessions, files, and
+                    communications with advanced encryption protocols.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col w-full lg:w-1/3 items-center">
+                  <img
+                    src="./assets/images/security2.svg"
+                    alt="AllWyse secured by Software Maintenance"
+                    class="w-1/2"
+                    loading="lazy"
+                  />
+                  <h2 class="text-2xl font-semibold mt-4 mb-6">
+                    Software Maintenance
+                  </h2>
+                  <p class="text-lg text-center">
+                    We're continuously improving to support you with
+                    troubleshooting, system updates, or platform inquires.
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="flex flex-col w-full lg:w-1/3 items-center">
+                  <img
+                    src="./assets/images/security3.svg"
+                    alt="AllWyse secured by 24/7 Team Support"
+                    class="w-1/2"
+                    loading="lazy"
+                  />
+                  <h2 class="text-2xl font-semibold mt-4 mb-6">
+                    24/7 Team Support
+                  </h2>
+                  <p class="text-lg text-center">
+                    Learn from experienced experts who guide you through every
+                    part of your online practice.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- integrations -->
+      <div class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative">
+        <div
+          class="lg:hidden w-full h-3/5 bg-primary blur-[400px] absolute -top-[30%] md:top-[10%] -right-[10%] opacity-10 z-0"
+        ></div>
+        <div class="flex flex-col lg:flex-row w-full gap-0 lg:gap-20 z-10">
+          <div class="w-full lg:w-1/5">
+            <h3
+              class="text-sm font-bold mb-2 text-primary text-center lg:text-start lg:text-secondary"
+            >
+              INTEGRATIONS
+            </h3>
+
+            <p
+              class="text-4xl md:text-4xl lg:text-5xl font-semibold mb-10 lg:mb-20 mt-10 text-center lg:text-left"
+            >
+              Effortless Integration, Maximum Efficiency.
+            </p>
+
+            <button
+              class="hidden lg:flex text-base font-semibold text-white py-3 px-12 w-max rounded-full items-center bg-green gap-2"
+            >
+              <img src="./assets/images/logo-white.svg" alt="AllWyse Logo" /> Get Started
+            </button>
+          </div>
+
+          <div class="flex lg:hidden w-full flex-col gap-10">
+            <img src="./assets/images/Integrations-mobile.png" alt="Google Calendar, Docs, Meet integration with AllWyse" loading="lazy" />
+
+            <h2 class="text-xl font-semibold">
+              Google Calendar, Docs, Meet and more Integrations you already use
+              everyday.
+            </h2>
+            <a href="/product.html" class="text-primary font-semibold underline"
+              >Read more</a
+            >
+          </div>
+
+          <div class="hidden lg:block w-4/5">
+            <div class="flex flex-col gap-24">
+              <div class="flex gap-10">
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/Photo.svg" alt="Google Calendar is Integrated with AllWyse" loading="lazy" />
+                </div>
+                <div class="w-1/2 flex flex-col justify-between">
+                  <p class="font-semibold text-2xl">
+                    Google Calendar Integrated and Face care or whatever you
+                    need, with allwyse.
+                  </p>
+
+                  <p class="text-lg text-link font-semibold underline">
+                    Google-Calender
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-10">
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/Docs.svg" alt="Google Documents is Integrated with AllWyse" loading="lazy" />
+                </div>
+                <div class="w-1/2 flex flex-col justify-between">
+                  <p class="font-semibold text-2xl">
+                    Google Documents Integrated Face care or whatever you need,
+                    with allwyse.
+                  </p>
+
+                  <p class="text-lg text-link font-semibold underline">
+                    Google-Docs
+                  </p>
+                </div>
+              </div>
+
+              <div class="flex gap-10">
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/Foto.svg" alt="Google Meets is Integrated with AllWyse" loading="lazy" />
+                </div>
+                <div class="w-1/2 flex flex-col justify-between">
+                  <p class="font-semibold text-2xl">
+                    Google Meets Integrated and Face care or whatever you need,
+                    with allwyse.
+                  </p>
+
+                  <p
+                    class="text-lg text-link font-semibold underline !font-inter"
+                  >
+                    Google-Meets
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- get started -->
+
+    <div
+      class="hidden lg:flex px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative flex bg-gray-gradient"
+    >
+      <div class="w-1/2">
+        <img src="./assets/images/getstarted.png" alt="get started with AllWyse" loading="lazy" />
+      </div>
+      <div class="w-1/2 flex justify-center flex-col">
+        <h3 class="text-5xl font-semibold mb-10">
+          Get started
+          <span class="gray-gradient-text"> today</span>
+        </h3>
+
+        <div class="flex flex-col gap-2">
+          <input
+            type="email"
+            name="email"
+            id="contactEmail"
+            placeholder="Example@gmail.com"
+            class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-xl border-black tracking-widest"
+            required
+          />
+          <p class="text-base px-2 hidden" id="emailResponse"></p>
+        </div>
+        <div class="flex mt-14 gap-4">
+          <button
+            class="py-3 px-16 text-base font-bold rounded-3xl bg-primary text-white text-center"
+            onclick="sendEmail()"
+            id='subscribeBtn'
+          >
+            Suscribe
+          </button>
+          <a href="./product.html">
+          <button
+            class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+          >
+            Product Tour
+            <img src="./assets/images/icons/link.png" alt="" />
+          </button>
+        </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- get started mobile -->
+    <div
+      class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
+    >
+      <div>
+        <img
+          src="./assets/images/getstarted-mbl.png"
+          alt="get started with AllWyse"
+          class="mx-auto"
+          loading="lazy"
+        />
+      </div>
+
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center">
+          Get started with
+        </h2>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-center">
+          <span class="gradient-text">Allwyse</span>
+          <span class="gray-gradient-text">today</span>
+        </h2>
+      </div>
+
+      <div class="flex flex-col mt-14 gap-4 w-max mx-auto">
+        <button
+          class="py-3 px-16 text-sm font-bold rounded-3xl bg-primary text-white text-center w-full"
+        >
+          Get Started for free
+        </button>
+        <a href="/product.html">
+        <button
+          class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
+        >
+          Product Tour
+          <img src="./assets/images/icons/link.png" alt="" />
+        </button>
+      </a>
+      </div>
+    </div>
+
+    <!-- Footer -->
+
+    <div class="hidden lg:flex justify-center py-20 lg:px-20 xl:px-32 bg-white">
+      <div class="flex lg:gap-5 xl:gap-10 lg:justify-evenly w-full">
+        <div class="w-2/6 flex flex-col gap-2 mr-20 justify-center">
+          <img src="./assets/images/logo-large.svg" alt="AllWyse Logo" />
+          <h3 class="text-sm font-medium text-center">
+            Allwyse Copyright 2024 ©️
+          </h3>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Security</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Sessions</a>
+            <a href="text-lg font-medium">Chat </a>
+            <a href="text-lg font-medium">Invoice</a>
+            <a href="text-lg font-medium">Your Services</a>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Sections</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Book a Demo</a>
+            <a href="text-lg font-medium">Client Data </a>
+            <a href="text-lg font-medium">Invoice</a>
+            <a href="text-lg font-medium">Request</a>
+          </div>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Terms</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="text-lg font-medium">Pricing</a>
+            <a href="text-lg font-medium">Subscription</a>
+            <a href="text-lg font-medium">File Manager</a>
+          </div>
+        </div>
+
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Social Media</h2>
+
+          <div class="flex">
+            <a href="/product.html"><img src="./assets/images/icons/Instagram.svg" alt="AllWyse Instagram" /></a>
+            <a href="/product.html"><img src="./assets/images/icons/LinkedIn.svg" alt="AllWyse LinkedIn" /></a>
+            <a href="/product.html"><img src="./assets/images/icons/TwitterX.svg" alt="AllWyse TwitterX" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer-mbl -->
+    <div class="block lg:hidden mx-5 py-14 bg-white">
+      <div class="flex flex-col">
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Products</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Sections</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Integration</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+
+        <div
+          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
+        >
+          <a href="/product.html" class="text-lg">Help Center</a>
+          <img
+            src="./assets/images/icons/collapse.svg"
+            alt=""
+            class="w-4 h-3"
+          />
+        </div>
+      </div>
+
+      <div class="flex justify-between my-10">
+        <div class="flex flex-col">
+          <img src="./assets/images/logo-large.svg" alt="AllWyse Logo" class="w-2/5 mb-1" />
+          <h3 class="text-xs">Allwyse Copyright 2024 ©️</h3>
+          <div class="flex gap-1">
+            <a href="/product.html" class="text-xs underline">Security</a>
+            <a href="/product.html" class="text-xs underline">Terms</a>
+            <a href="/product.html" class="text-xs underline">Privacy</a>
+          </div>
+        </div>
+
+        <div class="flex flex-col">
+          <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+          <div class="flex">
+            <img
+              src="./assets/images/icons/Instagram.svg"
+              alt="AllWyse Instagram"
+              class="w-1/4"
+            />
+            <img
+              src="./assets/images/icons/LinkedIn.svg"
+              alt="AllWyse LinkedIn"
+              class="w-1/4"
+            />
+            <img
+              src="./assets/images/icons/TwitterX.svg"
+              alt="AllWyse TwitterX"
+              class="w-1/4"
+            />
+            <img src="./assets/images/icons/YouTube.svg" alt="AllWyse YouTube" class="w-1/4" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    defer
+  ></script>
+  <script src="./assets/js/navbar.js"></script>
+
+  <script src="./assets/js/home-sliders.js" defer></script>
+
+  <script src="./assets/js/plans-tabs.js" defer></script>
+  <script src="./assets/js/email.js" defer></script>
+</html>
