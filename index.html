@@ -37,15 +37,15 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a href="/product.html" class="text-sm font-semibold text-primary">Product</a>
+            <a href="/product.html" class="text-sm font-semibold font-public-sans text-primary">Product</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="/product.html" class="text-sm font-semibold">Contact</a>
+            <a href="#getstarted" class="text-sm font-semibold font-public-sans">Contact</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="/product.html" class="text-sm font-semibold">Pricing</a>
+            <a href="#plans" class="text-sm font-semibold font-public-sans">Pricing</a>
           </div>
         </div>
 
@@ -158,7 +158,7 @@
 
       <!-- header-content -->
 
-      <div class="header-content overflow-x-hidden relative w-full h-full">
+      <div class="header-content overflow-x-hidden relative w-full h-full pb-12 lg:pb-0">
         <img
           src="./assets/images/green-shadow.png"
           alt=""
@@ -178,7 +178,7 @@
             workflow with <span class="gradient-text">Allwyse</span>
           </h2>
 
-          <p class="text-xl xl:px-28 py-6 text-center leading-9">
+          <p class="text-xl xl:px-28 py-6 text-center leading-10 lg:leading-9">
             The starting point for your success as a coach. Easy customization
             helps you offer services efficiently and better.
           </p>
@@ -307,7 +307,7 @@
           <span class="green-gradient-text"> Services</span> .
         </h3>
       </div>
-      <div class="mx-12">
+      <div class="mx-2 lg:mx-12">
         <img
           src="./assets/images/Photo-services.svg"
           alt="AllWyse Service Builder"
@@ -383,13 +383,20 @@
         TESTIMONIALS
       </h3>
       <h3
-        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
+        class="hidden lg:block text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
       >
         Rumors are flying
         <span class="gray-gradient-text"> that...</span>
       </h3>
 
-      <div class="mt-32">
+      <h3
+      class="block lg:hidden text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
+    >
+      Rumors are flying <br>
+      <span class="gray-gradient-text"> that...</span>
+    </h3>
+
+      <div class="mt-16 lg:mt-32">
         <!-- Slider main container -->
         <div class="swiper !pb-20">
           <!-- Additional required wrapper -->
@@ -707,7 +714,7 @@
     </div>
 
     <!-- Plans -->
-    <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 relative">
+    <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 relative" id='plans'>
       <div
         class="w-2/3 h-1/2 bg-primary blur-[400px] absolute -bottom-10 -right-20 opacity-10"
       ></div>
@@ -796,7 +803,7 @@
         </div>
 
         <div class="price-active relative w-full lg:w-1/3 py-8 px-12">
-          <div class="absolute top-0 right-7">
+          <div class="absolute top-3 right-7 lg:right-3 xl:right-7">
             <h2
               class="opacity-40 rounded-full bg-primary px-5 py-2 text-white text-sm font-bold w-max"
             >
@@ -956,7 +963,16 @@
     </div>
 
     <!-- Plans Mbl -->
-    <div class="block lg:hidden px-5 md:px-10 lg:px-20 xl:px-36 relative">
+    <div class="block lg:hidden px-5 md:px-10 lg:px-20 xl:px-36 relative"
+    id='plans'
+    >
+    <h3 class="text-sm font-bold mb-8 text-center text-secondary">PLANS</h3>
+    <h3
+      class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-6 text-center"
+    >
+      Transparent
+      <span class="gray-gradient-text"> pricing</span>
+    </h3>
       <div
         class="text-sm font-medium text-center text-gray-500 border-b-2 border-[#D9D9D9] mx-5 md:mx-10"
       >
@@ -1280,7 +1296,7 @@
 
     <!-- BENEFITS -->
 
-    <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative">
+    <div class=" px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative">
       <div
         class="w-2/3 h-1/2 bg-primary blur-[400px] absolute top-0 -right-20 opacity-10"
       ></div>
@@ -1771,6 +1787,7 @@
 
     <div
       class="hidden lg:flex px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative flex bg-gray-gradient"
+      id='getstarted'
     >
       <div class="w-1/2">
         <img src="./assets/images/getstarted.png" alt="get started with AllWyse" loading="lazy" />
@@ -1815,6 +1832,7 @@
     <!-- get started mobile -->
     <div
       class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
+      id='getstarted'
     >
       <div>
         <img
