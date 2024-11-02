@@ -198,6 +198,16 @@ body {
   }
 }
 
+
+.section-heading-text{
+  font-family: Helvetica;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-align: left;
+}
+
 /* DESKTOP STYLES ONLY */
 @media (min-width: 1024px) {
   .desktop-heading {
