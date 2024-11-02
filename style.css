@@ -26,6 +26,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -52,14 +53,12 @@ body {
 }
 
 .gradient-text {
-  background: #22c55e;
   background: linear-gradient(156deg, #22c55e 0, #aa75ff 28%, #20b4b6 69%, #22c55e 87%);
   -webkit-background-clip: text;
   color: transparent;
 }
 
 .green-gradient-text {
-  background: #77ed8b;
   background: linear-gradient(to bottom, #77ed8b 0, #22c55e 100%);
   -webkit-background-clip: text;
   color: transparent;
@@ -73,13 +72,11 @@ body {
 }
 
 .green-gradient-bg {
-  background: #77ed8b;
   background: linear-gradient(to right, #77ed8b 0, #22c55e 100%);
 }
 
 .shadow-div {
-  background: #52bdaa;
-  background: linear-gradient(152deg, #52bdaa 0, rgba(82, 189, 170, 0.1546) 100%);
+  background: linear-gradient(152deg, #52bdaa 0, rgba(82, 189, 170, 0.15458683473389356) 100%);
 }
 
 .hexagon {
@@ -106,7 +103,7 @@ body {
   overflow: hidden;
   transition: background-color 0.3s;
   border-radius: 22px;
-  background: 0 0;
+  background: none;
 }
 
 .price-active p {
@@ -141,7 +138,7 @@ body {
   border-bottom-width: 2px;
   border-color: #00a76f !important;
   margin-bottom: -2px;
-  background: 0 0;
+  background: none;
 }
 
 .product-header {
@@ -195,28 +192,28 @@ body {
   left: 50%;
 }
 
-/* DESKTOP STYLES ONLY */
-@media (min-width: 1024px) {
-    .desktop-heading {
-      margin-top: 30px;
-    }
-
-    .desktop-heading-higher {
-        margin-top: 50px;
-      }
-
-    .desktop-section-mb {
-        margin-bottom: 20px;
-    }
-
-    .padding-left-desktop{
-        padding-left: 40px;
-    }
-  }
-
 @media (min-width: 500px) {
   .header-content {
     background-image: none;
+  }
+}
+
+/* DESKTOP STYLES ONLY */
+@media (min-width: 1024px) {
+  .desktop-heading {
+    margin-top: 30px;
+  }
+
+  .desktop-heading-higher {
+    margin-top: 50px;
+  }
+
+  .desktop-section-mb {
+    margin-bottom: 20px;
+  }
+
+  .padding-left-desktop {
+    padding-left: 40px;
   }
 }
 
