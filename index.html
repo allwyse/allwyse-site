@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Allwyse: Empowering Coaches with Advanced Workflow Solutions</title>
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
     <meta name="description" content='Allwyse empowers coaches with professional, customizable tools to streamline workflows, manage services, sync calendars, analyze performance, and enhance client collaboration. Transition easily, increase productivity, and grow your coaching business with advanced security and 24/7 support. Start achieving success with AllWyse.'>
     <link
       rel="stylesheet"
@@ -30,7 +31,8 @@
           <img
             src="./assets/images/logo.png"
             alt="AllWyse Logo"
-            class="w-28 lg:w-auto"
+            width="150"
+            height="150"
           />
         </div>
 
@@ -1912,40 +1914,50 @@
     <!-- Footer -->
 
     <div class="hidden lg:flex justify-center py-20 lg:px-20 xl:px-32 bg-white">
-      <div class="flex items-end lg:gap-5 xl:gap-10 lg:justify-evenly w-full">
-        <div class="w-2/6 flex flex-col gap-2 mr-20 justify-center align-items">
+      <div class="flex lg:gap-5 xl:gap-10 lg:justify-evenly w-full">
+        <div class="w-2/6 flex flex-col gap-2 mr-20 justify-center">
           <img src="./assets/images/logo-large.svg" alt="AllWyse Logo" />
           <h3 class="text-sm font-medium text-center">
             Allwyse Copyright 2024 ©️
           </h3>
         </div>
         <div class="w-1/6">
-          <h2 class="text-xl font-semibold mb-4 desktop-heading-higher section-heading-text">SECURITY</h2>
+          <h2 class="text-xl font-semibold mb-4">Features</h2>
 
           <div class="flex flex-col gap-4">
-            <a href="text-lg font-medium">Sessions</a>
-            <a href="text-lg font-medium">Chat </a>
-            <a href="text-lg font-medium">Invoice</a>
-            <a href="text-lg font-medium">Your Services</a>
+            <a
+            onclick="onButtonClick(`/product`,'sessions-footer')"
+            href="#">Sessions</a>
+            <a
+            onclick="onButtonClick(`/product?selected=Integrations`,'integrations-footer')"
+            href="#">Integrations </a>
+            <a
+            onclick="onButtonClick(`/product?selected=Agenda`,'agenda-footer')"
+            href="#">Agenda</a>
+            <a
+            onclick="onButtonClick(`/product?selected=Services`,'services-footer')"
+            href="#">Your Services</a>
           </div>
+        </div>
+        <div class="w-1/6">
+          <h2 class="text-xl font-semibold mb-4">Actions</h2>
+
+          <div class="flex flex-col gap-4">
+            <a href="#"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+            >Book a Demo</a>
+            <a href="#"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+            >Login</a>
+          </div>
+            
         </div>
         <div class="w-1/6">
           <h2 class="text-xl font-semibold mb-4">Sections</h2>
 
           <div class="flex flex-col gap-4">
-            <a href="text-lg font-medium">Book a Demo</a>
-            <a href="text-lg font-medium">Client Data </a>
-            <a href="text-lg font-medium">Invoice</a>
-            <a href="text-lg font-medium">Request</a>
-          </div>
-        </div>
-        <div class="w-1/6">
-          <h2 class="text-xl font-semibold mb-4">Terms</h2>
-
-          <div class="flex flex-col gap-4">
-            <a href="text-lg font-medium">Pricing</a>
-            <a href="text-lg font-medium">Subscription</a>
-            <a href="text-lg font-medium">File Manager</a>
+            <a href="#plans">Pricing</a>
+            <a href="#getstarted">Subscription</a>
           </div>
         </div>
 
@@ -1953,9 +1965,18 @@
           <h2 class="text-xl font-semibold mb-4">Social Media</h2>
 
           <div class="flex">
-            <a href="./product"><img src="./assets/images/icons/Instagram.svg" alt="AllWyse Instagram" /></a>
-            <a href="./product"><img src="./assets/images/icons/LinkedIn.svg" alt="AllWyse LinkedIn" /></a>
-            <a href="./product"><img src="./assets/images/icons/TwitterX.svg" alt="AllWyse TwitterX" /></a>
+            <img
+              src="./assets/images/icons/Instagram.svg"
+              alt="AllWyse Instagram"
+            />
+            <img
+              src="./assets/images/icons/LinkedIn.svg"
+              alt="AllWyse LinkedIn"
+            />
+            <img
+              src="./assets/images/icons/TwitterX.svg"
+              alt="AllWyse TwitterX"
+            />
           </div>
         </div>
       </div>
@@ -1967,7 +1988,7 @@
         <div
           class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
         >
-          <a href="./product" class="text-lg">Products</a>
+          <a href="./product" class="text-lg">Product</a>
           <img
             src="./assets/images/icons/collapse.svg"
             alt=""
@@ -1978,7 +1999,9 @@
         <div
           class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
         >
-          <a href="./product" class="text-lg">Sections</a>
+          <a href="#"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+          class="text-lg">Login</a>
           <img
             src="./assets/images/icons/collapse.svg"
             alt=""
@@ -1989,7 +2012,10 @@
         <div
           class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
         >
-          <a href="./product" class="text-lg">Integration</a>
+          <a href="#"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+          
+          class="text-lg">Get started</a>
           <img
             src="./assets/images/icons/collapse.svg"
             alt=""
@@ -1997,16 +2023,8 @@
           />
         </div>
 
-        <div
-          class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
-        >
-          <a href="./product" class="text-lg">Help Center</a>
-          <img
-            src="./assets/images/icons/collapse.svg"
-            alt=""
-            class="w-4 h-3"
-          />
-        </div>
+   
+   
       </div>
 
       <div class="flex justify-between my-10">
