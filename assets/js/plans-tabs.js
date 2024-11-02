@@ -1,1 +1,24 @@
-function initTabs(){let e=document.querySelectorAll('#default-tab [role="tab"]'),a=document.querySelectorAll('#default-tab-content [role="tabpanel"]');e[0].classList.add("active-plan"),a[0].classList.remove("hidden"),e.forEach((t,l)=>{t.addEventListener("click",()=>{e.forEach(e=>e.classList.remove("active-plan")),a.forEach(e=>e.classList.add("hidden")),t.classList.add("active-plan"),a[l].classList.remove("hidden")})})}document.addEventListener("DOMContentLoaded",initTabs);
+function initTabs() {
+  let tabs = document.querySelectorAll('#default-tab [role="tab"]');
+  let panels = document.querySelectorAll(
+    '#default-tab-content [role="tabpanel"]'
+  );
+
+  // Set the first tab as active and make the first panel visible
+  tabs[0].classList.add("active-plan");
+  panels[0].classList.remove("hidden");
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => {
+      // Remove active state and hide all panels
+      tabs.forEach((t) => t.classList.remove("active-plan"));
+      panels.forEach((panel) => panel.classList.add("hidden"));
+
+      // Activate clicked tab and show corresponding panel
+      tab.classList.add("active-plan");
+      panels[index].classList.remove("hidden");
+    });
+  });
+}
+
+document.addEventListener("DOMContentLoaded", initTabs);

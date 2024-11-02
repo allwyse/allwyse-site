@@ -21,6 +21,8 @@
     />
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/redirections.js"></script>
+
     <script src="./assets/js/tailwind-config.js"></script>
   </head>
   <body class="overflow-x-hidden">
@@ -30,11 +32,12 @@
         class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
       >
         <!-- Logo -->
-        <div class="logo">
+        <div class="logo cursor-pointer">
           <img
+            onclick="onButtonClick(`https://allwyse.io`,'logo-product')"
             src="./assets/images/logo.png"
             alt="AllWyse Logo"
-            class="w-28 lg:w-auto"
+            class="w-28 lg:w-auto cursor-pointer"
           />
         </div>
 
@@ -286,7 +289,7 @@
                   alt=""
                   class="w-1/2 lg:w-2/3 mx-auto"
                 />
-                <h2 class="text-lg font-semibold text-center">Your Services</h2>
+                <h2 class="text-lg font-semibold text-center">Services</h2>
               </div>
             </div>
             <div class="swiper-slide">
