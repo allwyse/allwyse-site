@@ -225,6 +225,65 @@ body {
   .padding-left-desktop {
     padding-left: 40px;
   }
+  .benefits-grid {
+    background-color: #f9fafb; /* Light gray background */
+  }
+  
+  .benefit-item {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  }
+  
+  .benefit-item:hover {
+    transform: translateY(-4px); /* Hover effect */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1); /* Slight shadow on hover */
+  }
+  
+  .icon {
+    font-size: 1.25rem; /* Adjust size for icons */
+  }
+  
+  .text {
+    font-size: 0.875rem; /* Medium text size */
+  }
+  label {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  label input {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  label .peer {
+    display: block;
+    width: 48px;
+    height: 24px;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    transition: background-color 0.3s ease;
+  }
+  
+  label .dot {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  
+  label input:checked + .peer {
+    background-color: #10b981;
+  }
+  
+  label input:checked + .peer + .dot {
+    transform: translateX(24px);
+  }
+    
 }
 
 @keyframes float {
