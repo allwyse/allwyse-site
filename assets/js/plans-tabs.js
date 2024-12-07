@@ -5,8 +5,9 @@ function initTabs() {
   );
 
   // Set the first tab as active and make the first panel visible
-  tabs[0].classList.add("active-plan");
-  panels[0].classList.remove("hidden");
+  tabs[1].classList.add("active-plan");
+  panels[1].classList.remove("hidden");
+  panels[0].classList.add("hidden");
 
   tabs.forEach((tab, index) => {
     tab.addEventListener("click", () => {
