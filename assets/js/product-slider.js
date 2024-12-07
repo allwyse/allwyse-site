@@ -30,7 +30,6 @@ const swiper = new Swiper(".swiper", {
 });
 
 function showDiv(divId, buttonClicked) {
-  console.log(divId, buttonClicked);
   let contents = document.querySelectorAll(".content");
 
   // Hide all contents and remove active animation class
@@ -52,6 +51,12 @@ function showDiv(divId, buttonClicked) {
   if (buttonClicked) {
     buttonClicked.classList.add("active-tab");
   }
+
+  mixpanel.track("user_clicked", {
+    widget_name: "product-information",
+    product: divId,
+    from_view: "product",
+  });
 }
 
 // Set the initial active tab and content
