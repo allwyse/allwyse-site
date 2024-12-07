@@ -26,6 +26,17 @@
     <script src="/assets/js/redirections.js"></script>
 
     <script src="./assets/js/tailwind-config.js"></script>
+    <!-- CLARITY   -->
+
+    <script type="text/javascript">
+      (function(c,l,a,r,i,t,y){
+          c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+          t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+          y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+      })(window, document, "clarity", "script", "ne79yr3z9b");
+  </script>
+<script src="/assets/js/tracking.js"></script>
+
   </head>
   <body class="overflow-x-hidden">
     <div class="w-full h-auto lg:h-screen overflow-hidden">
@@ -36,7 +47,7 @@
         <!-- Logo -->
         <div class="logo cursor-pointer">
           <img
-            onclick="onButtonClick(`https://allwyse.io`,'logo-product')"
+            onclick="onButtonClick(`https://allwyse.io`,'logo','product-header')"
             src="./assets/images/logo.png"
             alt="Allwyse Logo"
             width="150"
@@ -48,11 +59,12 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a href="/" class="text-sm font-semibold text-primary">Home</a>
+            <a onclick="trackMPEvent('home')" href="/" class="text-sm font-semibold text-primary">Home</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
             <a
+            onclick="trackMPEvent('newsletter')"
               href="https://allwyse.io/#getstarted"
               class="text-sm font-semibold"
               >Contact</a
@@ -61,6 +73,7 @@
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
             <a href="https://allwyse.io/#plans" class="text-sm font-semibold"
+            onclick="trackMPEvent('pricing')"
               >Pricing</a
             >
           </div>
@@ -69,13 +82,13 @@
         <!-- Desktop Buttons -->
         <div class="hidden lg:flex gap-2">
           <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-product-header')"
             class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
           >
             Login
           </button>
           <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-product-header')"
             class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
           >
             Grab Free Account
@@ -119,7 +132,7 @@
             >
               <a
                 href="#"
-                onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+                onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-product-header')"
                 class="text-xl font-semibold"
                 >Sign In</a
               >
@@ -129,7 +142,7 @@
             >
               <a
                 href="#"
-                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-product-header')"
                 class="text-xl font-semibold"
                 >Grab free account</a
               >
@@ -148,13 +161,13 @@
           <div class="flex flex-col justify-center pb-20 mt-10">
             <!-- Action Button -->
             <button
-              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-product-header')"
               class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
             >
               Get Started
             </button>
             <button
-              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-product-header')"
               class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
             >
               Login
@@ -165,14 +178,14 @@
               <div class="flex gap-2">
                 <img
                   src="./assets/images/icons/Instagram.svg"
-                  onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+                  onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','mobile-product-header')"
                   alt="Allwyse Instagram Profile"
                   class="w-6 h-6"
                 />
                 <img
                   src="./assets/images/icons/LinkedIn.svg"
                   alt="Allwyse LinkedIn Profile"
-                  onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+                  onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','mobile-product-header')"
                   class="w-6 h-6"
                 />
                 <img
@@ -1366,22 +1379,22 @@
 
           <div class="flex flex-col gap-4">
             <a
-              onclick="onButtonClick(`https://allwyse.io/product`,'sessions-footer')"
+              onclick="onButtonClick(`https://allwyse.io/product`,'product-footer-link','profile')"
               href="#"
-              >Sessions</a
+              >Profile</a
             >
             <a
-              onclick="onButtonClick(`https://allwyse.io/product?selected=Integrations`,'integrations-footer')"
+              onclick="onButtonClick(`https://allwyse.io/product?selected=Integrations`,'product-footer-link','integrations')"
               href="#"
               >Integrations
             </a>
             <a
-              onclick="onButtonClick(`https://allwyse.io/product?selected=Agenda`,'agenda-footer')"
+              onclick="onButtonClick(`https://allwyse.io/product?selected=Agenda`,'product-footer-link','agenda')"
               href="#"
               >Agenda</a
             >
             <a
-              onclick="onButtonClick(`https://allwyse.io/product?selected=Services`,'services-footer')"
+              onclick="onButtonClick(`https://allwyse.io/product?selected=Services`,'product-footer-link','services')"
               href="#"
               >Your Services</a
             >
@@ -1393,12 +1406,12 @@
           <div class="flex flex-col gap-4">
             <a
               href="#"
-              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','footer')"
               >Book a Demo</a
             >
             <a
               href="#"
-              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','footer')"
               >Login</a
             >
           </div>
@@ -1418,12 +1431,12 @@
           <div class="flex">
             <img
               src="./assets/images/icons/Instagram.svg"
-              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','footer')"
               alt="Allwyse Instagram"
             />
             <img
               src="./assets/images/icons/LinkedIn.svg"
-              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','footer')"
               alt="Allwyse LinkedIn"
             />
             <img
@@ -1454,7 +1467,7 @@
         >
           <a
             href="#"
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','footer')"
             class="text-lg"
             >Login</a
           >
@@ -1470,7 +1483,7 @@
         >
           <a
             href="#"
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','footer')"
             class="text-lg"
             >Get started</a
           >
@@ -1502,14 +1515,14 @@
           <div class="flex">
             <img
               src="./assets/images/icons/Instagram.svg"
-              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','footer')"
               alt="Allwyse Instagram"
               class="w-1/4"
             />
             <img
               src="./assets/images/icons/LinkedIn.svg"
               alt="Allwyse LinkedIn"
-              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','footer')"
               class="w-1/4"
             />
             <img

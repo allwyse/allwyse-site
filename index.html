@@ -23,6 +23,17 @@
   type="text/javascript"
   src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
 ></script>
+
+    <!-- CLARITY   -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ne79yr3z9b");
+</script>
+<script src="/assets/js/tracking.js"></script>
+
   </head>
   <body class="overflow-x-hidden">
     <!-- Header -->
@@ -45,32 +56,32 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a href="./product" class="text-sm font-semibold font-public-sans text-primary">Product</a>
+            <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-public-sans text-primary">Product</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="#getstarted" class="text-sm font-semibold font-public-sans">Newsletter</a>
+            <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-public-sans">Newsletter</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="#plans" class="text-sm font-semibold font-public-sans">Pricing</a>
+            <a href="#plans" onclick="trackMPEvent('pricing')" class="text-sm font-semibold font-public-sans">Pricing</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="https://allwyse.io/policy" class="text-sm font-semibold font-public-sans">Privacy Policy</a>
+            <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-public-sans">Privacy Policy</a>
           </div>
         </div>
 
         <!-- Desktop Buttons -->
         <div class="hidden lg:flex gap-2">
           <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
             class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
           >
             Login
           </button>
           <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
             class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
           >
             Grab Free Account
@@ -115,14 +126,14 @@
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
             >
               <a href="#" 
-              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
               class="text-xl font-medium">Sign In</a>
             </div>
             <div
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
             >
               <a href="#"
-              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
               class="text-xl font-medium">Grab free account</a>
             </div>
             <div
@@ -135,14 +146,14 @@
           <div class="flex flex-col justify-center pb-20 mt-10">
             <!-- Action Button -->
             <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
 
               class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
             >
               Get Started
             </button>
             <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
 
               class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
             >
@@ -154,14 +165,14 @@
               <div class="flex gap-2">
                 <img
                   src="./assets/images/icons/Instagram.svg"
-                  onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+                  onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','mobile-header')"
                   alt="Allwyse Instagram Profile"
                   class="w-6 h-6"
                 />
                 <img
                   src="./assets/images/icons/LinkedIn.svg"
                   alt="Allwyse LinkedIn Profile"
-                  onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+                  onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','mobile-header')"
                   class="w-6 h-6"
                 />
                 <img
@@ -210,7 +221,7 @@
        <h1 class="block md:hidden text-2xl gray-gradient-text text-center font-bold leading-tight tracking-wide">
         AI-powered Marketplace
       </h1>
-       <p class="block md:hidden text-lg px-6 py-4 text-center leading-8">
+       <p class="flex justify-center text-start md:hidden text-lg px-6 py-4 text-center leading-8">
        ✔️   Sell & Build Services with AI
        <br/> 
        ✔️  Manage Clients data & files
@@ -227,7 +238,7 @@
       <h2 class="hidden md:block text-5xl lg:text-6xl xl:text-7xl text-black text-center font-bold leading-tight tracking-wider">
        for Coaches<span class="gradient-text">—Allwyse</span>
       </h2>
-      <p class="hidden md:block text-xl xl:px-28 py-6 text-center leading-10 lg:leading-9">
+      <p class="flex justify-center text-start hidden md:flex justify-center text-start text-xl xl:px-28 py-6  leading-10 lg:leading-9 ">
        ✔️ 1. Effortlessly Sell Services and Manage Clients
        <br />
        ✔️ 2. Automate Scheduling to Focus More on Coaching
@@ -263,20 +274,19 @@
             class="flex gap-4 py-10 items-center lg:justify-center flex-col lg:flex-row"
           >
             <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','hero')"
 
               class="w-4/5 sm:w-2/3 lg:w-max py-3 px-14 bg-black text-white rounded-3xl font-sem"
             >
               Get Started
             </button>
-            <a href="./product" class='w-4/5 sm:w-2/3 lg:w-max'>
             <button
+              onclick="onButtonClick(`https://allwyse.io/product`,'product','hero')"
               class="w-full lg:w-max py-3 px-12 border-[#000] border rounded-3xl flex items-center justify-center gap-4"
             >
               <u>Product Tour</u>
               <img src="./assets/images/icons/link.png" alt="" />
             </button>
-          </a>
           </div>
         </div>
 
@@ -373,7 +383,7 @@
       <br/>personalized offerings that resonate with clients and elevate your business.
     </p>
     <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','services-builder-section')"
       class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
     >
       Get Started
@@ -403,7 +413,7 @@
   </div>
   <div class="flex justify-center mt-5">
   <button
-  onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+  onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','services-builder-section')"
   class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
     >
   Get Started
@@ -425,7 +435,7 @@
     </p>
     <div class="mb-10"> <!-- Añadido margen aquí -->
       <button
-        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','calendar-section')"
         class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
       >
         Get Started
@@ -454,7 +464,7 @@
   </div>
   <div class="flex justify-center mt-5">
     <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','calendar-section')"
       class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
     >
       Get Started
@@ -475,7 +485,7 @@
     </p>
     <div class="mb-10"> <!-- Aquí se agrega un margen -->
       <button
-        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','analytics-section')"
         class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
       >
         Get Started
@@ -504,7 +514,7 @@
   </div>
   <div class="flex justify-center mt-5">
     <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','analytics-section')"
       class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
     >
       Get Started
@@ -819,13 +829,13 @@
     >
       <div class="bg-gradient-border h-[1px] w-full opacity-30 my-5"></div>
       <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">200+</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center">3000+</h2>
         <p class="gray-gradient-text text-base md:text-lg font-semibold">
-          Subscriptions order
+          Sessions scheduled
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">160+</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center">100+</h2>
         <p class="gray-gradient-text text-base md:text-lg font-semibold">
           Happy customers
         </p>
@@ -845,16 +855,16 @@
     <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
     
     <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">200+</h2>
+      <h2 class="text-5xl font-bold text-center">3000+</h2>
       <p class="gray-gradient-text text-xl font-semibold">
-        Subscriptions order
+        Sessions scheduled
       </p>
     </div>
 
     <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
 
     <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">160+</h2>
+      <h2 class="text-5xl font-bold text-center">100+</h2>
       <p class="gray-gradient-text text-xl font-semibold">
         Happy customers
       </p>
@@ -986,7 +996,7 @@
           </div>
 
           <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','starter-plan-section')"
 disabled
             class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
           >
@@ -1096,7 +1106,7 @@ disabled
           </div>
 
           <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','expert-plan-section')"
 
             class="bg-primary text-2xl font-bold text-white px-18 py-4 rounded-full w-full mt-6"
           >
@@ -1169,7 +1179,7 @@ disabled
           </div>
 
           <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','team-plan-section')"
           disabled
             class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
           >
@@ -1343,7 +1353,7 @@ disabled
             </div>
 
             <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','starter-plan-section')"
           disabled
 
               class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
@@ -1461,7 +1471,7 @@ disabled
             </div>
 
             <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','expert-plan-section')"
 
               class="bg-primary text-2xl font-bold text-white px-18 py-4 rounded-full w-full mt-6"
             >
@@ -1540,7 +1550,7 @@ disabled
             </div>
 
             <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','team-plan-section')"
           disabled
 
               class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
@@ -2152,7 +2162,7 @@ disabled
             </p>
 
             <button
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'integrations')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','integrations-section')"
 
               class="hidden lg:flex text-base font-semibold text-white py-3 px-12 w-max rounded-full items-center bg-green gap-2"
             >
@@ -2315,7 +2325,17 @@ disabled
       </div>
       <div class="flex flex-col mt-5 gap-4 mb-5 mx-auto">
         <button
-          class="py-3 px-16 text-sm font-bold rounded-3xl bg-primary text-white text-center w-full"
+        onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register','getstarted')"
+        class="py-3 px-16 text-sm font-semi rounded-3xl bg-primary text-white text-center w-full"
+      >
+        <span class="text-lg font-semibold">
+          Get Started
+        </span>
+      </button>
+      
+        <a href="./product">
+        <button
+          class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
         >
           Get Started for free
         </button>
@@ -2345,16 +2365,16 @@ disabled
 
           <div class="flex flex-col gap-4">
             <a
-            onclick="onButtonClick(`/product`,'sessions-footer')"
-            href="#">Sessions</a>
+            onclick="onButtonClick(`/product`,'product-footer-link','profile')"
+            href="#">Profile</a>
             <a
-            onclick="onButtonClick(`/product?selected=Integrations`,'integrations-footer')"
+            onclick="onButtonClick(`/product?selected=Integrations`,'product-footer-link','integrations')"
             href="#">Integrations </a>
             <a
-            onclick="onButtonClick(`/product?selected=Agenda`,'agenda-footer')"
+            onclick="onButtonClick(`/product?selected=Agenda`,'product-footer-link','agenda')"
             href="#">Agenda</a>
             <a
-            onclick="onButtonClick(`/product?selected=Services`,'services-footer')"
+            onclick="onButtonClick(`/product?selected=Services`,'product-footer-link','services')"
             href="#">Your Services</a>
           </div>
         </div>
@@ -2363,13 +2383,13 @@ disabled
 
           <div class="flex flex-col gap-4">
             <a href="#"
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','footer')"
             >Book a Demo</a>
             <a href="#"
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','footer')"
             >Login</a>
             <a 
-            onclick="onButtonClick(`https://allwyse.io/policy.html`,'policy-footer')"
+            onclick="onButtonClick(`https://allwyse.io/policy.html`,'policy','footer')"
             href="/policy.html"
             >Privacy policy</a>
           </div>
@@ -2390,13 +2410,13 @@ disabled
           <div class="flex">
             <img
               src="./assets/images/icons/Instagram.svg"
-              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','footer')"
               alt="Allwyse Instagram"
             />
             <img
               src="./assets/images/icons/LinkedIn.svg"
               alt="Allwyse LinkedIn"
-              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','footer')"
 
             />
             <img
@@ -2426,7 +2446,7 @@ disabled
           class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
         >
           <a href="#"
-          onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login-footer')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','footer')"
           class="text-lg">Login</a>
           <img
             src="./assets/images/icons/collapse.svg"
@@ -2439,7 +2459,7 @@ disabled
           class="flex justify-between border-b border-[#D9D9D9] pb-2 items-center"
         >
           <a href="#"
-          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register-footer')"
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','footer')"
           
           class="text-lg">Get started</a>
           <img
@@ -2480,14 +2500,14 @@ disabled
           <div class="flex">
             <img
               src="./assets/images/icons/Instagram.svg"
-              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram')"
+              onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','footer')"
               alt="Allwyse Instagram"
               class="w-1/4"
             />
             <img
               src="./assets/images/icons/LinkedIn.svg"
               alt="Allwyse LinkedIn"
-              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin')"
+              onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','footer')"
 
               class="w-1/4"
             />

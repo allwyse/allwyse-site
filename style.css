@@ -46,7 +46,7 @@ body {
 }
 
 .gray-gradient-text {
-  background: linear-gradient(to right, #1c252e 0, rgba(28, 37, 46, 0.1686) 100%);
+  background: linear-gradient(to right, #1c252e 0, rgba(28, 37, 46, 0.2686) 100%);
   -webkit-background-clip: text;
   color: transparent;
   opacity: 40%;
