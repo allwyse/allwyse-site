@@ -73,7 +73,48 @@ mixpanel.init("13112c94b385f01f21edd6bc6eecd2ff", {
 });
 
 const trackMPEvent = (widget_name = "", event = "user_clicked") => {
-  mixpanel.track(event, {
-    widget_name,
-  });
+  let isObj = typeof widget_name !== "string";
+
+  const payload = isObj
+    ? { ...widget_name }
+    : {
+        widget_name,
+      };
+  mixpanel.track(event, payload);
 };
+
+function monitorScrollProgress() {
+  let lastLoggedPercentage = 0;
+
+  function calculateScrollPercentage() {
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop;
+    const scrollHeight =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    return Math.floor((scrollTop / scrollHeight) * 100);
+  }
+
+  function handleScroll() {
+    const currentPercentage = calculateScrollPercentage();
+    if (currentPercentage >= lastLoggedPercentage + 20) {
+      if (lastLoggedPercentage > 0) {
+        trackMPEvent(
+          {
+            from_view: window.location.href,
+            scroll_percentage: lastLoggedPercentage,
+          },
+          "user_scroll"
+        );
+      }
+
+      lastLoggedPercentage += 20;
+    }
+  }
+
+  window.document.querySelector("body").onscroll = handleScroll;
+}
+
+window.document.addEventListener("DOMContentLoaded", function () {
+  monitorScrollProgress();
+});
