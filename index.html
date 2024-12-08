@@ -2143,7 +2143,7 @@ disabled
       </div>
 
       <!-- integrations -->
-      <div class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative">
+      <div class="px-5 md:px-10 lg:px-20 py-10 relative">
         <div
         class="lg:hidden w-auto sm:w-full h-3/5 bg-primary blur-[400px] absolute -top-[30%] md:top-[10%] -right-[10%] opacity-10 z-0"
     ></div>
@@ -2156,7 +2156,7 @@ disabled
             </h3>
 
             <p
-              class="text-4xl md:text-4xl lg:text-5xl font-semibold mb-10 lg:mb-20 mt-10 text-center lg:text-left"
+              class="text-6xl md:text-4xl lg:text-6xl font-semibold mb-10 lg:mb-20 mt-10  lg:text-left"
             >
               Effortless Integration,<span class="gray-gradient-text"> Maximum Efficiency</span> 
             </p>
@@ -2219,11 +2219,11 @@ disabled
 
               <div class="flex gap-10">
                 <div class="w-1/2 flex justify-end">
-                  <img src="./assets/images/Foto.svg" alt="Google Meets is Integrated with Allwyse" loading="lazy" />
+                  <img src="./assets/images/openai.svg" alt="Google Meets is Integrated with Allwyse" loading="lazy" />
                 </div>
                 <div class="w-1/2 flex flex-col justify-between">
                   <p class="font-semibold text-3xl">
-                    🌟 Open-Ai with allwyse            </p>
+                    🌟 Open-AI with allwyse            </p>
                   <p class="font-medium text-1xl">
                     Leverage AI-driven insights powered by Open AI to elevate your coaching impact
                   </p>
@@ -2243,19 +2243,27 @@ disabled
 
     <!-- get started -->
 
-    <div
-      class="desktop-heading-higher hidden lg:flex px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative flex bg-gray-gradient"
-      id='getstarted'
-    >
-      <div class="w-1/2 desktop-heading">
-        <img src="./assets/images/getstarted.png" alt="get started with Allwyse" loading="lazy" />
+    <div class="hidden lg:flex px-36 py-20 relative flex bg-gray-gradient">
+      <div class="w-1/2">
+        <img
+          src="./assets/images/CTA.png"
+          alt="get started with Allwyse"
+          loading="lazy"
+          
+        />
       </div>
-      <div class="w-1/2 flex justify-center flex-col padding-left-desktop">
-        <h3 class="text-5xl font-semibold mb-10">
+      <div class="w-1/2 flex justify-center flex-col">
+        <h1 class="text-7xl font-semibold mb-3">
           Get started
-          <span class="gray-gradient-text"> today</span>
-        </h3>
+          <span class="gradient-text"> today </span>
+          <h2 class="text-sm md:text-base lg:text-lg mt- xl:text-1xl font-inter mb-10">
+            
+            You’re making an impact in your client’s lives—let’s take your<br/> coaching 
+           to the next level with the power of technology... </h2>
+        </h1>
+       
 
+        
         <div class="flex flex-col gap-2">
           <input
             type="email"
@@ -2267,53 +2275,52 @@ disabled
           />
           <p class="text-base px-2 hidden" id="emailResponse"></p>
         </div>
-        <div class="flex mt-14 gap-4">
+
+        <div class="flex mt-5 gap-4">
           <button
-            class="py-3 px-16 text-base font-bold rounded-3xl bg-primary text-white text-center"
+            class="py-3 lg:px-12 xl:px-16 text-base font-semibold rounded-3xl bg-primary text-white text-center"
             onclick="sendEmail()"
-            id='subscribeBtn'
+            id="subscribeBtn"
           >
-            Suscribe
+            Subscribe
           </button>
-          <a href="../product">
-          <button
-            class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
-          >
-            Product Tour
-            <img src="./assets/images/icons/link.png" alt="" />
-          </button>
-        </a>
+            <button
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
+              class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+            >
+              Sign Up
+            </button>
         </div>
       </div>
     </div>
-
+  </div>
+  
     <!-- get started mobile -->
     <div
       class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
-      id='getstarted'
     >
       <div>
         <img
-          src="./assets/images/getstarted-mbl.png"
+          src="./assets/images/CTA.png"
           alt="get started with Allwyse"
           class="mx-auto"
           loading="lazy"
+          
         />
       </div>
 
-      <div >
-        <h2 class="text-5xl md:text-5xl font-bold text-center">
-          Join the Technology Future-Ready </h2>
-        <h2 class="text-4xl md:text-5xl font-extrabold text-center">
-          <h2 class="text-3xl font-bold text-center">
-            <span class="text-4xl line-through font-semibold text-gray-400">TOMORROW</span>
-            <span class="text-5xl gradient-text">Today🚀 </span> 
-          </h2>
-          
-        </h2>
+      <div>
+        <h2 class="text-4xl md:text-4xl font-extrabold text-center">
+          Get started <span class="gradient-text"> Today </span>
+        </h2> 
+        <h2 class="text-sm md:text-base lg:text-lg mt-5 text-justify xl:text-1xl font-inter mb-2">
+            
+          You’re making an impact in your client’s lives—let’s take your coaching 
+         to the next level with the power of technology... </h2>
+      </h1>
+       
       </div>
-
-      <div class="flex flex-col mt-1 gap-4 w-max mx-auto">
+      <div class="flex flex-col mt-5 gap-4 mb-5 mx-auto">
         <button
         onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register','getstarted')"
         class="py-3 px-16 text-sm font-semi rounded-3xl bg-primary text-white text-center w-full"
@@ -2323,14 +2330,16 @@ disabled
         </span>
       </button>
       
-        <a href="./product">
-        <button
-          class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
-        >
-          Product Tour
-          <img src="./assets/images/icons/link.png" alt="" />
-        </button>
-      </a>
+    
+          <button
+        onclick="onButtonClick(`https://allwyse.io`, 'home','getstarted')"
+
+            class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
+          >
+            Home
+            <img src="./assets/images/icons/link.png" alt="" />
+          </button>
+        </a>
       </div>
     </div>
 
