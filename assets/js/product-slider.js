@@ -1,19 +1,19 @@
 const tabObject = {
-  Sessions: "Sessions",
+  Profile: "Profile",
   Integrations: "integrations",
   Agenda: "Agenda",
   Analytics: "Analytics",
   Services: "Services",
-  Chat: "Chat",
+  Requests: "Requests",
 };
 
 const validParams = [
-  "Sessions",
+  "Profile",
   "Integrations",
   "Agenda",
   "Analytics",
   "Services",
-  "Chat",
+  "Requests",
 ];
 
 const swiper = new Swiper(".swiper", {
@@ -52,6 +52,10 @@ function showDiv(divId, buttonClicked) {
     buttonClicked.classList.add("active-tab");
   }
 
+  if (window.location.href.includes("localhost")) {
+    return;
+  }
+
   mixpanel.track("user_clicked", {
     widget_name: "product-information",
     product: divId,
@@ -65,7 +69,7 @@ const initialSelected = queryParam.get("selected");
 let initialButton = document.querySelectorAll(".tab-button")[0];
 if (
   initialSelected &&
-  initialSelected !== "Sessions" &&
+  initialSelected !== "Profile" &&
   validParams.includes(initialSelected)
 ) {
   initialButton =

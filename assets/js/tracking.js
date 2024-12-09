@@ -80,6 +80,10 @@ const trackMPEvent = (widget_name = "", event = "user_clicked") => {
     : {
         widget_name,
       };
+
+  if (window.location.href.includes("localhost")) {
+    return;
+  }
   mixpanel.track(event, payload);
 };
 
