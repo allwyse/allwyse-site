@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/redirections.js"></script>
+    <script src="/assets/js/dynamicText.js"></script>
     <script src="./assets/js/tailwind-config.js"></script>
     <script
   type="text/javascript"
@@ -240,29 +241,7 @@
            <h2 class="block md:hidden text-6xl text-black text-center font-regular leading-tight tracking-wide">
             Wise innovation <br/>built for ⤵<br/> <span class="gradient-text text-6xl" id="dynamicText">  </span>
           </h2>
-          
-          <script>
-            // List of words to cycle through
-            const words = ["Life coach", "Business coach", "Health coach", "Career coach"];
-            let index = 0;
-          
-            function changeWord() {
-              // Get the span where the word will appear
-              const dynamicText = document.getElementById("dynamicText");
-          
-              // Set the current word
-              dynamicText.textContent = words[index];
-          
-              // Increment the index and reset to 0 if we reach the end of the array
-              index = (index + 1) % words.length;
-            }
-          
-            // Change the word every 2 seconds
-            setInterval(changeWord, 2000);
-          
-            // Initialize the first word
-            changeWord();
-          </script>
+
           
     
        <p class="flex justify-center text-start md:hidden text-lg px-6 py-4 text-center leading-8">
@@ -280,7 +259,7 @@
           The first AI-Marketplace
         </h1>
         <h2 class="hidden md:block text-4xl lg:text-6xl text-black text-center font-regular leading-tight tracking-wider">
-          built to Sell <span class="gradient-text" id="dynamicText">Life Coach</span>
+          built to Sell <span class="gradient-text" id="dynamicTextDesktop"></span>
         </h2>
         
        
