@@ -4,8 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      Allwyse Sessions & Integrations: Streamline Coaching with Google Calendar,
-      Docs & Meet
+      Allwyse AI-Marketplace, Built for Coaching-Businesses, powered by innovation
     </title>
     <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
 
@@ -39,7 +38,7 @@
 
   </head>
   <body class="overflow-x-hidden">
-    <div class="w-full h-auto lg:h-screen overflow-hidden">
+    <div class="w-full h-auto lg:h-fit overflow-hidden">
       <!-- navbar -->
       <div
         class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
@@ -59,20 +58,18 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a onclick="trackMPEvent('home')" href="/" class="text-sm font-semibold text-primary">Home</a>
+            <a onclick="trackMPEvent('home')" href="/" class="text-1xl font-semibold text-inter">Home</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 bg-black rounded-full"></div>
             <a
             onclick="trackMPEvent('newsletter')"
               href="https://allwyse.io/#getstarted"
-              class="text-sm font-semibold"
+              class="text-sm font-inter font-semibold"
               >Contact</a
             >
           </div>
           <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="https://allwyse.io/#plans" class="text-sm font-semibold"
+            <a href="https://allwyse.io/#plans" class="text-sm font-semibold font-inter"
             onclick="trackMPEvent('pricing')"
               >Pricing</a
             >
@@ -83,13 +80,13 @@
         <div class="hidden lg:flex gap-2">
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-product-header')"
-            class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
+            class="border border-[#919EAB] rounded-3xl px-8 py-2 font-2xl text-inter font-semibold "
           >
-            Login
+            Log in
           </button>
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-product-header')"
-            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
+            class="bg-black rounded-3xl px-8 py-2  text-white font-semibold font-inter font-2xl"
           >
             Grab Free Account
           </button>
@@ -125,15 +122,15 @@
             <div
               class="border-[#D9D9D9] border-t border-b w-full px-5 py-3 mbl-link"
             >
-              <a href="/" class="text-xl font-semibold">Home</a>
+              <a href="/" class=" font-regular font-inter">Home</a>
             </div>
             <div
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
             >
               <a
-                href="#"
+                href="#sign in "
                 onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-product-header')"
-                class="text-xl font-semibold"
+                class=" font-regular font-inter"
                 >Sign In</a
               >
             </div>
@@ -141,9 +138,9 @@
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
             >
               <a
-                href="#"
+                href="#grab"
                 onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-product-header')"
-                class="text-xl font-semibold"
+                class="font-inter font-regular "
                 >Grab free account</a
               >
             </div>
@@ -152,29 +149,31 @@
             >
               <a
                 href="https://allwyse.io/#getstarted"
-                class="text-xl font-semibold"
+                class="font-inter font-regular"
                 >Contact us</a
               >
             </div>
           </div>
 
           <div class="flex flex-col justify-center pb-20 mt-10">
-            <!-- Action Button -->
-            <button
-              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-product-header')"
-              class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
-            >
-              Get Started
-            </button>
-            <button
-              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-product-header')"
-              class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
-            >
-              Login
-            </button>
+          <!-- Action Button -->
+          <button
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
+
+            class="text-2xl  w-4/5 mx-auto mt-6 bg-primary font-inter text-white font-semibold  py-2 px-13 rounded-full"
+          >
+            Get Started
+          </button>
+          <button
+          onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
+
+            class="text-2xl w-4/5 mx-auto my-3 bg-white border border-black font-inter  py-2 px-12 rounded-full"
+          >
+            Log in
+          </button>
 
             <div class="flex gap-3 items-center justify-center mt-5">
-              <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+              <h3 class="text-xl font-regular font-inter mb-1"> ☺ Social Media </h3>
               <div class="flex gap-2">
                 <img
                   src="./assets/images/icons/Instagram.svg"
@@ -204,26 +203,34 @@
         </div>
       </div>
 
-      <div class="product-header h-full w-full">
+      <div class="product-header h-full lg:h-[80%] w-full">
         <div class="pt-36 pb-20 px-4 md:px-5 lg:px-10 xl:px-20">
-          <h1 class="text-sm gray-black-gradient">Product Overview</h1>
-
-          <h2
-            class="text-4xl md:text-5xl lg:text-6xl xl:text-7xl mt-10 text-white font-bold"
-          >
-            Step-by-step guide to start
-          </h2>
-          <h2
-            class="text-3xl md:text-4xl lg:text-5xl xl:text-6.5xl text-white font-bold"
-          >
-            Discovering <span class="blue-green-gradient-text"> Allwyse</span>
-          </h2>
-
+          <h1 class="text-xl font-inter gray-black-gradient">Product Overview⤵</h1>
+      
+          <!-- Versión Mobile -->
+          <div class="lg:hidden">
+            <h2 class="text-6xl mt-10 text-white font-semibold">
+              Step-by-step,
+            </h2>
+            <h2 class="text-7xl text-white font-semibold">
+              Discovering <span class="blue-green-gradient-text"> Allwyse</span>
+            </h2>
+          </div>
+      
+          <!-- Versión Desktop -->
+          <div class="hidden lg:block">
+            <h2 class="text-6xl xl:text-6xl mt-10 text-white font-regular">
+              Step-by-step guide to start
+            </h2>
+            <h2 class="text-8xl xl:text-8xl text-white font-semibold">
+              Discovering <span class="blue-green-gradient-text"> Allwyse</span>
+            </h2>
+          </div>
+      
+          <!-- Buscador -->
           <form class="max-w-md mt-10">
             <div class="relative">
-              <div
-                class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none"
-              >
+              <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
                 <svg
                   class="w-5 h-5 text-gray-500 dark:text-gray-400"
                   aria-hidden="true"
@@ -1261,69 +1268,64 @@
         </div>
 
         <!-- END -->
-      </div>
+         </div>
 
-          <!-- get started -->
+     <!-- get started desktop -->
 
-    <div class="hidden lg:flex px-36 py-20 relative flex bg-gray-gradient">
-      <div class="w-1/2">
-        <img
-          src="./assets/images/CTA.png"
-          alt="get started with Allwyse"
-          loading="lazy"
-          
-        />
-      </div>
-      <div class="w-1/2 flex justify-center flex-col">
-        <h1 class="text-7xl font-semibold mb-3">
-          Get started
-          <span class="gradient-text"> today </span>
-          <h2 class="text-sm md:text-base lg:text-lg mt- xl:text-1xl font-inter mb-10">
-            
-            You’re making an impact in your client’s lives—let’s take your<br/> coaching 
-           to the next level with the power of technology... </h2>
-        </h1>
-       
-
-        
-        <div class="flex flex-col gap-2">
-          <input
-            type="email"
-            name="email"
-            id="contactEmail"
-            placeholder="Example@gmail.com"
-            class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-xl border-black tracking-widest"
-            required
-          />
-          <p class="text-base px-2 hidden" id="emailResponse"></p>
-        </div>
-
-        <div class="flex mt-5 gap-4">
-          <button
-            class="py-3 lg:px-12 xl:px-16 text-base font-semibold rounded-3xl bg-primary text-white text-center"
-            onclick="sendEmail()"
-            id="subscribeBtn"
-          >
-            Subscribe
-          </button>
-          <a href="/">
-            <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
-
-              class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
-            >
-              Sign Up
-            </button>
-          </a>
-        </div>
-      </div>
     </div>
-  </div>
+    <div class="hidden lg:flex px-36 py-20 relative flex bg-gray-gradient">
+     <div class="w-1/2">
+       <img
+         src="./assets/images/CTA.png"
+         alt="get started with Allwyse"
+         loading="lazy"
+         
+       />
+     </div>
+     <div class="w-1/2 flex justify-center flex-col">
+       <h1 class="text-6xl font-semibold mb-3">
+         Get started
+         <span class="gradient-text">today ☺ </span>
+         <h2 class="text-sm md:text-base lg:text-lg mt- xl:text-1xl font-inter mb-10">
+           
+           You’re making an impact in your client’s lives—let’s take your<br/> coaching 
+          to the next level with the power of technology... </h2>
+       </h1>
+      
 
+       
+       <div class="flex flex-col gap-2">
+         <input
+           type="email"
+           name="email"
+           id="contactEmail"
+           placeholder="Write your email: example@gmail.com"
+           class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-3xl border-gray-400  tracking-widest"
+           required
+         />
+         <p class="text-base px-2 hidden" id="emailResponse"></p>
+       </div>
 
-    <!-- get started mobile -->
-    <div
-      class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
+       <div class="flex mt-5 gap-4">
+         <button
+           class="py-3 lg:px-12 xl:px-16 text-2xl font-inter font-semibold rounded-3xl bg-primary text-white text-center"
+           onclick="sendEmail()"
+           id="subscribeBtn"
+         >
+           Subscribe
+         </button>
+           <button
+           onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
+             class="p-3 px-8 text-2xl font-inter font-semibold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+           >
+             Log in
+           </button>
+       </div>
+     </div>
+   </div>
+  
+    <!-- get started mobile --> 
+    <div class="block lg:hidden mx-5 my-10 px-10 py-14 relative flex flex-col gap-10 bg-gray-gradient rounded-xl"
     >
       <div>
         <img
@@ -1336,8 +1338,8 @@
       </div>
 
       <div>
-        <h2 class="text-4xl md:text-4xl font-extrabold text-center">
-          Get started <span class="gradient-text"> Today </span>
+        <h2 class="text-7xl md:text-7xl font-semibold text-center">
+          ⤹Get started <span class="gradient-text"> Today ☺ </span>
         </h2> 
         <h2 class="text-sm md:text-base lg:text-lg mt-5 text-justify xl:text-1xl font-inter mb-2">
             
@@ -1348,19 +1350,20 @@
       </div>
       <div class="flex flex-col mt-5 gap-4 mb-5 mx-auto">
         <button
-        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
-        
-          class="py-3 px-16 text-sm font-bold rounded-3xl bg-primary text-white text-center w-full"
-        >
-          Get Started for free
-        </button>
-        <a href="/">
+        onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register','getstarted')"
+        class="py-3 px-16 text-1xl font-inter font-semibold rounded-3xl bg-primary text-white text-center w-full"
+      >
+        <span class="text-lg font-semibold">
+          Get Started
+        </span>
+      </button>
+      
+    
           <button
-            class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
-          >
-            Home
-            <img src="./assets/images/icons/link.png" alt="" />
-          </button>
+        onclick="onButtonClick(`https://allwyse.io`, 'home','getstarted')"
+
+            class="p-3 px-8 text-1xl font-semibold font-inter border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
+          > Home </button>
         </a>
       </div>
     </div>
