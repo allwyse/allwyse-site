@@ -24,12 +24,9 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="/assets/js/redirections.js"></script>
+    <script src="/assets/js/dynamicText.js"></script>
+    <script src="/assets/js/audio.js"></script>
     <script src="./assets/js/tailwind-config.js"></script>
-    <script
-  type="text/javascript"
-  src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
-></script>
-
     <!-- CLARITY   -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -39,11 +36,14 @@
     })(window, document, "clarity", "script", "ne79yr3z9b");
 </script>
 <script src="/assets/js/tracking.js"></script>
-
+<script
+type="text/javascript"
+src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
+></script>
   </head>
   <body class="overflow-x-hidden">
     <!-- Header -->
-    <div class="w-full h-auto lg:h-screen overflow-hidden">
+    <div class="w-full h-auto  overflow-hidden">
       <!-- navbar -->
       <div
         class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
@@ -62,19 +62,16 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-public-sans text-primary">Product</a>
+            <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-inter ">Product</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-public-sans">Newsletter</a>
+            <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-inter">Newsletter</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a href="#plans" onclick="trackMPEvent('pricing')" class="text-sm font-semibold font-public-sans">Pricing</a>
+            <a href="#plans" onclick="trackMPEvent('pricing')" class="text-sm font-semibold font-inter">Pricing</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 bg-black rounded-full"></div>
-            <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-public-sans">Privacy Policy</a>
+            <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-inter">Privacy Policy</a>
           </div>
         </div>
 
@@ -82,15 +79,15 @@
         <div class="hidden lg:flex gap-2">
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
-            class="border border-[#919EAB] rounded-3xl px-8 py-2 text-sm font-bold"
+            class="border border-[#919EAB] rounded-3xl px-8 py-2 font-semibold  font-inter"
           >
-            Login
+            Log in
           </button>
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
-            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-bold"
+            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-1.5xl font-inter font-semibold"
           >
-            Grab Free Account
+            Register
           </button>
         </div>
 
@@ -126,26 +123,26 @@
             <div
               class="border-[#D9D9D9] border-t border-b w-full px-5 py-3 mbl-link"
             >
-              <a href="./product" class="text-xl font-medium">Product</a>
+              <a href="./product" class="text-1xl font-inter">Product</a>
             </div>
             <div
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
             >
-              <a href="#" 
+              <a href="#signin" 
               onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
-              class="text-xl font-medium">Sign In</a>
+              class="text-1xl font-regular font-inter ">Sign In</a>
             </div>
             <div
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
             >
-              <a href="#"
+              <a href="#free"
               onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
-              class="text-xl font-medium">Grab free account</a>
+              class="text-1xl font-inter">Grab free account</a>
             </div>
             <div
               class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
             >
-              <a href="#getstarted" class="text-xl font-medium">Suscribe</a>
+              <a href="#getstarted" class="text-1xl font-regular font-inter">Suscribe</a>
             </div>
           </div>
 
@@ -154,23 +151,22 @@
             <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
 
-              class="w-4/5 mx-auto mt-6 bg-primary text-white font-bold py-2 px-12 rounded-full"
+              class="text-2xl  w-3/5 mx-auto mt-6 bg-primary font-inter text-white font-semibold  py-2 px-13 rounded-full"
             >
               Get Started
             </button>
             <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
 
-              class="w-4/5 mx-auto my-3 bg-white border border-black font-bold py-2 px-12 rounded-full"
+              class="text-2xl w-3/5 mx-auto my-3 bg-white border border-black font-inter  py-2 px-12 rounded-full"
             >
-              Login
+              Log in
             </button>
 
             <div class="flex gap-3 items-center justify-center mt-5">
-              <h3 class="text-sm font-semibold mb-1">Social Media</h3>
+              <h3 class="text-sm font-1xl font-inter mb-1">Social Media</h3>
               <div class="flex gap-2">
-                <img
-                  src="./assets/images/icons/Instagram.svg"
+                <img src="./assets/images/icons/Instagram.svg"
                   onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','mobile-header')"
                   alt="Allwyse Instagram Profile"
                   class="w-6 h-6"
@@ -209,24 +205,44 @@
 
         <div class="w-full  lg:w-[70%] mx-auto pt-20 z-10 relative">
           <!-- Versión para mobile -->
-        <h2 class="block md:hidden text-base text-secondary text-center mb-4 font-medium">
-        🚀 Revolutioning Coaching 
-        <br/>with Top-Tech Solutions (Beta)
-        </h2>
+          <h1 class="block md:hidden text-2xl gray-gradient-text text-center font-inter leading-tight tracking-wide">
+            AI-powered Marketplace   
+            <span 
+            class="inline-flex items-center bg-green-100 text-green-600 text-s md:text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+            style="display: inline-flex; align-items: center; background-color: #daeee6; color: #047857; border-radius: 9999px; padding: 0.25rem 0.75rem;"
+          >
+            <span 
+              class="w-2 h-2 bg-green-600 rounded-full mr-2"
+              style="width: 8px; height: 8px; background-color: #047857; border-radius: 50%; margin-right: 8px;"
+            ></span>
+            Beta
+          </span>
+          </h1>
 
         <!-- Versión para desktop -->
-        <h2 class="hidden md:block text-lg lg:text-xl text-secondary text-center mb-6 font-medium">
-        🚀 Revolutioning Coaching with Top-Tech Solutions (Beta)
+        <h2 class="hidden md:block text-lg lg:text-xl text-secondary font-regular text-center mb-6">
+          Built for Coaching-Businesses, powered by innovation  
+          <span 
+            class="inline-flex items-center bg-green-100 text-green-600 text-s md:text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+            style="display: inline-flex; align-items: center; background-color: #daeee6; color: #047857; border-radius: 9999px; padding: 0.25rem 0.75rem;"
+          >
+            <span 
+              class="w-2 h-2 bg-green-600 rounded-full mr-2"
+              style="width: 8px; height: 8px; background-color: #047857; border-radius: 50%; margin-right: 8px;"
+            ></span>
+            Beta
+          </span>
         </h2>
+        
+        
            <!-- Versión para mobile -->
       
-       <h2 class="block md:hidden text-6xl text-black text-center font-bold leading-tight tracking-wide">
-        Built for Coaches<span class="gradient-text">
-          <br/>—Allwyse</span>
-       </h2>
-       <h1 class="block md:hidden text-2xl gray-gradient-text text-center font-bold leading-tight tracking-wide">
-        AI-powered Marketplace
-      </h1>
+           <h2 class="block md:hidden text-6xl text-black text-center font-regular leading-tight tracking-wide">
+            Wise innovation <br/>built for ⤵<br/> <span class="gradient-text text-6xl" id="dynamicText">  </span>
+          </h2>
+
+          
+    
        <p class="flex justify-center text-start md:hidden text-lg px-6 py-4 text-center leading-8">
        ✔️   Sell & Build Services with AI
        <br/> 
@@ -238,87 +254,94 @@
        </p>
 
         <!-- Versión para desktop -->
-      <h1 class="hidden md:block text-5xl lg:text-6xl xl:text-7xl gray-gradient-text text-center font-bold leading-tight tracking-wider">
-       The AI-powered Marketplace
-      </h1>
-      <h2 class="hidden md:block text-5xl lg:text-6xl xl:text-7xl text-black text-center font-bold leading-tight tracking-wider">
-       for Coaches<span class="gradient-text">—Allwyse</span>
-      </h2>
+        <h1 class="hidden md:block text-8xl xl:text-7xl text-center font-semibold leading-tight tracking-wider mb-1">
+          Own your AI-Marketplace⤵
+        </h1>
+        <h2 class="hidden md:block text-xl lg:text-5xl text-black text-center font-regular leading-tight tracking-wider">
+          built to Sell ❋ <span class="gradient-text" id="dynamicTextDesktop"></span>
+        </h2>
+        
+  
+      
       <p class="flex justify-center text-start hidden md:flex justify-center text-start text-xl xl:px-28 py-6  leading-10 lg:leading-9 ">
-       ✔️ 1. Effortlessly Sell Services and Manage Clients
+       ✔️ Sell, manage, and grow your coaching services with ease.
        <br />
-       ✔️ 2. Automate Scheduling to Focus More on Coaching
+       ✔️ Save +25hs/mo & money with AI-powered scheduling tools.
        <br />
-       ✔️ 3. Drive Growth with AI-Powered Analytics
-</p>
-
-          <div class="flex gap-3 items-center justify-center">
-            <div class="flex -space-x-1 overflow-hidden">
-              <img
-                class="inline-block h-9 w-9 rounded-full"
-                src="./assets/images/avatars/avatar1.png"
-                alt=""
-              />
-              <img
-                class="inline-block h-9 w-9 rounded-full"
-                src="./assets/images/avatars/avatar2.png"
-                alt=""
-              />
-              <img
-                class="inline-block h-9 w-9 rounded-full"
-                src="./assets/images/avatars/avatar3.png"
-                alt=""
-              />
-            </div>
-
-            <p class="text-base text-black font-semibold">
-              100+ Happy coaches 
-            </p>
-          </div>
+       ✔️ Track your success with Top-Advanced analytics.
+      
 
           <div
-            class="flex gap-4 py-10 items-center lg:justify-center flex-col lg:flex-row"
+            class="flex gap-4 py-5 items-center  lg:justify-center flex-col lg:flex-row"
           >
             <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','hero')"
 
-              class="w-4/5 sm:w-2/3 lg:w-max py-3 px-14 bg-black text-white rounded-3xl font-sem"
+              class="w-4/5 text-2xl sm:w-2/3 lg:w-max py-3 px-16 bg-green text-white font-semibold rounded-3xl  text-2xl"
             >
               Get Started
             </button>
             <button
               onclick="onButtonClick(`https://allwyse.io/product`,'product','hero')"
-              class="w-4/5 lg:w-max py-3 px-12 border-[#000] border rounded-3xl flex items-center justify-center gap-4"
+              class="w-4/5 lg:w-max py-3 px-12 border-[#000] border rounded-3xl flex font-semibold items-center justify-center gap-4"
             >
-              <u>Product Tour</u>
-              <img src="./assets/images/icons/link.png" alt="" />
+              Product Tour
             </button>
           </div>
         </div>
 
+        <div class="flex gap-3  mb-3 justify-center">
+          <div class="flex -space-x-1 overflow-hidden">
+            <img
+              class="inline-block h-9 w-9 rounded-full"
+              src="./assets/images/avatars/avatar5.png"
+              alt=""
+            />
+            <img
+              class="inline-block h-9 w-9 rounded-full"
+              src="./assets/images/avatars/avatar2.png"
+              alt=""
+            />
+            <img
+              class="inline-block h-9 w-9 rounded-full"
+              src="./assets/images/avatars/avatar3.png"
+              alt=""
+            />
+          </div>
+
+          <p class="text-base font-inter mb-5 font-regular">
+            Join to 100+ Coaching Business
+          </p>
+        </div>
+
+
+<!--whats mobile-->
         <div class='px-5 md:px-10  block lg:hidden'>
-        <h2 class="text-sm text-secondary mb-6 font-bold">
-          Visualizing Success
+        <h2 class="text-sm text-secondary mt-10 mb-6 font-bold">
+          VISUALIZING SUCCESS
         </h2>
-        <h2 class="text-4xl lg:text-4xl xl:text-5xl font-extrabold">
-          What's in <span class="gray-gradient-text">Allwyse?</span>
+        <h2 class="text-7xl lg:text-7xl xl:text-7xl ">
+          <span class="font-semibold"> A new way  </span> <span class="text-black font-regular" > <br/>To coach.</span>
         </h2>
       </div>
       </div>
     </div>
 
+
+
     <!-- What's in Allwyse section -->
 
     <div
-      class="px-5 md:px-10 lg:px-20 xl:px-36 py-10 pt-0 lg:pt-10  flex flex-col lg:flex-row"
+      class="px-5 md:px-10 mt-0 md:mt-20 lg:px-20 xl:px-36 py-10 pt-0 lg:pt-10 flex flex-col lg:flex-row"
     >
       <div class="w-full lg:w-1/2">
         <div class='hidden lg:block'>
-        <h2 class="text-sm text-secondary mb-6 section-heading-text">
+        <h2 class="text-secondary mb-6 section-heading-text">
          VISUALIZING SUCCESS
         </h2>
-        <h2 class="text-4xl lg:text-6xl xl:text-6xl font-extrabold">
-          What's in <span class="gray-gradient-text">Allwyse?</span>
+        <h2 class="lg:text-7xl font-semibold">
+         A new way
+          <h3 class="!font-regular text-7xl "> To coach. </h3>
         </h2>
       </div>
         <div class="mt-3 lg:mt-16">
@@ -327,6 +350,7 @@
               src="./assets/images/icons/ic-user.svg"
               alt="Professional Software"
               loading="lazy"
+            
             />
             <div class="flex flex-col">
               <h3 class="font-semibold text-lg">Professional Software</h3>
@@ -363,191 +387,333 @@
           </div>
         </div>
       </div>
-      <div class="w-full lg:w-1/2">
+      <div class="w-full ">
         <div class="flex items-start justify-center -mt-16">
           <img
             src="./assets/images/I.svg"
             alt="What is Allwyse?"
             class="circle w-full"
             loading="lazy"
+            style="max-width: 100%;"
           />
         </div>
       </div>
     </div>
 
-<!-- SERVICES Desktop Version -->
+            <!-- STATS Desktop Version -->
+<div class="hidden lg:flex px-20 xl:px-36 py-16 pt-0 bg-white">
+  <div class="w-full flex items-center justify-between">
+    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
+    
+    <div class="flex flex-col gap-3 items-center">
+      <h2 class="text-5xl font-bold text-center">+26 hs</h2>
+      <p class="gray-gradient-text text-xl font-semibold">
+        Saved per month
+      </p>
+    </div>
+
+    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
+
+    <div class="flex flex-col gap-3 items-center">
+      <h2 class="text-5xl font-bold text-center">+100</h2>
+      <p class="gray-gradient-text text-xl font-semibold">
+        Happy Coaches
+      </p>
+    </div>
+
+    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
+
+    <div class="flex flex-col gap-3 items-center">
+      <h2 class="text-5xl font-bold text-center">+30%</h2>
+      <p class="gray-gradient-text text-xl font-semibold">
+        Conversion rate
+      </p>
+    </div>
+
+    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
+  </div>
+</div>
+
+   <!-- SERVICES Desktop Version -->
+
+   <div class="hidden lg:block py-20 bg-gray-gradient w-full">
+   <div class="px-20 xl:px-36 flex flex-col">
+    <div class="services-builder-section">
+      <div class="text-content">
+        <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">SERVICES BUILDER</h2>
+        <h3 class="text-6xl font-medium mb-5">
+         Coaching experts finally have a platform
+          <br /> <span class="gradient-text text-7xl font-regular "> ☑ Sell, Manage and Automate  </span>
+        </h3>
+        <p class="text-2xl text-2xl mb-5 leading-relaxed">
+          Build custom services, sell effortlessly, and manage client data seamlessly. Showcase your expertise with a personalized public profile!
+         <br/> 
+
+        </p>
+        <div class="buttons">
+          <button
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'services-builder-section')"
+            class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
+          >
+            Get Started
+          </button>
+          <button
+          onclick="onButtonClick(`/product?selected=Services`,'product-tour','services')"
+            class=" ml-5 font-regular text-2xl text-black "
+          >
+            <U> → Services Tour </U>
+          </button>
+        </div>
+      </div>
+      <div class="image-content mt-10">
+        <img
+          src="./assets/images/ok.png"
+          alt="Allwyse Service Builder"
+          class="image-right"
+          loading="lazy"
+        />
+      </div>
+    </div>
+    
+  </div>
+  </div>
+
+  <!-- SERVICES Mobile Version -->
+   <div class="block lg:hidden py-10 bg-gray-gradient w-full"> 
+  <div class="px-4 sm:px-6 flex flex-col">
+    <div class="services-builder-section text-center">
+      <div class="text-content">
+        <h2 class="font-inter mb-3 section-heading-text text-center text-gray-900">SERVICES BUILDER</h2>
+        <h3 class="text-6xl  font-medium mb-4">
+          Sell and scale!
+          <br /> <span class="gradient-text text-6xl sm:text-5xl font-regular"> ☑ Sell, Manage and Automate-Coaching </span>
+        </h3>
+        <p class="text-base sm:text-lg mb-5 leading-relaxed">
+          Build custom services, sell effortlessly, and manage client data seamlessly. Showcase your expertise with a personalized public profile!
+        </p>
+        <div class="buttons flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5">
+          <button
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'services-builder-section')"
+            class="w-full sm:w-max py-3 px-10 text-base text-white bg-green rounded-3xl font-semibold"
+          >
+            Get Started
+          </button>
+          <button
+          onclick="onButtonClick(`/product?selected=Services`,'product-tour','services')"
+            class="text-base text-black"
+          >
+            <u>→ Services Tour</u>
+          </button>
+        </div>
+      </div>
+      <div class="image-content mt-10">
+        <img
+          src="./assets/images/ok.png"
+          alt="Allwyse Service Builder"
+          class="w-full max-w-md mx-auto"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+   </div>
+  <!--END SERVICE-->
+
+<!-- CALENDAR Desktop Version -->
+
+    
+<div class="hidden lg:block py-20 bg-white w-full">
+  <div class="px-20 xl:px-36 flex flex-col">
+   <div class="services-builder-section">
+     <div class="text-content">
+       <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">CALENDAR AUTOMATED</h2>
+       <h3 class="text-6xl font-medium mb-5">
+        Focus on What Matters—Effortless 
+         <br /> <span class="gradient-text text-7xl font-regular "> ☏ Scheduling for Coaches and Clients </span>
+       </h3>
+       <p class="text-2xl text-2xl mb-5 leading-relaxed">
+        Stay perfectly on schedule. Create, edit, and sync your services, sessions or events. Allwyse was proudly verified and authorized by Google team.        <br/> 
+
+       </p>
+       <div class="buttons">
+         <button
+           onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'calendar-section')"
+           class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
+         >
+           Get Started
+         </button>
+         <button
+         onclick="onButtonClick(`/product?selected=Calendar`,'product-tour','calendar')"
+           class=" ml-5 font-regular text-2xl text-black "
+         >
+           <U> → Calendar Tour </U>
+         </button>
+       </div>
+     </div>
+     <div class="image-content mt-10">
+       <img
+         src="./assets/images/Calendary.png"
+         alt="Allwyse Service Builder"
+         class="image-right"
+         loading="lazy"
+       />
+     </div>
+   </div>
+   
+ </div>
+ </div>
+
+<!-- CALENDAR Mobile Version -->
+  <div class="block lg:hidden py-10 bg-white w-full"> 
+  <div class="px-4 sm:px-6 flex flex-col">
+    <div class="services-builder-section text-center">
+      <div class="text-content">
+        <h2 class="font-inter mb-3 section-heading-text text-center text-gray-900">CALENDAR AUTOMATED</h2>
+        <h3 class="text-6xl  font-medium mb-4">
+          I'm on call!
+          <br /> <span class="gradient-text text-6xl sm:text-5xl font-regular"> ☏ Scheduling for Coaches and Clients</span>
+        </h3>
+        <p class="text-base sm:text-lg mb-5 leading-relaxed">
+          Stay perfectly on schedule. Create, edit, and sync your services, sessions or events. Allwyse was proudly verified and authorized by Google team.        <br/> 
+        </p>
+        <div class="buttons flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5">
+          <button
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'calendar-section')"
+            class="w-full sm:w-max py-3 px-10 text-base text-white bg-green rounded-3xl font-semibold"
+          >
+            Get Started
+          </button>
+          <button
+          onclick="onButtonClick(`/product?selected=Calendar`,'product-tour','calendar')"
+            class="text-base text-black"
+          >
+            <u>→ Calendar Tour</u>
+          </button>
+        </div>
+      </div>
+      <div class="image-content mt-10">
+        <img
+          src="./assets/images/Calendary.png"
+          alt="Allwyse Service Builder"
+          class="w-full max-w-md mx-auto"
+          loading="lazy"
+        />
+      </div>
+    </div>
+  </div>
+   </div>
+<!--CALENDAR END-->
+
+
+
+<!-- ANALYTICS Desktop Version -->
 
 <div class="hidden lg:block py-20 bg-gray-gradient w-full">
   <div class="px-20 xl:px-36 flex flex-col">
-    <h2 class="text-lg font-semibold mb-10 section-heading-text">SERVICES BUILDER</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-      Acces to your own AI-powered marketplace 
-      <br/> and efforlessly Create & Sell <span class="gradient-text">your services </span> 
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Create and sell your coaching services effortlessly with your own AI-powered marketplace. Allwyse guides you in crafting 
-      <br/>personalized offerings that resonate with clients and elevate your business.
-    </p>
-    <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','services-builder-section')"
-      class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
-    >
-      Get Started
-    </button>
-  </div>
-  <div class="mx-12">
-    <img src="./assets/images/Photo-services.svg" alt="Allwyse Service Builder" class="w-full" loading="lazy" />
-  </div>
-</div>
+   <div class="services-builder-section">
+     <div class="text-content">
+       <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">ANALYTICS DASHBOARD</h2>
+       <h3 class="text-6xl font-medium mb-5">
+        Growth with Coaching-Driven Analytics
+                 <br /> <span class="gradient-text text-7xl font-regular "> ☺ Map Your Clients’ Journey </span>
+       </h3>
+       <p class="text-2xl text-2xl mb-5 leading-relaxed">
+        Gain full visibility into your clients’ journey with Allwyse Analytics. Manage your agenda while track every action—views, clicks, bookings, and more—all in one place.  <br/> 
 
-<!-- SERVICES Mobile Version -->
-
-<div class="block lg:hidden py-10 bg-gray-gradient w-full">
-  <div class="px-5 flex flex-col">
-    <h2 class="text-lg font-semibold mb-8 section-heading-text">SERVICES BUILDER</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-      Build your own marketplace, Sell efforlessly 
- <span class="gradient-text">AI-Powered Services</span> 
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Create and sell your services in your own marketplace, with <u>AI-TOOLS</u> to craft offers that <U>resonate with clients and boost your business.</U>
-    </p>
-  
-  </div>
-  <div class="mx-2">
-    <img src="./assets/images/Foto services-mobile.png" alt="Allwyse Service Builder" class="w-full" loading="lazy" />
-  </div>
-  <div class="flex justify-center mt-5">
-  <button
-  onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','services-builder-section')"
-  class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
-    >
-  Get Started
-   </button>
-  </div>
+       </p>
+       <div class="buttons">
+         <button
+           onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'analytics-section')"
+           class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
+         >
+           Get Started
+         </button>
+         <button
+         onclick="onButtonClick(`/product?selected=Analytics`,'product-tour','analytics')"
+           class=" ml-5 font-regular text-2xl text-black "
+         >
+           <U> → Analytics Tour </U>
+         </button>
+       </div>
+     </div>
+     <div class="image-content mt-10">
+       <img
+         src="./assets/images/Analytics.png"
+         alt="Allwyse Service Builder"
+         class="image-right"
+         loading="lazy"
+       />
+     </div>
    </div>
-
-<!-- CALENDAR Desktop Version -->
-<div class="hidden lg:block py-20 bg-white w-full">
-  <div class="px-20 xl:px-36 flex flex-col">
-    <h2 class="text-lg font-semibold mb-10 section-heading-text">CALENDAR SYNC</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-      Prioritize Your Clients' Growth—Stay On Track with Seamless 
-      <span class="gradient-text">Calendar Integration</span> 
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Effortlessly sync your Google Calendar and manage all your meetings in one place. 
-      Save time and money by simplifying your schedule—stay organized and focus on growing your clients' success.
-    </p>
-    <div class="mb-10"> <!-- Añadido margen aquí -->
-      <button
-        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','calendar-section')"
-        class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
-      >
-        Get Started
-      </button>
-    </div>
-  </div>
-  <div class="mx-12">
-    <img src="./assets/images/Photo-calendar.svg" alt="Allwyse calendar sync" class="w-full" loading="lazy" />
-  </div>
-</div>
-
-<!-- CALENDAR Mobile Version -->
-<div class="block lg:hidden py-10 bg-white w-full">
-  <div class="px-5 flex flex-col">
-    <h2 class="text-lg font-semibold mb-8 section-heading-text">CALENDAR SYNC</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-      Focus on your clients lives,
-      Never miss a meeting with <span class="gradient-text">Calendar</span> 
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Connect your favorite calendar and <u>automate your availability</u>. Stay organized and <u>focus on what matters most - your clients.</u>
-    </p>
-  </div>
-  <div class="mx-2">
-    <img src="./assets/images/Calendar-mobile.png" alt="Allwyse calendar sync" class="w-full" loading="lazy" />
-  </div>
-  <div class="flex justify-center mt-5">
-    <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','calendar-section')"
-      class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
-    >
-      Get Started
-    </button>
-  </div>
-</div>
-
-<!-- ANALYTICS Desktop Version -->
-<div class="hidden lg:block py-20 bg-gray-gradient w-full -mt-32">
-  <div class="px-20 xl:px-36 flex flex-col">
-    <h2 class="text-lg font-semibold mb-10 section-heading-text">ANALYTICS</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-     Turn Data Into Client Success Stories and Scale Your Coaching Business  <span class="gradient-text"> with Analytics</span>.
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Track your growth and make data-driven decisions.
-      <br/>Understand your business performance and optimize your coaching strategy.
-    </p>
-    <div class="mb-10"> <!-- Aquí se agrega un margen -->
-      <button
-        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','analytics-section')"
-        class="w-max py-3 px-14 bg-green text-white rounded-3xl font-semibold"
-      >
-        Get Started
-      </button>
-    </div>
-  </div>
-  <div class="mx-12">
-    <img src="./assets/images/Photo-Analytics.svg" alt="Allwyse analytics" class="w-full" loading="lazy" />
-  </div>
-</div>
+   
+ </div>
+ </div>
 
 <!--ANALYTICS Mobile Version -->
 
-<div class="block lg:hidden py-10 bg-gray-gradient w-full mt-0">
-  <div class="px-5 flex flex-col">
-    <h2 class="text-lg font-semibold mb-8 section-heading-text">ANALYTICS</h2>
-    <h3 class="text-6xl font-semibold mb-5">
-      Elevate Your Practice with Smart Insights    <span class="gradient-text">Analytics</span> 
-    </h3>
-    <p class="mb-5 text-lg leading-relaxed">
-      Track your growth and make <u>data-driven decisions</u>. Understand your <u>business performance</u> and optimize your coaching strategy.
-    </p>
+<div class="block lg:hidden py-10 bg-white w-full"> 
+  <div class="px-4 sm:px-6 flex flex-col">
+    <div class="services-builder-section text-center">
+      <div class="text-content">
+        <h2 class="font-inter mb-3 section-heading-text text-center text-gray-900">ANALYTICS DASHBOARD</h2>
+        <h3 class="text-6xl  font-medium mb-4">
+          Eureka!
+          <br /> <span class="gradient-text text-6xl sm:text-5xl font-regular"> ☺ Map Your Clients’ Journey</span>
+        </h3>
+        <p class="text-base sm:text-lg mb-5 leading-relaxed">
+Gain full visibility into your clients’ journey with Allwyse Analytics. Track every action—views, clicks, bookings, and more—all in one place.        </p>
+        <div class="buttons flex flex-col sm:flex-row justify-center items-center space-y-3 sm:space-y-0 sm:space-x-5">
+          <button
+            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'analytics-section')"
+            class="w-full sm:w-max py-3 px-10 text-base text-white bg-green rounded-3xl font-semibold"
+          >
+            Get Started
+          </button>
+          <button
+          onclick="onButtonClick(`/product?selected=Analytics`,'product-tour','analytics')"
+            class="text-base text-black"
+          >
+            <u>→ Analytics Tour</u>
+          </button>
+        </div>
+      </div>
+      <div class="image-content mt-10">
+        <img
+          src="./assets/images/Calendary.png"
+          alt="Allwyse Service Builder"
+          class="w-full max-w-md mx-auto"
+          loading="lazy"
+        />
+      </div>
+    </div>
   </div>
-  <div class="mx-2">
-    <img src="./assets/images/Analytics-mobile.png" alt="Allwyse analytics" class="w-full" loading="lazy" />
-  </div>
-  <div class="flex justify-center mt-5">
-    <button
-      onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','analytics-section')"
-      class="w-4/5 py-3 px-14 bg-green text-white rounded-3xl font-semibold mb-8"
-    >
-      Get Started
-    </button>
-    
-  </div>
-</div>
+   </div>
+
+
+  <!--ANALYTICS THE END-->
+
+
+
     <!-- testimonials section -->
 
     <div
       class="px-5 md:px-10 lg:px-20 py-10 xl:px-36 bg-white overflow-x-hidden"
     >
-      <h3 class="text-sm font-bold mb-2 text-center text-secondary desktop-heading section-heading-text">
-        TESTIMONIALS
+      <h3 class=" font-bold mb-2 text-center text-secondary desktop-heading section-heading-text">
+       COACHES EXPERIENCES
       </h3>
       <h3
-        class="hidden lg:block text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
+        class="hidden lg:block text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-10 text-center"
       >
-        Rumors are flying
-        <span class="gray-gradient-text"> that...</span>
+        This is our 
+        <span class=" text-7xl gradient-text"> Why ✎. </span>
       </h3>
 
       <h3
-      class="block lg:hidden text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-10 text-center"
+      class="block lg:hidden text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-10 text-center"
     >
-      Rumors are flying <br>
-      <span class="gray-gradient-text"> that...</span>
+    This is our  <br>
+      <span class="gradient-text"> Why ✎. </span>
     </h3>
 
       <div class="mt-16 lg:mt-32">
@@ -564,32 +730,31 @@
                   <div class="flex flex-col items-center lg:items-start gap-2">
                     <div class="flex">
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                     </div>
-                    <h3 class="text-sm font-bold">Beta Feedback</h3>
                   </div>
                   <p
                     class="text-base truncate-text text-center lg:text-start text-center lg:text-start"
@@ -600,7 +765,7 @@
                 </div>
                 <div class="flex gap-3 justify-center lg:justify-start">
                   <img
-                    src="./assets/images/avatars/img_avatar1.png"
+                    src="./assets/images/avatars/avatar9.png"
                     alt="Allwyse testimonial"
                     class="w-12 h-12 rounded-full"
                   />
@@ -619,32 +784,31 @@
                   <div class="flex flex-col items-center lg:items-start gap-2">
                     <div class="flex">
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                     </div>
-                    <h3 class="text-sm font-bold">Beta Feedback</h3>
                   </div>
                   <p class="text-base truncate-text text-center lg:text-start">
                     I'll admit, I was a bit skeptical at first because it looked complex, 
@@ -652,12 +816,12 @@
                 </div>
                 <div class="flex gap-3 justify-center lg:justify-start">
                   <img
-                    src="./assets/images/avatars/Img_avatar2.png"
+                    src="./assets/images/avatars/avatar9.png"
                     alt="Allwyse testimonial"
                     class="w-12 h-12 rounded-full"
                   />
                   <div class="flex flex-col">
-                    <h3 class="text-base font-bold">Nicholas S.</h3>
+                    <h3 class="text-base font-bold">Sandy S.</h3>
                     <p class="text-sm text-secondary">Business Coach</p>
                   </div>
                 </div>
@@ -671,32 +835,31 @@
                   <div class="flex flex-col items-center lg:items-start gap-2">
                     <div class="flex">
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                     </div>
-                    <h3 class="text-sm font-bold">Beta Feedback</h3>
                   </div>
                   <p class="text-base truncate-text text-center lg:text-start">
                   I'm really liking the flexibility. I can adjust my availability without 
@@ -707,7 +870,7 @@
 
                 <div class="flex gap-3 justify-center lg:justify-start">
                   <img
-                    src="./assets/images/avatars/img_avatar3.png"
+                    src="./assets/images/avatars/avatar5.png"
                     alt="Allwyse testimonial"
                     class="w-12 h-12 rounded-full"
                   />
@@ -726,39 +889,38 @@
                   <div class="flex flex-col items-center lg:items-start gap-2">
                     <div class="flex">
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                     </div>
-                    <h3 class="text-sm font-bold">Beta Feedback</h3>
                   </div>
                   <p class="text-base truncate-text text-center lg:text-start">
                     Well, i didn't expect to feel this organized!and saving a ton of time now that everything's in one place.                </p>
                 </div>
                 <div class="flex gap-3 justify-center lg:justify-start">
                   <img
-                    src="./assets/images/avatars/img_avatar4.png"
+                    src="./assets/images/avatars/avatar4.png"
                     alt="Allwyse testimonial"
                     class="w-12 h-12 rounded-full"
                   />
@@ -777,32 +939,31 @@
                   <div class="flex flex-col items-center lg:items-start gap-2">
                     <div class="flex">
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                       <img
-                        src="./assets/images/icons/star.png"
+                        src="./assets/images/icons/star.svg"
                         alt=""
                         class="w-5 h-5"
                       />
                     </div>
-                    <h3 class="text-sm font-bold">Beta Feedback</h3>
                   </div>
                   <p class="text-base truncate-text text-center lg:text-start">
                     This is exactly what i've been waiting for. Currently i've been using multiple apps like Calendar, monday, Excel and more to handle client bookings, notes, and payments. 
@@ -810,7 +971,7 @@
                 </div>
                 <div class="flex gap-3 justify-center lg:justify-start">
                   <img
-                    src="./assets/images/avatars/img_avatar1.png"
+                    src="./assets/images/avatars/avatar3.png"
                     alt="Allwyse testimonial"
                     class="w-12 h-12 rounded-full"
                   />
@@ -835,59 +996,27 @@
     >
       <div class="bg-gradient-border h-[1px] w-full opacity-30 my-5"></div>
       <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">3000+</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center">+26 hs</h2>
         <p class="gray-gradient-text text-base md:text-lg font-semibold">
-          Sessions scheduled
+          Saved per month
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">100+</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center">+100</h2>
         <p class="gray-gradient-text text-base md:text-lg font-semibold">
-          Happy customers
+          Happy Coaches
         </p>
       </div>
       <div class="flex flex-col gap-2">
-        <h2 class="text-3xl md:text-4xl font-bold text-center">4.9</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center">+30%</h2>
         <p class="gray-gradient-text text-base md:text-lg font-semibold">
-          Review rate
+          Conversion rate
         </p>
       </div>
       <div class="bg-gradient-border h-[1px] w-full opacity-30 my-5"></div>
     </div>
 
-    <!-- STATS Desktop Version -->
-<div class="hidden lg:flex px-20 xl:px-36 py-16 bg-white">
-  <div class="w-full flex items-center justify-between">
-    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
-    
-    <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">3000+</h2>
-      <p class="gray-gradient-text text-xl font-semibold">
-        Sessions scheduled
-      </p>
-    </div>
 
-    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
-
-    <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">100+</h2>
-      <p class="gray-gradient-text text-xl font-semibold">
-        Happy customers
-      </p>
-    </div>
-
-    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
-
-    <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">4.9</h2>
-      <p class="gray-gradient-text text-xl font-semibold">
-        Review rate
-      </p>
-    </div>
-
-    <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
-  </div>
-</div>
 
     <!-- Plans -->
     <div class="hidden lg:block px-5 md:px-10 lg:px-20 xl:px-36 relative" id='plans'>
@@ -895,17 +1024,19 @@
         class="w-2/3 h-1/2 bg-primary blur-[400px] absolute -bottom-10 -right-20 opacity-10"
       ></div>
 
-      <h3 class="text-sm font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">PLANS</h3>
+      <h3 class=" font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">PLANS</h3>
       <h3
-        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-2 text-center"
+        class="text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-2 text-center"
       >
         Transparent
-        <span class="gray-gradient-text"> pricing</span>
+        <span class="gradient-text text-7xl font-regular"> pricing ⤵</span>
       </h3>
-      <p class="text-base text-secondaryGray text-center hidden lg:block">
+      <p class="font-inter text-secondaryGray text-center hidden lg:block">
         Choose from flexible pricing options designed to fit your business needs
         and budget, with no hidden fees.
       </p>
+    
+      <!--starter-->
 
       <div class="mt-20 gap-2 flex">
         <div class="price w-full border-2  lg:w-[60%] py-8 px-8">
@@ -915,7 +1046,7 @@
           </div>
 
           <h3 class="text-2.5xl font-bold">Starter Coach</h3>
-          <p class="text-grayText text-lg">Built for experts, Open BETA</p>
+          <p class="text-grayText text-lg">Built for Starters, Open soon*</p>
           <p class="text-grayText text-lg mb-[32px]">Whats included ?</p>
           <div class="flex gap-5 flex-col">
             <div>
@@ -929,7 +1060,7 @@
               </div>
               <p class="text-grayText text-sm font-semibold ml-[50px]">- Share Your Background & Expertise</p>
               <p class="text-grayText text-sm font-semibold ml-[50px]">- Showcase Your Service Listing</p>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- Show Off 1 Service </p>
+              <p class="text-grayText text-sm font-semibold ml-[50px]">- Show Off (1) Service </p>
             </div>
             <div>
               <div class="flex gap-6 items-center">
@@ -954,8 +1085,8 @@
                 <p class="text-md font-semibold">Customized Services Builder</p>
               </div>
               <p class="text-grayText text-sm font-semibold ml-[50px]">- Tailor the Booking Experience</p>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- AI-Powered Marketable Service Descriptions</p>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- Up to 1 Service</p>
+              <p class="text-grayText text-sm font-semibold ml-[50px]">- AI-Powered (limited)</p>
+              <p class="text-grayText text-sm font-semibold ml-[50px]">- Up to (1) Service</p>
             </div>
 
             <div>
@@ -982,8 +1113,7 @@
                 <p class="text-md font-semibold">Client managment</p>
               </div>
               <p class="text-grayText text-sm font-semibold ml-[50px]">- Instant Access to Client Data</p>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- Automated Payment Reminders</p>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- Up to 1 client</p>
+              <p class="text-grayText text-sm font-semibold ml-[50px] ">- Up to 1 client</p>
             </div>
 
             <div>
@@ -995,7 +1125,7 @@
                 />
                 <p class="text-md font-semibold">Analytics</p>
               </div>
-              <p class="text-grayText text-sm font-semibold ml-[50px] text-red-500">- Actionable Business Insights</p>
+              <p class="text-grayText text-sm font-semibold ml-[50px] ">- Actionable Business Insights</p>
               <p class="text-grayText text-sm font-semibold ml-[50px]">- Real-Time Profile Popularity Metrics </p>
             </div>
          
@@ -1010,6 +1140,7 @@ disabled
           </button>
         </div>
 
+         <!--expert -->
         <div class="price-active relative w-full  lg:w-[60%] py-8 px-8">
           <div class="absolute top-3 right-7 lg:right-3 xl:right-7">
             <h2
@@ -1120,6 +1251,7 @@ disabled
           </button>
         </div>
 
+        <!--teams-->
         <div class="price w-full border-2  lg:w-[60%] py-8 px-8">
           <div class="flex gap-10 items-end mb-4">
             <h2 class="text-3xl text-black-800 font-bold">$**</h2>
@@ -1127,8 +1259,8 @@ disabled
           </div>
 
           <h3 class="text-2.5xl font-bold">Coaching Team</h3>
-          <p class="text-grayText text-lg ">Coming soon</p>
-          <p class="text-grayText text-lg mb-10 !text-primary">Everything in Expert and:</p>
+          <p class="text-grayText text-lg ">Available for consulting</p>
+          <p class="text-grayText text-lg mb-10">Contact us for your custom system</p>
 
           <div class="flex gap-6 flex-col">
             <div class="flex gap-6 items-center">
@@ -1201,10 +1333,10 @@ disabled
     >
     <h3 class="text-sm font-bold mb-8 text-center text-secondary">PLANS</h3>
     <h3
-      class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-6 text-center"
+      class="text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-6 text-center"
     >
       Transparent
-      <span class="gray-gradient-text"> pricing</span>
+      <span class="gradient-text"> pricing⤵</span>
     </h3>
       <div
         class="text-sm font-medium text-center text-gray-500 border-b-2 border-[#D9D9D9] mx-5 md:mx-10"
@@ -1663,21 +1795,34 @@ disabled
         class="w-2/3 h-1/2 bg-primary blur-[400px] absolute bottom-0 -left-20 opacity-10"
       ></div>
 
-      <h3 class="text-sm font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">
-        BENEFITS
+      <h3 class=" font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">
+        ABOUT ALLWYSE
       </h3>
       <h3
-        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-28 text-center"
+        class="text-7xl  lg:text-7xl  mb-28 text-center"
       >
-      Manage Clients & Schedule Sessions       
-      <span class="gray-gradient-text"> <br/> with allwyse</span>
-      </h3>
+      <span class="font-semibold"> Mindset</span> 
+      <span class="gradient-text font-semibold text-7xl ">allwyse ☄</span>
+     
+     <!-- Add Audio Element -->
+     <div class="audio-section flex justify-center items-center px-5 md:px-10 lg:px-20 xl:px-36 py-5" >
+     <audio controls style="filter: invert(1) brightness(2);">
+     <source src="assets/images/Welcomeaudio.mp3" type="audio/mpeg">
+     Your browser does not support the audio element.
+     </audio>
+     </div>
+
+    
+    </h3>
+      
+    <!--components BENEFITS-->
+    
       <div class="w-full flex gap-6">
         <div class="hidden lg:block w-2/3">
           <div class="w-full flex drop-shadow-custom-lg">
             <div class="w-1/5">
               <img
-                src="https://i.ibb.co/vjHnGcV/freepik-candid-image-photography-natural-textures-highly-r-79713.jpg"
+                src="assets/images/values.jpg"
                 alt="Allwyse security benefit"
                 class="h-full w-full rounded-xl rounded-tr-none rounded-br-none object-cover"
               />
@@ -1807,7 +1952,7 @@ disabled
         </div>
         <div class="w-full lg:w-1/3">
           <div class="w-full flex flex-col drop-shadow-custom-lg h-full">
-            <div class="w-1/5" style="width: 100%; height: 300px; overflow: hidden;">
+            <div class="w-1/5" style="width: 100%; height: 400px; overflow: hidden;">
               <img
                 src="https://i.ibb.co/wd0B1CZ/freepik-candid-image-photography-natural-textures-highly-r-50122.jpg"
                 alt="Allwyse values benefit"
@@ -1827,8 +1972,13 @@ disabled
               <h2 class="text-4xl font-semibold mb-3">Coaching Business</h2>
 
               <p class="text-sm text-secondaryGray mb-10">
-                Allwyse merges powerful tech with an intuitive design, creating a coaching experience that’s impactful, seamless, and ready to grow with you.
-              <div class="flex flex-col gap-4">
+
+                At Allwyse, we’re here for coaches who are ready to have the best technology available. 
+                We’ve built a platform designed to grow with you,
+                 adapt to your needs, and simplify the way you work, so you can focus on what matters most:
+                  transforming lives.
+                
+                  <div class="flex flex-col gap-4">
                 <div class="flex gap-3 items-center">
                   <img
                     src="./assets/images/icons/check-circle.svg"
@@ -1909,6 +2059,8 @@ disabled
         </div>
       </div>
     </div>
+
+
 <!-- BENEFITS (Mobile) -->
 <div class="px-4 py-8 relative sm:hidden bg-gray-60">
   <!-- Background Blur Effects -->
@@ -1916,19 +2068,29 @@ disabled
 
   <!-- Title Section -->
   <h3 class="text-xs font-bold mb-2 text-center text-secondary">
-    BENEFITS
+    ABOUT US
   </h3>
-  <h3 class="text-4xl font-semibold mb-12 text-center">
-    Manage Clients & Schedule Sessions
-    <span class="gray-gradient-text"><br />with Allwyse</span>
+  <h3 class="text-7xl font-semibold mb-12 text-center">
+    Mindset
+    <span class="gradient-text"><br />allwyse ☄</span>
+     <!-- Add Audio Element -->
+     <div class="audio-section flex justify-center items-center px-5 md:px-10 lg:px-20 xl:px-36 py-5" >
+      <audio controls style="filter: invert(1) brightness(2);">
+      <source src="assets/images/Welcomeaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+      </audio>
+      </div>
+ 
+      
   </h3>
+  
 
   <!-- Benefit Items -->
   <div class="space-y-8">
     <!-- Benefit Item 1 -->
     <div class="flex flex-col bg-white shadow-lg rounded-xl overflow-hidden">
       <!-- Cover Image -->
-      <img src="./assets/images/benifit1.png" alt="Transparency Image" class="w-full h-48 object-cover" />
+      <img src="./assets/images/values.jpg" alt="Transparency" class="w-full h-48 object-cover" />
       <!-- Content -->
       <div class="p-6">
         <div class="!bg-greenLight rounded-full py-1 px-4 w-max mb-4">
@@ -1958,7 +2120,7 @@ disabled
     <!-- Benefit Item 2 -->
     <div class="flex flex-col bg-white shadow-lg rounded-xl overflow-hidden">
       <!-- Cover Image -->
-      <img src="./assets/images/benifit2.png" alt="Community Image" class="w-full h-48 object-cover" />
+      <img src="./assets/images/benifit2.png" alt="Community" class="w-full h-48 object-cover object-top" />
       <!-- Content -->
       <div class="p-6">
         <div class="!bg-greenLight rounded-full py-1 px-4 w-max mb-4">
@@ -2030,10 +2192,10 @@ disabled
           SECURITY
         </h3>
         <h3
-          class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-20 text-center"
+          class="text-7xl  xl:text-6.5xl  mb-20 text-center"
         >
-          Advanced Protection,
-          <span class="gray-gradient-text"> Trasparent security..</span>
+         <span class="font-semibold"> Advanced </span> 
+          <span class="gradient-text text-7xl font-semibold"> data-safe ♘ </span>
         </h3>
        
         <div class="hidden lg:flex lg:gap-20 xl:gap-28 z-10 relative">
@@ -2044,8 +2206,8 @@ disabled
               class="w-1/2"
               loading="lazy"
             />
-            <h2 class="text-2xl font-semibold mt-4 mb-6">Data Encryption</h2>
-            <p class="text-lg text-center">
+            <h2 class="text-2xl font-semibold mt-4 mb-6 ">Data Encryption</h2>
+            <p class="text-lg text-center flex justify-center items-center" >
              We use stricted security protocols:
              <br/>✔️ AES-256 Encryption  
              <br/>✔️ TLS 1.3 Security 
@@ -2064,7 +2226,7 @@ disabled
               Software Maintenance
             </h2>
             <p class="text-lg text-center">
-              We're continuously updating our software following the Highest-performing standards ✔️
+              We're continuously updating our software, following the Highest-performing standards
             </p>
           </div>
 
@@ -2149,7 +2311,7 @@ disabled
       </div>
 
       <!-- integrations -->
-      <div class="px-5 md:px-10 lg:px-20 py-10 relative">
+      <div class="px-5  md:px-10 lg:px-20 py-10 relative">
         <div
         class="lg:hidden w-auto sm:w-full h-3/5 bg-primary blur-[400px] absolute -top-[30%] md:top-[10%] -right-[10%] opacity-10 z-0"
     ></div>
@@ -2162,7 +2324,7 @@ disabled
             </h3>
 
             <p
-              class="text-6xl md:text-4xl lg:text-6xl font-semibold mb-10 lg:mb-20 mt-10  lg:text-left"
+              class="text-5xl lg:text-6xl font-semibold mb-20 lg:mb-20 mt-10 text-center  lg:text-left "
             >
               Effortless Integration,<span class="gray-gradient-text"> Maximum Efficiency</span> 
             </p>
@@ -2247,7 +2409,7 @@ disabled
       </div>
     </div>
 
-    <!-- get started -->
+    <!-- get started desktop -->
 
     <div class="hidden lg:flex px-36 py-20 relative flex bg-gray-gradient">
       <div class="w-1/2">
@@ -2261,7 +2423,7 @@ disabled
       <div class="w-1/2 flex justify-center flex-col">
         <h1 class="text-7xl font-semibold mb-3">
           Get started
-          <span class="gradient-text"> today </span>
+          <span class="gradient-text">today ☺ </span>
           <h2 class="text-sm md:text-base lg:text-lg mt- xl:text-1xl font-inter mb-10">
             
             You’re making an impact in your client’s lives—let’s take your<br/> coaching 
@@ -2275,8 +2437,8 @@ disabled
             type="email"
             name="email"
             id="contactEmail"
-            placeholder="Example@gmail.com"
-            class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-xl border-black tracking-widest"
+            placeholder="Write your email: example@gmail.com"
+            class="w-full h-16 px-5 text-xl bg-transparent border-2 rounded-3xl border-gray-400  tracking-widest"
             required
           />
           <p class="text-base px-2 hidden" id="emailResponse"></p>
@@ -2284,7 +2446,7 @@ disabled
 
         <div class="flex mt-5 gap-4">
           <button
-            class="py-3 lg:px-12 xl:px-16 text-base font-semibold rounded-3xl bg-primary text-white text-center"
+            class="py-3 lg:px-12 xl:px-16 text-2xl font-inter font-semibold rounded-3xl bg-primary text-white text-center"
             onclick="sendEmail()"
             id="subscribeBtn"
           >
@@ -2292,9 +2454,9 @@ disabled
           </button>
             <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
-              class="p-3 px-8 text-base font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+              class="p-3 px-8 text-2xl font-inter font-semibold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
             >
-              Sign Up
+              Log in
             </button>
         </div>
       </div>
@@ -2316,8 +2478,8 @@ disabled
       </div>
 
       <div>
-        <h2 class="text-4xl md:text-4xl font-extrabold text-center">
-          Get started <span class="gradient-text"> Today </span>
+        <h2 class="text-7xl md:text-7xl font-semibold text-center">
+          ⤹Get started <span class="gradient-text"> Today ☺ </span>
         </h2> 
         <h2 class="text-sm md:text-base lg:text-lg mt-5 text-justify xl:text-1xl font-inter mb-2">
             
@@ -2329,7 +2491,7 @@ disabled
       <div class="flex flex-col mt-5 gap-4 mb-5 mx-auto">
         <button
         onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register','getstarted')"
-        class="py-3 px-16 text-sm font-semi rounded-3xl bg-primary text-white text-center w-full"
+        class="py-3 px-16 text-1xl font-inter font-semibold rounded-3xl bg-primary text-white text-center w-full"
       >
         <span class="text-lg font-semibold">
           Get Started
@@ -2340,10 +2502,9 @@ disabled
           <button
         onclick="onButtonClick(`https://allwyse.io`, 'home','getstarted')"
 
-            class="p-3 px-8 text-sm font-bold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
+            class="p-3 px-8 text-1xl font-semibold font-inter border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4 w-full"
           >
             Home
-            <img src="./assets/images/icons/link.png" alt="" />
           </button>
         </a>
       </div>
