@@ -27,6 +27,7 @@
     <script src="/assets/js/dynamicText.js"></script>
     <script src="/assets/js/audio.js"></script>
     <script src="./assets/js/tailwind-config.js"></script>
+
     <!-- CLARITY   -->
 <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -40,63 +41,71 @@
 type="text/javascript"
 src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
 ></script>
+
   </head>
   <body class="overflow-x-hidden">
-    <!-- Header -->
-    <div class="w-full h-auto  overflow-hidden">
-      <!-- navbar -->
-      <div
-        class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
-      >
-        <!-- Logo -->
-        <div class="logo">
-          <img
-            src="./assets/images/logo.png"
-            alt="Allwyse Logo"
-            width="150"
-            height="150"
-          />
-        </div>
-
-        <!-- Desktop Navigation Links -->
-        <div class="hidden lg:flex nav-links flex gap-12">
-          <div class="nav-link flex gap-2 items-center">
-            <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-inter ">Product</a>
+    <div class="header-content overflow-x-hidden relative w-full h-full pb-8 lg:pb-0">
+      <img
+        src="./assets/images/green-shadow.png"
+        alt=""
+        class="hidden md:block absolute h-full w-full z-0 top-0 left-0"
+        loading="lazy"
+      />
+  
+      <!-- Header -->
+      <div class="absolute top-0 w-full z-50">
+        <div class="flex px-6 xl:px-36 pt-9 pb-5 justify-between relative">
+          <!-- Logo -->
+          <div class="logo">
+            <img
+              src="./assets/images/logo.png"
+              alt="Allwyse Logo"
+              width="150"
+              height="150"
+            />
           </div>
-          <div class="nav-link flex gap-2 items-center">
-            <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-inter">Newsletter</a>
+        
+          <!-- Desktop Navigation Links -->
+          <div class="hidden lg:flex nav-links flex gap-8">
+            <div class="nav-link flex gap-2 items-center">
+              <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
+              <a href="./product" onclick="trackMPEvent('product')" class="text-1xl font-regular font-inter">Product</a>
+            </div>
+            <div class="nav-link flex gap-2 items-center">
+              <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-1xl font-regular font-inter">Newsletter</a>
+            </div>
+            <div class="nav-link flex gap-2 items-center">
+              <a href="#plans" onclick="trackMPEvent('pricing')" class="text-1xl font-regular font-inter">Pricing</a>
+            </div>
+            <div class="nav-link flex gap-2 items-center">
+              <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-1xl font-regular font-inter">Privacy Policy</a>
+            </div>
           </div>
-          <div class="nav-link flex gap-2 items-center">
-            <a href="#plans" onclick="trackMPEvent('pricing')" class="text-sm font-semibold font-inter">Pricing</a>
-          </div>
-          <div class="nav-link flex gap-2 items-center">
-            <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-inter">Privacy Policy</a>
-          </div>
-        </div>
-
-        <!-- Desktop Buttons -->
-        <div class="hidden lg:flex gap-2">
-          <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
-            class="border border-[#919EAB] rounded-3xl px-8 py-2 font-semibold  font-inter"
-          >
-            Log in
-          </button>
-          <button
+        
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex gap-2">
+            <button
+              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
+              class="px-5 py-2 font-regular text-1xl font-inter"
+            >
+              Log in
+            </button>
+            <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
-            class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-1.5xl font-inter font-semibold"
+            class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
           >
-            Register
+            Get Started ➜
           </button>
-        </div>
-
-        <!-- Hamburger Icon for Mobile -->
-        <div class="flex lg:hidden items-center">
-          <button id="hamburger" class="text-black text-3xl">☰</button>
+          </div>
+          
+        
+          <!-- Hamburger Icon for Mobile -->
+          <div class="flex lg:hidden items-center">
+            <button id="hamburger" class="text-black text-3xl">☰</button>
+          </div>
         </div>
       </div>
-
+  
       <!-- Sliding Mobile Menu -->
       <div
         id="mobileMenu"
@@ -213,27 +222,13 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
           >
             <span 
               class="w-2 h-2 bg-green-600 rounded-full mr-2"
-              style="width: 8px; height: 8px; background-color: #047857; border-radius: 50%; margin-right: 8px;"
+              style="width: 8px; height: 8px; border-radius: 50%; margin-right: 8px;"
             ></span>
             Beta
           </span>
           </h1>
 
-        <!-- Versión para desktop -->
-        <h2 class="hidden md:block text-lg lg:text-xl text-secondary font-regular text-center mb-6">
-          Built for Coaching-Businesses, powered by innovation  
-          <span 
-            class="inline-flex items-center bg-green-100 text-green-600 text-s md:text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
-            style="display: inline-flex; align-items: center; background-color: #daeee6; color: #047857; border-radius: 9999px; padding: 0.25rem 0.75rem;"
-          >
-            <span 
-              class="w-2 h-2 bg-green-600 rounded-full mr-2"
-              style="width: 8px; height: 8px; background-color: #047857; border-radius: 50%; margin-right: 8px;"
-            ></span>
-            Beta
-          </span>
-        </h2>
-        
+    
         
            <!-- Versión para mobile -->
       
@@ -254,13 +249,74 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
        </p>
 
         <!-- Versión para desktop -->
-        <h1 class="hidden md:block text-8xl xl:text-7xl text-center font-semibold leading-tight tracking-wider mb-1">
-          The Intelligent Coaching 
-        </h1>
-        <h2 class="hidden md:block text-xl lg:text-7xl text-black text-center  leading-tight tracking-wider">
-          <span class="font-semibold" > System built to Sell & Grow</span> <span class="gradient-text font-semibold" id="dynamicTextDesktop"></span>
-        </h2>
+
+          <!-- Versión para desktop -->
+       <!--    <h2 class="mt-10 hidden md:block text-lg lg:text-xl text-secondary font-regular text-center mb-6">
+            
+            <span 
+              class="inline-flex items-center bg-green-100 text-green-600 text-s md:text-sm font-semibold px-3 py-1 rounded-full shadow-sm"
+              style="display: inline-flex; align-items: center; background-color: #fdfdfd; color: #047857; border-radius: 9999px; padding: 0.25rem 0.75rem;"
+            >
+              <span 
+                class="w-2 h-2 bg-green-600 rounded-full mr-2"
+                style="width: 8px; height: 8px; background-color: #1cfbbc; border-radius: 50%; margin-right: 8px;"
+              ></span>
+              AI-Powered Platform 
+            </span>
+          </h2> 
+        -->
+        <div class="mt-20 flex items-center justify-center gap-4">
+          <!-- Avatars -->
+          <div class="flex -space-x-2 overflow-hidden">
+            <img
+              class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              src="./assets/images/avatars/avatar5.png"
+              alt="User avatar"
+            />
+            <img
+              class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              src="./assets/images/avatars/avatar2.png"
+              alt="User avatar"
+            />
+            <img
+              class="inline-block h-10 w-10 rounded-full ring-2 ring-white"
+              src="./assets/images/avatars/avatar3.png"
+              alt="User avatar"
+            />
+          </div>
         
+          <!-- Reviews -->
+          <div class="bg-transparent flex flex-col">
+            <div class="flex gap-1 mb-1">
+              <!-- SVG Stars directamente en vez de imágenes -->
+              <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+              <svg class="w-7 h-7 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/>
+              </svg>
+            </div>
+            <p class="text-xl text-gray-800">100+ Coaching Businesses</p>
+          </div>
+        </div>
+        
+        <h1 class="hidden md:block text-5xl xl:text-6xl text-center font-regular leading-tight tracking-wider mb-1">
+         Manage. Automate. Thrive
+        </h1>
+        <h2 class="hidden md:block text-6xl xl:text-6xl text-black text-center leading-tight tracking-wider">
+          <span class="font-semibold">Coaching using AI & Automation.
+          </span> </br>
+          <span class="text-black font-semibold" id="dynamicTextDesktop"></span>
+        </h2>
   
       
       <p class="flex justify-center text-start hidden md:flex justify-center text-start text-xl xl:px-28 py-6  leading-10 lg:leading-9 ">
@@ -274,48 +330,71 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
           <div
             class="flex gap-4 py-5 items-center  lg:justify-center flex-col lg:flex-row"
           >
-            <button
-            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','hero')"
-
-              class="w-4/5 text-2xl sm:w-2/3 lg:w-max py-3 px-10 bg-green text-white font-semibold rounded-3xl  text-2xl"
-            >
-              Get Started free
-            </button>
-            <button
-              onclick="onButtonClick(`https://allwyse.io/product`,'product','hero')"
-              class="w-4/5 text-2xl sm:w-2/3 lg:w-max py-3 px-10 border-[#000] border rounded-3xl flex font-semibold items-center justify-center gap-4"
-            >
-              Product Tour
-            </button>
+          <button
+          onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
+          class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+        >
+          Get Started ➜
+        </button>
+        <button
+        onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
+        class=" px-8 py-3  font-3xl font-inter "
+      >
+       <u> Product Tour </u>
+      </button>
+          </div>
+        </div>
+        
+        <div class="container mx-auto px-4 md:px-8 lg:px-16">
+          <div class="image-content w-auto flex justify-center">
+            <img
+              src="./assets/images/homesmart.svg"
+              alt="Allwyse Service Builder"
+              class="max-w-[110%] md:max-w-[110%] lg:max-w-[110%]"
+              loading="lazy"
+            />
           </div>
         </div>
 
-        <div class="flex gap-3  mb-3 justify-center">
-          <div class="flex -space-x-1 overflow-hidden">
-            <img
-              class="inline-block h-9 w-9 rounded-full"
-              src="./assets/images/avatars/avatar5.png"
-              alt=""
-            />
-            <img
-              class="inline-block h-9 w-9 rounded-full"
-              src="./assets/images/avatars/avatar2.png"
-              alt=""
-            />
-            <img
-              class="inline-block h-9 w-9 rounded-full"
-              src="./assets/images/avatars/avatar3.png"
-              alt=""
-            />
+          <section class="trusted-by-section py-7 w-full overflow-hidden"></section>
+          <div class="w-full">
+            <h2 class="text-secondary mb-6 section-heading-text text-center">
+              LEADING INTEGRATIONS        
+            </h2>
+            <!-- Slider container -->
+            <div class="slider-container w-full">
+              <div class="slider">
+                <div class="slide-track flex">
+                  <!-- First set -->
+                  <div class="slide"><img src="/assets/images/calendar.svg" alt="Google Calendar" /></div>
+                  <div class="slide"><img src="/assets/images/meet.svg" alt="Meet" /></div>
+                  <div class="slide"><img src="/assets/images/stripe.svg" alt="Stripe" /></div>
+                  <div class="slide"><img src="/assets/images/whatsapp.svg" alt="Whatsapp" /></div>
+                  <div class="slide"><img src="/assets/images/chat.svg" alt="Chat" /></div>
+                  <div class="slide"><img src="/assets/images/gmail.svg" alt="Gmail" /></div>
+                  
+                  <!-- Duplicate set for infinite scroll -->
+                  <div class="slide"><img src="/assets/images/calendar.svg" alt="Google Calendar" /></div>
+                  <div class="slide"><img src="/assets/images/meet.svg" alt="Meet" /></div>
+                  <div class="slide"><img src="/assets/images/stripe.svg" alt="Stripe" /></div>
+                  <div class="slide"><img src="/assets/images/whatsapp.svg" alt="Whatsapp" /></div>
+                  <div class="slide"><img src="/assets/images/chat.svg" alt="Chat" /></div>
+                  <div class="slide"><img src="/assets/images/gmail.svg" alt="Gmail" /></div>
+                  
+                  <!-- Third set for smoother transition -->
+                  <div class="slide"><img src="/assets/images/calendar.svg" alt="Google Calendar" /></div>
+                  <div class="slide"><img src="/assets/images/meet.svg" alt="Meet" /></div>
+                  <div class="slide"><img src="/assets/images/stripe.svg" alt="Stripe" /></div>
+                  <div class="slide"><img src="/assets/images/whatsapp.svg" alt="Whatsapp" /></div>
+                  <div class="slide"><img src="/assets/images/chat.svg" alt="Chat" /></div>
+                  <div class="slide"><img src="/assets/images/gmail.svg" alt="Gmail" /></div>
+                </div>
+              </div>
+            </div>
           </div>
+        </section>
 
-          <p class="text-base font-inter mb-5 font-regular">
-            Join to 100+ Coaching Businesses
-          </p>
-        </div>
-
-
-<!--whats mobile-->
+     <!--whats mobile-->
         <div class='px-5 md:px-10  block lg:hidden'>
         <h2 class="text-sm text-secondary mt-10 mb-6 font-bold">
           VISUALIZING SUCCESS
@@ -332,7 +411,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
     <!-- What's in Allwyse section -->
 
     <div
-      class="px-5 md:px-10 mt-0 md:mt-20 lg:px-20 xl:px-36 py-10 pt-0 lg:pt-10 flex flex-col lg:flex-row"
+      class="px-5 md:px-10   lg:px-20 xl:px-36 py-10 pt-0 lg:pt-10 flex flex-col lg:flex-row"
     >
       <div class="w-full lg:w-1/2">
         <div class='hidden lg:block'>
@@ -406,8 +485,8 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
     <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
     
     <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">+26 hs</h2>
-      <p class="gray-gradient-text text-xl font-semibold">
+      <h2 class="text-5xl font-inter font-bold text-center">+26 hs</h2>
+      <p class="gray-gradient-text font-inter text-xl font-semibold">
         Saved per month
       </p>
     </div>
@@ -415,7 +494,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
     <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
 
     <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">+100</h2>
+      <h2 class="text-5xl font-inter font-bold text-center">+100</h2>
       <p class="gray-gradient-text text-xl font-semibold">
         Happy Coaches
       </p>
@@ -424,7 +503,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
     <div class="bg-gradient-border w-[1px] h-32 opacity-30"></div>
 
     <div class="flex flex-col gap-3 items-center">
-      <h2 class="text-5xl font-bold text-center">+30%</h2>
+      <h2 class="text-5xl font-inter font-bold text-center">+30%</h2>
       <p class="gray-gradient-text text-xl font-semibold">
         Conversion rate
       </p>
@@ -437,24 +516,24 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
    <!-- SERVICES Desktop Version -->
 
    <div class="hidden lg:block py-20 bg-gray-gradient w-full">
-   <div class="px-20 xl:px-36 flex flex-col">
+   <div class="px-20 xl:px-36 flex flex-col text-center">
     <div class="services-builder-section">
-      <div class="text-content">
-        <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">SERVICES BUILDER</h2>
+      <div class="text-content text-center">
+        <h2 class="text-1xl text-center text-1xl font-regular mb-5 section-heading-text">SERVICES BUILDER</h2>
         <h3 class="text-6xl font-medium mb-5">
-         Coaching experts finally have a platform
+         Build best sellers!
           <br /> <span class="gradient-text text-7xl font-regular "> ☑ Sell, Manage and Automate  </span>
         </h3>
         <p class="text-2xl text-2xl mb-5 leading-relaxed">
-          Build custom services, sell effortlessly, and manage client data seamlessly. Showcase your expertise with a personalized public profile!
+          Build custom services, sell effortlessly, and manage client data seamlessly. </br> Showcase your expertise with a personalized public profile!
          <br/> 
 
         </p>
         <div class="buttons">
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'services-builder-section')"
-            class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
-          >
+            class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+            >
             Get Started
           </button>
           <button
@@ -518,23 +597,23 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
 
     
 <div class="hidden lg:block py-20 bg-white w-full">
-  <div class="px-20 xl:px-36 flex flex-col">
+  <div class="px-20 xl:px-36 flex flex-col text-center">
    <div class="services-builder-section">
-     <div class="text-content">
-       <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">CALENDAR AUTOMATED</h2>
+     <div class="text-content text-center">
+       <h2 class="text-1xl text-center text-1xl font-regular mb-5 section-heading-text">CALENDAR AUTOMATED</h2>
        <h3 class="text-6xl font-medium mb-5">
-        Focus on What Matters—Effortless 
-         <br /> <span class="gradient-text text-7xl font-regular "> ☏ Scheduling for Coaches and Clients </span>
+        Sync with your clients
+         <br /> <span class="gradient-text text-7xl font-regular "> ☏ Bookings simple than ever </span>
        </h3>
        <p class="text-2xl text-2xl mb-5 leading-relaxed">
-        Stay perfectly on schedule. Create, edit, and sync your services, sessions or events. Allwyse was proudly verified and authorized by Google team.        <br/> 
+   Create sessions,services,packages or one time, edit, and sync with your clients. </br> Allwyse is verified and authorized by Google team.        <br/> 
 
        </p>
        <div class="buttons">
          <button
            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'calendar-section')"
-           class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
-         >
+           class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+           >
            Get Started
          </button>
          <button
@@ -545,14 +624,15 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
          </button>
        </div>
      </div>
+
      <div class="image-content mt-10">
-       <img
-         src="./assets/images/Calendary.png"
-         alt="Allwyse Service Builder"
-         class="image-right"
-         loading="lazy"
-       />
-     </div>
+      <img
+        src="./assets/images/Calendary.png"
+        alt="Allwyse Service Builder"
+        class="image-right scroll-reveal"
+        loading="lazy"
+      />
+    </div>
    </div>
    
  </div>
@@ -598,23 +678,23 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
 <!-- ANALYTICS Desktop Version -->
 
 <div class="hidden lg:block py-20 bg-gray-gradient w-full">
-  <div class="px-20 xl:px-36 flex flex-col">
-   <div class="services-builder-section">
-     <div class="text-content">
-       <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text">ANALYTICS DASHBOARD</h2>
+  <div class="px-20 xl:px-36 flex flex-col text-center">
+   <div class="services-builder-section text-center">
+     <div class="text-content text-center">
+       <h2 class="text-1xl text-1xl font-regular mb-5 section-heading-text text-center">ANALYTICS DASHBOARD</h2>
        <h3 class="text-6xl font-medium mb-5">
-        Growth with Coaching-Driven Analytics
-                 <br /> <span class="gradient-text text-7xl font-regular "> ☺ Map Your Clients’ Journey </span>
+         Map Your Clients’ Journey
+                 <br /> <span class="gradient-text text-7xl font-regular "> ☺ Grow your business with data </span>
        </h3>
        <p class="text-2xl text-2xl mb-5 leading-relaxed">
-        Gain full visibility into your clients’ journey with Allwyse Analytics. Manage your agenda while track every action—views, clicks, bookings, and more—all in one place.  <br/> 
+      Track every interaction or visitor at your profile, services, or agenda </br> like clicks, bookings, and more—all in one place.  <br/> 
 
        </p>
        <div class="buttons">
          <button
            onclick="onButtonClick(`https://app.allwyse.io/auth/register`, 'register', 'analytics-section')"
-           class="w-max py-3 px-14  mt-5 text-2xl text-white bg-green rounded-3xl font-semibold"
-         >
+           class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+           >
            Get Started
          </button>
          <button
@@ -1783,14 +1863,13 @@ disabled
       <h3
         class="text-7xl  lg:text-7xl  mb-28 text-center"
       >
-      <span class="font-semibold"> Mindset</span> 
-      <span class="gradient-text font-semibold text-7xl ">allwyse ☄</span>
+      <span class="font-semibold"> Vision & Mindset</span> 
+      <span class="gradient-text font-semibold text-7xl ">allwyse</span>
      
      <!-- Add Audio Element -->
      <div class="audio-section flex justify-center items-center px-5 md:px-10 lg:px-20 xl:px-36 py-5" >
      <audio controls style="filter: invert(1) brightness(2);">
      <source src="assets/images/Welcomeaudio.mp3" type="audio/mpeg">
-     Your browser does not support the audio element.
      </audio>
      </div>
 
@@ -1823,9 +1902,9 @@ disabled
               <div class="flex flex-col gap-4">
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Easily manage all your client data and seamlessly track their goals with a reliable, efficient system.
@@ -1833,9 +1912,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                    Easy setup and accesible user experience to create custom services and sell them.
@@ -1843,9 +1922,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Boosted Productivity: Maximize efficiency from day one.
@@ -1853,9 +1932,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                     loading="lazy"
                   />
                   <p class="text-grayText text-sm font-semibold">
@@ -1890,9 +1969,9 @@ disabled
               <div class="flex flex-col gap-4">
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Step-by-step coaching for setup and Workspace suggestions
@@ -1900,9 +1979,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Access to a SME to advise on custom solutions
@@ -1910,9 +1989,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Best practices from thousands of other Coaches-Workspaces
@@ -1920,9 +1999,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Access to everything in our self-serve option
@@ -1963,9 +2042,9 @@ disabled
                   <div class="flex flex-col gap-4">
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Policies and processes to resolve all issues
@@ -1973,9 +2052,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5"
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Easy for coaches to access and navigate
@@ -1983,9 +2062,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Low-complexity interactions
@@ -1993,9 +2072,9 @@ disabled
                 </div>
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Measure coaching effectiveness
@@ -2004,9 +2083,9 @@ disabled
 
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5 "
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Continuous improvements - ITUpdates
@@ -2015,9 +2094,9 @@ disabled
 
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5"
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Access to content and tools that support the coaching
@@ -2027,9 +2106,9 @@ disabled
 
                 <div class="flex gap-3 items-center">
                   <img
-                    src="./assets/images/icons/check-circle.svg"
+                    src="./assets/images/icons/check-circle-1.svg"
                     alt=""
-                    class="w-5 h-5 opacity-30"
+                    class="w-5 h-5"
                   />
                   <p class="text-grayText text-sm font-semibold">
                     Data Security and protection
@@ -2174,10 +2253,10 @@ disabled
           SECURITY
         </h3>
         <h3
-          class="text-5xl  xl:text-6.5xl  mb-20 text-center"
+          class="text-6xl  xl:text-6xl  mb-20 text-center"
         >
-         <span class="font-semibold"> Advanced </span>  <br/>
-          <span class="gradient-text text-5xl font-semibold"> data-safe</span>🔐
+          <span class="text-black text-6xl font-semibold"> World-Class Security
+          </span>
         </h3>
        
         <div class="hidden lg:flex lg:gap-20 xl:gap-28 z-10 relative">
@@ -2185,7 +2264,7 @@ disabled
             <img
               src="./assets/images/security1.svg"
               alt="Allwyse secured by Data Encryption"
-              class="w-1/2"
+              class="w-2/2"
               loading="lazy"
             />
             <h2 class="text-2xl font-semibold mt-4 mb-6 ">Data Encryption</h2>
@@ -2201,7 +2280,7 @@ disabled
             <img
               src="./assets/images/security2.svg"
               alt="Allwyse secured by Software Maintenance"
-              class="w-1/2"
+              class="w-2/2"
               loading="lazy"
             />
             <h2 class="text-2xl font-semibold mt-4 mb-6">
@@ -2216,7 +2295,7 @@ disabled
             <img
               src="./assets/images/security3.svg"
               alt="Allwyse secured by 24/7 Team Support"
-              class="w-1/2"
+              class="w-2/2"
               loading="lazy"
             />
             <h2 class="text-2xl font-semibold mt-4 mb-6">24/7 Team Support</h2>
@@ -2234,11 +2313,12 @@ disabled
             <div class="swiper-wrapper">
               <!-- Slides -->
               <div class="swiper-slide">
+                
                 <div class="flex flex-col w-full lg:w-1/3 items-center">
                   <img
                     src="./assets/images/security1.svg"
                     alt="Allwyse secured by Data Encryption"
-                    class="w-1/2"
+                    class="w-2/2"
                     loading="lazy"
                   />
                   <h2 class="text-2xl font-semibold mt-4 mb-6">
@@ -2257,7 +2337,7 @@ disabled
                   <img
                     src="./assets/images/security2.svg"
                     alt="Allwyse secured by Software Maintenance"
-                    class="w-1/2"
+                    class="w-2/2"
                     loading="lazy"
                   />
                   <h2 class="text-2xl font-semibold mt-4 mb-6">
@@ -2270,11 +2350,12 @@ disabled
                 </div>
               </div>
               <div class="swiper-slide">
+
                 <div class="flex flex-col w-full lg:w-1/3 items-center">
                   <img
                     src="./assets/images/security3.svg"
                     alt="Allwyse secured by 24/7 Team Support"
-                    class="w-1/2"
+                    class="w-2/2"
                     loading="lazy"
                   />
                   <h2 class="text-2xl font-semibold mt-4 mb-6">
@@ -2426,19 +2507,19 @@ disabled
           <p class="text-base px-2 hidden" id="emailResponse"></p>
         </div>
 
-        <div class="flex mt-5 gap-4">
+        <div class="flex mt-5 gap-2">
           <button
-            class="py-3 lg:px-12 xl:px-16 text-2xl font-inter font-semibold rounded-3xl bg-primary text-white text-center"
-            onclick="sendEmail()"
+          class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+          onclick="sendEmail()"
             id="subscribeBtn"
           >
             Subscribe
           </button>
             <button
             onclick="onButtonClick(`https://allwyse.io/product`,'product','getstarted')"
-              class="p-3 px-8 text-2xl font-inter font-semibold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+              class="p-3 px-8 text-1xl font-inter font-regular  flex  gap-2"
             >
-             Product
+             <u>Product Tour </u>
             </button>
         </div>
       </div>
@@ -2660,6 +2741,7 @@ disabled
         </div>
       </div>
     </div>
+    
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
