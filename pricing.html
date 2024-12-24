@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Allwyse: Empowering Coaches with Next-Gen Solutions</title>
+    <link rel="canonical" href="https://www.allwyse.io">
+    <link rel="icon" href="/assets/images/favicon.ico" type="image/x-icon" />
+    
+    <meta name="description" content='Allwyse empowers coaches with it owns professional, customizable marketplace to build and sell coaching services with IA-powered integrated, manage clients data, sync calendars, analyze performance, and enhance client collaboration. Transition easily, increase productivity, and grow your coaching business with advanced security and 24/7 support. Start achieving success with Allwyse.'>
+    <meta name="twitter:card" content='Allwyse empowers coaches with it owns professional, customizable marketplace to build and sell coaching services with IA-powered integrated, manage clients data, sync calendars, analyze performance, and enhance client collaboration. Transition easily, increase productivity, and grow your coaching business with advanced security and 24/7 support. Start achieving success with Allwyse.'>
+    <meta name="twitter:title" content="Allwyse: Empowering Coaches with Next-Gen Solutions">
+    <meta name="twitter:description" content="Revolutionizing coaching with AI-powered tools for service creation, client management, and growth analytics.">
+    <meta name="twitter:image" content="https://i.ibb.co/4sFKvCd/Captura-de-pantalla-2024-12-12-a-la-s-9-56-02-p-m.png">
+   
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/assets/js/redirections.js"></script>
+
+    <script src="./assets/js/tailwind-config.js"></script>
+    <!-- CLARITY   -->
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "ne79yr3z9b");
+</script>
+<script src="/assets/js/tracking.js"></script>
+<script
+type="text/javascript"
+src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
+></script>
+  </head>
+ <body>
+    <div class="w-full h-auto  overflow-hidden">
+        <!-- navbar -->
+        <div
+          class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
+        >
+          <!-- Logo -->
+          <div class="logo cursor-pointer">
+            <img
+                onclick="onButtonClick(`https://allwyse.io`,'logo','desktop-header')"
+              src="./assets/images/logo.png"
+              alt="Allwyse Logo"
+              width="150"
+              height="150"
+            />
+          </div>
+  
+          <!-- Desktop Navigation Links -->
+          <div class="hidden lg:flex nav-links flex gap-12">
+            <div class="nav-link flex gap-2 items-center">
+              <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
+              <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-inter ">Product</a>
+            </div>
+            <div class="nav-link flex gap-2 items-center">
+              <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-inter">Newsletter</a>
+            </div>
+           
+            <div class="nav-link flex gap-2 items-center">
+              <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-inter">Privacy Policy</a>
+            </div>
+          </div>
+  
+          <!-- Desktop Buttons -->
+          <div class="hidden lg:flex gap-2">
+            <button
+              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
+              class="border border-[#919EAB] rounded-3xl px-8 py-2 font-semibold  font-inter"
+            >
+              Log in
+            </button>
+            <button
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
+              class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-1.5xl font-inter font-semibold"
+            >
+              Register
+            </button>
+          </div>
+  
+          <!-- Hamburger Icon for Mobile -->
+          <div class="flex lg:hidden items-center">
+            <button id="hamburger" class="text-black text-3xl">☰</button>
+          </div>
+        </div>
+  
+        <!-- Sliding Mobile Menu -->
+        <div
+          id="mobileMenu"
+          class="fixed top-0 right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-20"
+        >
+          <div
+            class="flex justify-between items-center py-8 px-5 "
+          >
+            <!-- Close Button -->
+            <div class="logo">
+              <img
+                src="./assets/images/logo.png"
+                alt="Allwyse Logo"
+                class="w-28 lg:w-auto"
+              />
+            </div>
+            <button id="closeMenu" class="text-black text-5xl">×</button>
+          </div>
+  
+          <div class="flex flex-col">
+            <!-- Mobile Menu Links -->
+  
+            <div class="flex flex-col items-start">
+              <div
+                class="border-[#D9D9D9] border-t border-b w-full px-5 py-3 mbl-link"
+              >
+                <a href="./product" class="text-1xl font-inter">Product</a>
+              </div>
+              <div
+                class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mt-0 mbl-link"
+              >
+                <a href="#signin" 
+                onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','mobile-header')"
+                class="text-1xl font-regular font-inter ">Sign In</a>
+              </div>
+              <div
+                class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+              >
+                <a href="#free"
+                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','mobile-header')"
+                class="text-1xl font-inter">Grab free account</a>
+              </div>
+              <div
+                class="border-[#D9D9D9] border-b w-full px-5 py-3 border-l-0 border-r-0 mbl-link"
+              >
+                <a href="#getstarted" class="text-1xl font-regular font-inter">Suscribe</a>
+              </div>
+            </div>
+  
+            <div class="flex flex-col justify-center pb-20 mt-10">
+              <!-- Action Button -->
+              <button
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
+  
+                class="text-2xl  w-4/5 mx-auto mt-6 bg-primary font-inter text-white font-semibold  py-2 px-13 rounded-full"
+              >
+                Get Started
+              </button>
+              <button
+              onclick="onButtonClick(`https://allwyse.io/product`,'product','getstarted')"
+  
+                class="text-2xl w-4/5 mx-auto my-3 bg-white border border-black font-inter  py-2 px-12 rounded-full"
+              >
+           Product
+              </button>
+  
+              <div class="flex gap-3 items-center justify-center mt-5">
+                <h3 class="text-sm font-1xl font-inter mb-1">☺ Social Media</h3>
+                <div class="flex gap-2">
+                  <img src="./assets/images/icons/Instagram.svg"
+                    onclick="onButtonClick(`https://www.instagram.com/allwyse.io`,'instagram','mobile-header')"
+                    alt="Allwyse Instagram Profile"
+                    class="w-6 h-6"
+                  />
+                  <img
+                    src="./assets/images/icons/LinkedIn.svg"
+                    alt="Allwyse LinkedIn Profile"
+                    onclick="onButtonClick(`https://www.linkedin.com/company/allwyse`,'linkedin','mobile-header')"
+                    class="w-6 h-6"
+                  />
+                  <img
+                    src="./assets/images/icons/TwitterX.svg"
+                    alt="Allwyse Twitter Profile"
+                    class="w-6 h-6"
+                  />
+                  <img
+                    src="./assets/images/icons/YouTube.svg"
+                    alt="Allwyse YouTube Channel"
+                    class="w-6 h-6"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+  
+      </div>
+  
+    <div>
+        <div class="hidden lg:block px-2 md:px-5 lg:px-15 xl:px-20 relative" id='plans'>
+            <div
+              class="w-2/3 h-1/2 bg-primary blur-[400px] absolute -bottom-10 -right-20 opacity-10"
+            ></div>
+      
+            <h3 class=" font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">PLANS</h3>
+            <h3
+              class="text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-2 text-center"
+            >
+              Transparent
+              <span class="gradient-text text-7xl font-regular"> pricing ⤵</span>
+            </h3>
+            <p class="font-inter text-secondaryGray text-center hidden lg:block">
+                Choose from 100% free plans designed to support every coach, with no hidden fees.
+            </p>
+          
+            <!--starter-->
+      
+            <div class="mt-20 gap-20 flex">
+              <div class="price w-full border-2  lg:w-[60%] py-8 px-8">
+                <div class="flex gap-5 items-end mb-4">
+                  <h2 class="text-3xl text-black-800 font-bold">$0</h2>
+                  <p class="text-grayText text-base">/month</p>
+                </div>
+      
+                <h3 class="text-2.5xl font-bold">Starter Coach</h3>
+                <p class="text-grayText text-lg">Built for Starters, Open soon*</p>
+                <p class="text-grayText text-lg mb-[32px]">Whats included ?</p>
+
+                <button disabled 
+                class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+            Get Started!
+        </button>
+                <div class="flex gap-5 flex-col">
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Marketplace Profile</p>
+                    </div>
+           
+                  </div>
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Personalized Booking system</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Customized Services Builder</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Calendar & Agenda</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Client managment</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-md font-semibold">Analytics</p>
+                    </div>
+                  </div>
+               
+                </div>
+      
+               
+              </div>
+      
+               <!--expert -->
+              <div class="price-active relative w-full  lg:w-[60%] py-8 px-8"
+              onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','expert-plan-section')"
+              
+              >
+                <div class="absolute top-3 right-7 lg:right-3 xl:right-7">
+                  <h2
+                    class="opacity-100 rounded-full bg-primary px-3 py-1 text-white text-sm font-medium w-max"
+                  >
+                  🌟 Popular
+                  </h2>
+                </div>
+               
+                <div class="flex gap-4 items-end mb-3">
+                  <h2 class="text-3xl text-white font-bold">$0</h2>
+                  <p class="text-grayText text-base monthText">/month</p>
+                </div>
+                <h3 class="text-4.5xl font-bold text-white mb-30">Expert Coach</h3>
+                <p class="text-secondaryGray text-lg opacity-60">Built for experts, Open BETA.</p>
+                <p class="text-grayText text-lg mb-5">Whats included ?</p>
+                <button class="w-full bg-primary text-white py-2.5 sm:py-3 px-4 rounded-lg font-medium hover:bg-primary/70  transition-colors mb-6 sm:mb-8 text-sm sm:text-base">
+                    Get started for free
+                </button>
+                <div class="flex gap-5 flex-col">
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Full Marketplace Profile</p>
+                    </div>
+                  </div>
+              
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Personalized Booking system</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Customized Services Builder</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Calendar & Agenda</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Client managment</p>
+                    </div>
+                  </div>
+      
+                  <div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5"
+                      />
+                      <p class="text-md font-semibold !text-primary">Analytics</p>
+                    </div>
+                  </div>
+           
+                </div>
+      
+              </div>
+      
+              <!--teams-->
+              <div class="price w-full border-2  lg:w-[60%] py-8 px-8">
+                <div class="flex gap-10 items-end mb-4">
+                  <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+                  <p class="text-grayText text-base">/month</p>
+                </div>
+      
+                <h3 class="text-2.5xl font-bold">Coaching Team</h3>
+                <p class="text-grayText text-lg ">Available for consulting</p>
+                <p class="text-grayText text-lg mb-[32px]">Contact us for your custom system</p>
+        
+                <button disabled 
+                class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+           Contact Sales
+        </button>
+                <div class="flex gap-6 flex-col">
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold"> Marketplace with multiple-profiles</p>
+                  </div>
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold">
+                      Courses Builder
+                    </p>
+                  </div>
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold">Contract Management</p>
+                  </div>
+      
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold">Invoice Builder *Soon</p>
+                  </div>
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold">File Manager *Soon</p>
+                  </div>
+                  <div class="flex gap-6 items-center">
+                    <img
+                      src="./assets/images/icons/check-circle.svg"
+                      alt=""
+                      class="w-5 h-5 opacity-30"
+                    />
+                    <p class="text-grayText text-sm font-semibold">Certification Builder *Soon</p>
+                  </div>
+                </div>
+      
+           
+              </div>
+            </div>
+          </div>
+      
+          <!-- Plans Mbl -->
+          <div class="block lg:hidden px-5 md:px-10 lg:px-20 xl:px-36 relative"
+          id='plans'
+          >
+          <h3 class="text-sm font-bold mb-5 text-center text-secondary">PLANS</h3>
+          <h3
+            class="text-5xl md:text-5xl lg:text-5xl xl:text-6.5xl font-semibold mb-6 text-center"
+          >
+            Transparent
+            <span class="gradient-text"> pricing</span>🥇
+          </h3>
+            <div
+              class="text-sm font-medium text-center text-gray-500 border-b-2 border-[#D9D9D9] mx-5 md:mx-10"
+            >
+              <ul
+                class="flex"
+                id="default-tab"
+                data-tabs-toggle="#default-tab-content"
+                role="tablist"
+              >
+                <li class="w-1/3 rounded-t-lg" role="tab">
+                  <button
+                    role="presentation"
+                    class="inline-block p-4 font-bold text-black"
+                    id="base-tab"
+                    data-tabs-target="#base"
+                    type="button"
+                    aria-controls="base"
+                    aria-selected="false"
+                  >
+                    Starter
+                  </button>
+                </li>
+                <li class="w-1/3" role="tab">
+                  <button
+                    role="presentation"
+                    class="inline-block p-4 rounded-t-lg"
+                    id="pro-tab"
+                    data-tabs-target="#pro"
+                    type="button"
+                    aria-controls="pro"
+                    aria-selected="false"
+                  >
+                    Expert
+                  </button>
+                </li>
+                <li class="w-1/3" role="tab">
+                  <button
+                    role="presentation"
+                    class="inline-block p-4 rounded-t-lg"
+                    id="team-tab"
+                    data-tabs-target="#team"
+                    type="button"
+                    aria-controls="team"
+                    aria-selected="false"
+                  >
+                  Teams
+                  </button>
+                </li>
+              </ul>
+            </div>
+      
+            <div id="default-tab-content" class="block lg:hidden my-10  md:mx-10">
+              <div
+                class="pt-4 rounded-lg"
+                id="base"
+                role="tabpanel"
+                aria-labelledby="base-tab"
+              >
+                <div class="price bg-gray-50 w-full lg:w-1/3 p-5">
+                  <div class="flex gap-10 items-end mb-12">
+                    <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+                    <p class="text-grayText text-base">/month</p>
+                  </div>
+      
+                  <h3 class="text-2.5xl font-bold text-start">Starter</h3>
+                  <p class="text-grayText text-lg">Built for experts, Open BETA</p>
+                  <p class="text-grayText text-lg mb-[20px]">Whats included ?</p>
+      
+                  <button disabled 
+                  class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+              Get Started!
+          </button>
+                  <div class="flex gap-5 flex-col">
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Marketplace Profile</p>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Personalized Booking system</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Customized Services Builder</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Calendar & Agenda</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Client managment</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5 opacity-30"
+                        />
+                        <p class="text-md font-semibold">Analytics</p>
+                      </div>
+                    </div>
+                 
+                  </div>
+      
+                 
+                </div>
+              </div>
+              <div
+                class="pt-4 rounded-lg hidden"
+                id="pro"
+                role="tabpanel"
+                aria-labelledby="pro-tab"
+                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','expert-plan-section')"
+              >
+                <div  class="price-active relative w-full lg:w-1/3 p-5">
+                  <div class="absolute top-4 right-3">
+                    <h2
+                      class="opacity-70 rounded-full bg-primary px-5 py-2 text-white text-xs md:text-sm font-bold w-max"
+                    >
+                      Most Popular
+                    </h2>
+                  </div>
+                  <div class="flex gap-4 items-end mb-3">
+                    <h2 class="text-3xl text-white font-bold">$ 0</h2>
+                    <p class="text-grayText text-base monthText">/month</p>
+                  </div>
+      
+                  <h3 class="text-4.5xl font-bold text-white mb-8">Coach Expert</h3>
+                  <p class="text-secondaryGray text-lg opacity-60">Built for experts, Open BETA.</p>
+                  <p class="text-grayText text-lg mb-5">Whats included ?</p>
+      
+                  <button class="w-full bg-primary text-white py-2.5 sm:py-3 px-4 rounded-lg font-medium hover:bg-primary/70  transition-colors mb-6 sm:mb-8 text-sm sm:text-base">
+                    Get started for free
+                </button>
+                  <div class="flex gap-5 flex-col">
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Full Marketplace Profile</p>
+                      </div>
+                    </div>
+                
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Personalized Booking system</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Customized Services Builder</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Calendar & Agenda</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Client managment</p>
+                      </div>
+                    </div>
+        
+                    <div>
+                      <div class="flex gap-6 items-center">
+                        <img
+                          src="./assets/images/icons/check-circle.svg"
+                          alt=""
+                          class="w-5 h-5"
+                        />
+                        <p class="text-md font-semibold !text-primary">Analytics</p>
+                      </div>
+                    </div>
+             
+                  </div>
+      
+                
+                </div>
+              </div>
+              <div
+                class="pt-4 rounded-lg hidden"
+                id="base"
+                role="tabpanel"
+                aria-labelledby="base-tab"
+              >
+                <div class="price bg-gray-50 w-full lg:w-1/3 p-5">
+                  <div class="flex gap-10 items-end mb-12">
+                    <h2 class="text-3xl text-black-800 font-bold">$**</h2>
+                    <p class="text-grayText text-base">/month</p>
+                  </div>
+      
+                  <h3 class="text-2.5xl font-bold text-start">Coaching Team</h3>
+                  <p class="text-grayText text-lg ">Coming soon</p>
+                  <p class="text-grayText text-lg mb-10 !text-primary">Everything in Expert and:</p>
+      
+                  <button disabled 
+                  class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+             Contact Sales
+          </button>
+                  <div class="flex gap-6 flex-col">
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold"> Marketplace with multiple-profiles</p>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold">
+                        Courses Builder
+                      </p>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold">Contract Management</p>
+                    </div>
+        
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold">Invoice Builder *Soon</p>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold">File Manager *Soon</p>
+                    </div>
+                    <div class="flex gap-6 items-center">
+                      <img
+                        src="./assets/images/icons/check-circle.svg"
+                        alt=""
+                        class="w-5 h-5 opacity-30"
+                      />
+                      <p class="text-grayText text-sm font-semibold">Certification Builder *Soon</p>
+                    </div>
+                  </div>
+      
+                  <button
+                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','team-plan-section')"
+                disabled
+      
+                    class="bg-greenLight text-sm px-22 py-6 opacity-10 rounded-3xl w-full mt-6"
+                  >
+                    Contact
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+    <div class="flex mt-10 items-center justify-center">
+        <!-- Bouncing button -->
+        <button 
+        onclick="window.scrollBy({
+            top: window.innerHeight * 0.7,
+            behavior: 'smooth'
+        })"
+        class="animate-bounce bg-primary/10 hover:bg-primary-700 text-primary font-bold py-4 px-8 rounded">
+           See all features below <strong> ↓ </strong>
+        </button>
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+        <!-- Header Message -->
+        <div class="mb-8 sm:mb-12 text-gray-600 text-sm sm:text-base px-4">
+        </div>
+
+      
+
+        <!-- Usage and Access Section -->
+        <div class="mt-5 sm:mt-16 px-4">
+              <!-- Mobile View -->
+            <h2 class="block sm:hidden text-xl sm:text-2xl font-bold text-primary mb-6 sm:mb-8">Client Attraction & Acquisition</h2>
+
+              <div class="block sm:hidden">
+               <!-- Shareable Public Profile -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Shareable Public Profile to Showcase Your Expertise</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>0</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>1</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>5</div>
+        </div>
+    </div>
+</div>
+
+<!-- Comprehensive Services -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Comprehensive Services & Programs Showcase</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>1</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Unlimited</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Unlimited</div>
+        </div>
+    </div>
+</div>
+
+<!-- Real-Time Calendar -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Real-Time Public Calendar View</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Not included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- Booking System -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">High-Converting Booking System to Boost Client Engagement</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- AI Service Builder -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">AI-Driven Service Builder for Tailored Client Offerings</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Not included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- Centralized Module -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Centralized module to manage and respond client inquiries.</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Not included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- Client Testimonials -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Client Testimonials to Enhance Your Profile and Services</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+                <!-- Repeat similar blocks for other features -->
+              </div>
+
+            <h2 class="block sm:hidden mt-5 text-xl sm:text-2xl font-bold text-primary mb-6 sm:mb-8">Client Management and Workload Analytics</h2>
+
+              <!-- Streamlined Client Creation -->
+              <div class="block sm:hidden">
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Streamlined Client Creation & Management</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Smart Agenda -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Smart Agenda with Daily & Weekly Session Overviews</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- Google Meet Integration -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Seamless Google Meet & Calendar Integration</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Not included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+
+<!-- Comprehensive Analytics -->
+<div class="p-4 space-y-4 border-b border-gray-200">
+    <div class="font-medium text-gray-900">Comprehensive Analytics for Services and Public Profiles</div>
+    <div class="grid grid-cols-3 gap-2 text-sm">
+        <div>
+            <div class="text-gray-500 mb-1">Starter</div>
+            <div>Not included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Expert</div>
+            <div>Included</div>
+        </div>
+        <div>
+            <div class="text-gray-500 mb-1">Teams</div>
+            <div>Included</div>
+        </div>
+    </div>
+</div>
+</div>
+            <!-- Mobile View  end-->
+            
+            <h2 class="hidden sm:block text-xl sm:text-2xl font-bold text-primary mb-6 sm:mb-8">Client Attraction & Acquisition</h2>
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-100">
+              
+
+                <!-- Desktop View -->
+                <div class="hidden sm:block">
+                    <!-- Table Headers -->
+                    <div class="grid grid-cols-4 text-sm font-medium text-gray-500 bg-gray-50">
+                        <div class="p-4">Feature</div>
+                        <div class="p-4 text-center">Starter</div>
+                        <div class="p-4 text-center">Expert</div>
+                        <div class="p-4 text-center">Teams</div>
+                    </div>
+
+                    <!-- Table Rows -->
+                    <div class="divide-y divide-gray-200">
+                        <!-- Requests per month -->
+                        <div class="grid grid-cols-4 hover:bg-gray-50 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Shareable Public Profile to Showcase Your Expertise</div>
+                            <div class="p-4 text-center">0</div>
+                            <div class="p-4 text-center">1</div>
+                            <div class="p-4 text-center">5</div>
+                        </div>
+
+                        <!-- Team Members -->
+                        <div class="grid grid-cols-4 bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Comprehensive Services & Programs Showcase</div>
+                            <div class="p-4 text-center">1</div>
+                            <div class="p-4 text-center">Unlimited</div>
+                            <div class="p-4 text-center">Unlimited</div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="grid grid-cols-4 hover:bg-gray-50 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Real-Time Public Calendar View </div>
+                            <div class="p-4 text-center">Not included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Feature Flags -->
+                        <div class="grid grid-cols-4 bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">High-Converting Booking System to Boost Client Engagement</div>
+                            <div class="p-4 text-center">Included </div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Environments -->
+                        <div class="grid grid-cols-4 hover:bg-gray-50 text-sm sm:text-base">
+                            <div class="p-4 font-medium">AI-Driven Service Builder for Tailored Client Offerings</div>
+                            <div class="p-4 text-center">Not included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Identities and Segments -->
+                        <div class="grid grid-cols-4 bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Centralized module to manage and respond client inquiries.</div>
+                            <div class="p-4 text-center">Not included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+                        <div class="grid grid-cols-4 hover:bg-gray-50 text-sm sm:text-base">
+                            <div class="p-4 font-medium"> Client Testimonials to Enhance Your Profile and Services</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                       
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="hidden mt-5 sm:block text-xl sm:text-2xl font-bold text-primary mb-6 sm:mb-8">Client Management and Workload Analytics</h2>
+            <div class="bg-white rounded-lg overflow-hidden border border-gray-100">
+              
+
+                <!-- Desktop View -->
+                <div class="hidden sm:block">
+                    <!-- Table Headers -->
+                    <div class="grid grid-cols-4 text-sm font-medium text-gray-500 bg-gray-50">
+                        <div class="p-4">Feature</div>
+                        <div class="p-4 text-center">Starter</div>
+                        <div class="p-4 text-center">Expert</div>
+                        <div class="p-4 text-center">Teams</div>
+                    </div>
+
+                    <!-- Table Rows -->
+                    <div class="divide-y divide-gray-200">
+                        <!-- Requests per month -->
+                        <div class="grid grid-cols-4 hover:bg-gray-50 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Streamlined Client Creation & Management</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Projects -->
+                        <div class="grid grid-cols-4 bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Smart Agenda with Daily & Weekly Session Overviews</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Feature Flags -->
+                        <div class="grid grid-cols-4 hover:bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Seamless Google Meet & Calendar Integration</div>
+                            <div class="p-4 text-center">Not included </div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+
+                        <!-- Environments -->
+                        <div class="grid grid-cols-4 bg-gray-100 text-sm sm:text-base">
+                            <div class="p-4 font-medium">Comprehensive Analytics for Services and Public Profiles</div>
+                            <div class="p-4 text-center">Not included</div>
+                            <div class="p-4 text-center">Included</div>
+                            <div class="p-4 text-center">Included</div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+
+          <!-- Pricing Grid -->
+          <div class="mt-5 space-y-4 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-6 lg:gap-8 ">
+            <!-- Free Plan -->
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
+                <h2 class="text-xl sm:text-2xl font-bold text-primary mb-2">Starter Coach</h2>
+                <p class="text-gray-600 text-sm sm:text-base mb-6">Built for Starters</p>
+                
+                <button disabled 
+                class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+            Get Started!
+        </button>
+            </div>
+        
+            <!-- Start-Up Plan -->
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100">
+                <h2 class="text-xl sm:text-2xl font-bold text-primary mb-2">Expert Coach</h2>
+                <p class="text-gray-600 text-sm sm:text-base mb-6">Built for experts</p>
+                
+                <button 
+                onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','pricing-footer')"
+                
+                class="w-full bg-primary text-white py-2.5 sm:py-3 px-4 rounded-lg font-medium hover:bg-primary/70  transition-colors mb-6 sm:mb-8 text-sm sm:text-base">
+                    Get started for free
+                </button>
+            </div>
+        
+            <!-- Enterprise Plan -->
+            <div class="bg-white p-6 sm:p-8 rounded-lg shadow-sm border border-gray-100 sm:col-span-2 lg:col-span-1">
+                <h2 class="text-xl sm:text-2xl font-bold text-primary mb-2">Teams</h2>
+                <p class="text-gray-600 text-sm sm:text-base mb-6">For Coaches teams</p>
+                
+                <button disabled 
+                class="w-full bg-gray-200 text-gray-500 py-2.5 sm:py-3 px-4 rounded-lg font-medium transition-colors mb-6 sm:mb-8 text-sm sm:text-base cursor-not-allowed opacity-75">
+           Contact Sales
+        </button>
+            </div>
+        </div>
+    </div>
+
+    <style>
+        @media (max-width: 640px) {
+            .mobile-table-row {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 1rem;
+                padding: 1rem;
+                border-bottom: 1px solid #e5e7eb;
+            }
+            
+            .mobile-table-row:last-child {
+                border-bottom: none;
+            }
+        }
+    </style>
+ </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    defer
+  ></script>
+
+  <script src="./assets/js/home-sliders.js" defer></script>
+
+  <script src="./assets/js/plans-tabs.js" defer></script>
+  <script src="./assets/js/navbar.js"></script>
+
+
+</html>
