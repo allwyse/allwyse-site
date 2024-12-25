@@ -348,3 +348,7 @@ body {
 .slider:hover .slide-track {
   animation-play-state: paused;
 }
+
+.display-none{
+  display: none !important;
+}

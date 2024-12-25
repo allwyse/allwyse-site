@@ -53,7 +53,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
       />
   
       <!-- Header -->
-      <div class="absolute top-0 w-full z-50">
+      <div  id="header" class="absolute top-0 w-full z-50">
         <div class="flex px-6 xl:px-36 pt-9 pb-5 justify-between relative">
           <!-- Logo -->
           <div class="logo">
@@ -367,11 +367,17 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
         <div class="container mx-auto px-4 md:px-8 lg:px-16">
           <div class="image-content w-auto flex justify-center">
             <img
-              src="./assets/images/homesmart.svg"
-              alt="Allwyse Service Builder"
-              class="max-w-[120%] md:max-w-[120%] lg:max-w-[120%]"
-              loading="lazy"
-            />
+            src="./assets/images/homesmart.svg"
+            alt="Allwyse Service Builder"
+            class="hidden md:block max-w-[120%]"
+            loading="lazy"
+          />
+          <img
+            src="./assets/images/homesmartmobile.svg"
+            alt="Allwyse Service Builder"
+            class="md:hidden max-w-[120%]"
+            loading="lazy"
+          />
           </div>
         </div>
  
