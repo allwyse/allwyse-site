@@ -42,62 +42,63 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
   </head>
  <body>
     <div class="w-full h-auto  overflow-hidden">
-        <!-- navbar -->
-        <div
-          class="flex px-6 xl:px-36 pt-9 pb-5 justify-between bg-white relative z-10"
-        >
-          <!-- Logo -->
-          <div class="logo cursor-pointer">
-            <img
-                onclick="onButtonClick(`https://allwyse.io`,'logo','desktop-header')"
-              src="./assets/images/logo.png"
-              alt="Allwyse Logo"
-              width="150"
-              height="150"
-            />
-          </div>
-  
-          <!-- Desktop Navigation Links -->
-          <div class="hidden lg:flex nav-links flex gap-12">
-            <div class="nav-link flex gap-2 items-center">
-              <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-              <a href="./product" onclick="trackMPEvent('product')" class="text-sm font-semibold font-inter ">Product</a>
+        <!-- Header -->
+        <div id="header"  class="absolute top-0 w-full z-50">
+          <div class="flex px-6 xl:px-36 pt-9 pb-5 justify-between relative">
+            <!-- Logo -->
+            <div class="logo cursor-pointer">
+              <img
+              onclick="onButtonClick(`https://allwyse.io`,'home','desktop-header')"
+                src="./assets/images/logo.png"
+                alt="Allwyse Logo"
+                width="150"
+                height="150"
+              />
             </div>
-            <div class="nav-link flex gap-2 items-center">
-              <a onclick="trackMPEvent('newsletter')" href="#getstarted" class="text-sm font-semibold font-inter">Newsletter</a>
+          
+            <!-- Desktop Navigation Links -->
+            <div class="hidden lg:flex nav-links flex gap-8">
+              <div class="nav-link flex gap-2 items-center">
+                <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
+                <a href="./product" onclick="trackMPEvent('product')" class="text-1xl font-regular font-inter">Product</a>
+              </div>
+          
+              <div class="nav-link flex gap-2 items-center">
+                <a href="/index.html" onclick="trackMPEvent('home')" class="text-1xl font-regular font-inter">Home</a>
+              </div>
+              <div class="nav-link flex gap-2 items-center">
+                <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-1xl font-regular font-inter">Privacy Policy</a>
+              </div>
             </div>
-           
-            <div class="nav-link flex gap-2 items-center">
-              <a onclick="trackMPEvent('privacy')" href="https://allwyse.io/policy" class="text-sm font-semibold font-inter">Privacy Policy</a>
-            </div>
-          </div>
-  
-          <!-- Desktop Buttons -->
-          <div class="hidden lg:flex gap-2">
-            <button
-              onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
-              class="border border-[#919EAB] rounded-3xl px-8 py-2 font-semibold  font-inter"
-            >
-              Log in
-            </button>
-            <button
+          
+            <!-- Desktop Buttons -->
+            <div class="hidden lg:flex gap-2">
+              <button
+                onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-header')"
+                class="px-5 py-2 font-regular text-1xl font-inter"
+              >
+                Log in
+              </button>
+              <button
               onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-header')"
-              class="bg-black rounded-3xl px-8 py-2 text-sm text-white font-1.5xl font-inter font-semibold"
+              class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
             >
-              Register
+              Get Started ➜
             </button>
-          </div>
-  
-          <!-- Hamburger Icon for Mobile -->
-          <div class="flex lg:hidden items-center">
-            <button id="hamburger" class="text-black text-3xl">☰</button>
+            </div>
+            
+          
+            <!-- Hamburger Icon for Mobile -->
+            <div class="flex lg:hidden items-center">
+              <button id="hamburger" class="text-black text-3xl">☰</button>
+            </div>
           </div>
         </div>
-  
+    
         <!-- Sliding Mobile Menu -->
         <div
           id="mobileMenu"
-          class="fixed top-0 right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-20"
+          class="fixed top-0 bg-white right-0 w-full h-full bg-white transform translate-x-full transition-transform duration-300 ease-in-out z-20"
         >
           <div
             class="flex justify-between items-center py-8 px-5 "
@@ -110,7 +111,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
                 class="w-28 lg:w-auto"
               />
             </div>
-            <button id="closeMenu" class="text-black text-5xl">×</button>
+            <button id="closeMenu" class=" text-black text-5xl">×</button>
           </div>
   
           <div class="flex flex-col">
@@ -153,7 +154,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
                 Get Started
               </button>
               <button
-              onclick="onButtonClick(`https://allwyse.io/product`,'product','getstarted')"
+              onclick="onButtonClick(`https://allwyse.io/product`,'product-tour','getstarted')"
   
                 class="text-2xl w-4/5 mx-auto my-3 bg-white border border-black font-inter  py-2 px-12 rounded-full"
               >
@@ -194,12 +195,18 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
       </div>
   
     <div>
-        <div class="hidden lg:block px-2 md:px-5 lg:px-15 xl:px-20 relative" id='plans'>
+      <img
+      src="./assets/images/green-shadow.png"
+      alt=""
+      class="hidden md:block absolute h-full w-full z-0 top-0 left-0"
+      loading="lazy"
+    />
+        <div class="hidden lg:block px-2 md:px-5 lg:px-15 xl:px-20 relative " id='plans'>
             <div
               class="w-2/3 h-1/2 bg-primary blur-[400px] absolute -bottom-10 -right-20 opacity-10"
             ></div>
       
-            <h3 class=" font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">PLANS</h3>
+            <h3 class="mt-[150px] font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">PLANS</h3>
             <h3
               class="text-7xl md:text-7xl lg:text-7xl xl:text-6.5xl font-semibold mb-2 text-center"
             >
@@ -471,7 +478,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
           <div class="block lg:hidden px-5 md:px-10 lg:px-20 xl:px-36 relative"
           id='plans'
           >
-          <h3 class="text-sm font-bold mb-5 text-center text-secondary">PLANS</h3>
+          <h3 class="mt-20 text-sm font-bold mb-5 text-center text-secondary">PLANS</h3>
           <h3
             class="text-5xl md:text-5xl lg:text-5xl xl:text-6.5xl font-semibold mb-6 text-center"
           >

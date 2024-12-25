@@ -58,13 +58,13 @@
         <div class="hidden lg:flex nav-links flex gap-12">
           <div class="nav-link flex gap-2 items-center">
             <div class="w-2 h-2 green-gradient-bg rounded-full"></div>
-            <a onclick="trackMPEvent('home')" href="/" class="text-1xl font-semibold text-inter">Home</a>
+            <a onclick="trackMPEvent('home')" href="/" class="text-1xl font-regular font-inter">Home</a>
           </div>
           <div class="nav-link flex gap-2 items-center">
             <a
             onclick="trackMPEvent('newsletter')"
               href="https://allwyse.io/#getstarted"
-              class="text-sm font-inter font-semibold"
+              class="text-1xl font-regular font-inter"
               >Contact</a
             >
           </div>
@@ -80,13 +80,13 @@
         <div class="hidden lg:flex gap-2">
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/login`,'login','desktop-product-header')"
-            class="border border-[#919EAB] rounded-3xl px-8 py-2 font-2xl text-inter font-semibold "
-          >
+            class="px-5 py-2 font-regular text-1xl font-inter"
+            >
             Log in
           </button>
           <button
             onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','desktop-product-header')"
-            class="bg-black rounded-3xl px-8 py-2  text-white font-semibold font-inter font-2xl"
+            class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
           >
             Grab Free Account
           </button>
@@ -1767,19 +1767,19 @@
          <p class="text-base px-2 hidden" id="emailResponse"></p>
        </div>
 
-       <div class="flex mt-5 gap-4">
+       <div class="flex mt-5 gap-2">
          <button
-           class="py-3 lg:px-12 xl:px-16 text-2xl font-inter font-semibold rounded-3xl bg-primary text-white text-center"
-           onclick="sendEmail()"
+         class="green-gradient-bg rounded-3xl px-8 py-3 text-1xl text-white font-3xl font-inter font-semibold"
+         onclick="sendEmail()"
            id="subscribeBtn"
          >
            Subscribe
          </button>
            <button
            onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','getstarted')"
-             class="p-3 px-8 text-2xl font-inter font-semibold border-[#000] border-2 rounded-3xl flex justify-center items-center gap-4"
+           class="p-3 px-8 text-1xl font-inter font-regular  flex  gap-"
            >
-             Log in
+             <u>Log in</u>
            </button>
        </div>
      </div>
