@@ -59,7 +59,7 @@ body {
 }
 
 .green-gradient-text {
-  background: linear-gradient(to bottom, #77ed8b 0, #22c55e 100%);
+  background: linear-gradient(to bottom, #77ed8b 0, #2dac7a 100%);
   -webkit-background-clip: text;
   color: transparent;
 }
@@ -72,7 +72,7 @@ body {
 }
 
 .green-gradient-bg {
-  background: linear-gradient(to right, #77ed8b 0, #22c55e 100%);
+  background: linear-gradient(to right, #2dac7a  0, #50dd68 100%);
 }
 
 .shadow-div {
@@ -192,6 +192,7 @@ body {
   left: 50%;
 }
 
+
 @media (min-width: 500px) {
   .header-content {
     background-image: none;
@@ -287,6 +288,7 @@ body {
 }
 
 
+
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -294,4 +296,55 @@ body {
   50% {
     transform: translateY(-10px);
   }
+}
+
+
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 6));
+  }
+}
+
+.slider-container {
+  background: white;
+  margin: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.slider {
+  width: 100%;
+}
+
+.slide-track {
+  animation: scroll 20s linear infinite;
+  display: flex;
+  width: calc(250px * 18);
+}
+
+.slide {
+  height: 100px;
+  width: 250px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+/* Optional: Pause animation on hover */
+.slider:hover .slide-track {
+  animation-play-state: paused;
 }
