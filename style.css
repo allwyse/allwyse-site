@@ -284,6 +284,9 @@ body {
   label input:checked + .peer + .dot {
     transform: translateX(24px);
   }
+
+
+
     
 }
 
@@ -351,4 +354,42 @@ body {
 
 .display-none{
   display: none !important;
+}
+
+    
+[data-state] { 
+  display: none; 
+}
+[data-state].active { 
+  display: block; 
+}
+.tab-content.hidden {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+.tab-button {
+  position: relative;
+}
+audio::-webkit-media-controls-panel {
+  background-color: #ffffff !important;
+}
+
+audio::-webkit-media-controls-enclosure {
+  background-color: #ffffff !important;
+}
+
+/* Botones y elementos internos */
+audio::-webkit-media-controls-play-button,
+audio::-webkit-media-controls-pause-button,
+audio::-webkit-media-controls-timeline,
+audio::-webkit-media-controls-seek-back-button,
+audio::-webkit-media-controls-seek-forward-button,
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-volume-slider {
+  background-color: #ffffff !important;
+  color: #333333 !important; /* Ajusta el color del texto/iconos si lo deseas */
 }
