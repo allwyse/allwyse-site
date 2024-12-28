@@ -750,7 +750,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
       <!-- Left Image Column -->
       <div class="absolute left-0 top-1/2 -translate-y-1/2 w-6/12">
         <img
-          src="./assets/images/Calendar.svg"
+          src="./assets/images/calendar.svg"
           alt="Allwyse Calendar Automation"
           class=" h-auto object-contain"
           loading="lazy"
@@ -851,7 +851,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
         </p>
         <div class="image-content mt-10">
           <img
-            src="./assets/images/Calendar.svg"
+            src="./assets/images/calendar.svg"
             alt="Allwyse Service Builder"
             class="w-full max-w-md mx-auto"
             loading="lazy"
@@ -1976,90 +1976,216 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
 
   
 
-    <!-- <div class="comparison-section py-12 mt-10 sm:px-10 lg:px-20">
-      <h3 class="text-sm font-bold mb-2 text-center text-secondary desktop-heading-higher section-heading-text">
-        COMPARATIVE TABLE
-      </h3>
-      <h3
-        class="text-4xl md:text-4xl lg:text-5xl xl:text-6.5xl font-semibold mb-8 text-center"
-      >
-      Save Time & Money<span class="gradient-text"> Allwyse<br/> </span>
-      </h3>
+     <!-- integrations -->
+     <div class="mt-10 px-5 md:px-10 lg:px-20 py-16">
+      <div class="max-w-7xl mx-auto">
+       <!-- Header -->
+       <div class="text-center mb-16">
+         <h3 class="text-sm font-bold mb-2 text-center text-secondary">
+           FEATURES
+         </h3>
+         <h2 class="font-degular text-6xl lg:text-7xl font-medium mb-6">
+           Your library of features in one place
+         </h2>
+         <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+           Easily manage your schedule with Google Calendar integration and unlock powerful, AI-driven insights with Open AI.
+         </p>
+       </div>
     
-      <div class="flex justify-center items-center mb-8">
-        <span class="text-sm font-medium text-gray-600 mr-3">Monthly</span>
-        <label for="toggle-switch" class="relative inline-flex items-center cursor-pointer">
-          <input type="checkbox" id="toggle-switch" class="sr-only">
-          <div class="peer w-12 h-6 bg-gray-200 rounded-full transition-all"></div>
-          <div class="dot absolute w-4 h-4 bg-white rounded-full shadow-md transform transition-all"></div>
-        </label>
-        <span class="text-sm font-medium text-gray-600 ml-3">Annual</span>
-      </div>
+      <!-- Tabs Navigation -->
+      <div 
+      class="flex gap-4 mb-12 border-b border-gray-200 
+             overflow-x-auto whitespace-nowrap 
+             scrollbar-hide"
+    >
+     <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="clients">
+      Clients Management
+      </button>
+   
+       <button class="tab-button px-4 py-2 text-gray-900 font-medium relative" data-tab="integrations">
+      Integrations
+      <span class="absolute -bottom-px left-0 w-full h-0.5 bg-gray-900"></span>
+    </button>
+   
+     <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="ai">
+      AI Assistant
+    </button>
+   
+      <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="analytics">
+       Analytics
+       </button>
+       </div>
+   
     
-      <div class="comparison-table bg-white shadow-lg rounded-lg overflow-hidden">
-        <div class="grid grid-cols-3 lg:grid-cols-4 bg-gray-100 text-gray-700 font-semibold text-sm md:text-base p-4">
-          <div>Application</div>
-          <div>Cost (<span id="billing-type">Monthly</span>)</div>
-          <div>Time Spent</div>
-          <div class="hidden lg:block">With Allwyse</div>
+       <!-- Integrations Content -->
+     <div data-state="integrations" class="tab-content active">
+       <div class="grid lg:grid-cols-3 gap-6">
+         <!-- Calendar Card -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/integra-calendar.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Google-Calendar Sync  📅</h3>
+             <p class="text-gray-600 mb-4">Automatically sync and manage all your client sessions in one place. Schedule and track appointments seamlessly between AIIwyse and Google Calendar.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <!-- Docs Card -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/integra-meet.svg" alt="Google Docs Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Google-Meet Linked 🔗  </h3>
+             <p class="text-gray-600 mb-4">Create and manage virtual meetings instantly. Join sessions, share documents, and collaborate with clients directly through your AIIwyse platform.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <!-- OpenAI Card -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/integra-openai.svg" alt="OpenAI Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Open-AI on allwyse 🤖</h3>
+             <p class="text-gray-600 mb-4">Enhance your services with advanced AI capabilities. Generate insights, create content, and deliver personalized experiences using OpenAI's powerful technology.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+       </div>
+     </div>
+   
+     <!-- AI Assistant Content -->
+     <div data-state="ai" class="tab-content hidden">
+       <div class="grid lg:grid-cols-3 gap-6">
+         <!-- AI Assistant Cards aquí -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+          
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/ai-description.svg" 
+             alt="Ai description" 
+             class="w-full h-full object-contain" 
+             loading="lazy" />
+   
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">AI-Description ✍️ </h3>
+             <p class="text-gray-600 mb-4">Craft a perfect description that capture what makes your coaching practice  unique and engaging. </p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/ai-questionary.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Client-Onboard Questionary ⭐ </h3>
+             <p class="text-gray-600 mb-4">Streamline your client communication. Get deeper insights and better understanding of your clients' needs automatically.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/ai-servicebuilder.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">AI-Service Builder 💡</h3>
+             <p class="text-gray-600 mb-4">AI guidance. Create structured, professional service packages that align with your business goals and client needs.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+       </div>
+     </div>
+   
+     <!-- client Management Content -->
+     <div data-state="clients" class="tab-content hidden">
+       <div class="grid lg:grid-cols-3 gap-6">
+         <!-- Client Management Cards aquí -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/clientmanagement-1.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3"> Client-Panel of Control 🌐 </h3>
+             <p class="text-gray-600 mb-4">Keep track of all your client interactions in one organized dashboard. Manage sessions, notes, and services effortlessly with our intuitive control panel.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/clientmanagement-2.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3"> Client-Data Centralize 👁️</h3>
+             <p class="text-gray-600 mb-4">Access and manage all your client data in a centralized hub. Track payments, sessions, and client progress with comprehensive data organization.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+       
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/clientmanagement-3.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Requests and Questions 👤</h3>
+             <p class="text-gray-600 mb-4">Handle client inquiries and requests efficiently in real-time. Respond to questions and manage communication seamlessly through a unified inbox.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+       </div>
+     </div>
+   
+     <!-- Analytics Content -->
+     <div data-state="analytics" class="tab-content hidden">
+       <div class="grid lg:grid-cols-3 gap-6">
+         <!-- Analytics Cards aquí -->
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/analytics-1.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Complete Dashboard  📊</h3>
+             <p class="text-gray-600 mb-4">Get a comprehensive overview of your business performance at a glance. Track key metrics, client engagement, and growth statistics in one intuitive dashboard.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/analytics-2.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Advanced formula 🔮 </h3>
+             <p class="text-gray-600 mb-4">Unlock deeper insights with sophisticated analytics tools. Monitor service performance, trends, and client engagement with customizable metrics and reports.</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+         <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
+           <div class="aspect-[16/10] bg-gray-50 p-4">
+             <img src="./assets/images/analytics-3.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
+           </div>
+           <div class="p-6">
+             <h3 class="text-xl font-semibold mb-3">Profile and Service 🔍</h3>
+             <p class="text-gray-600 mb-4">Analyze detailed metrics about your profile views and service performance. Track engagement, conversion rates, and client interactions to optimize your offerings</p>
+             <span class="text-link font-semibold group-hover:underline">Learn more →</span>
+           </div>
+         </a>
+   
+       </div>
+     </div>
+       
+       </div>
         </div>
-    
-        <div class="grid grid-cols-3 lg:grid-cols-4 text-sm md:text-base border-b p-4 items-center">
-          <div class="flex items-center gap-2">
-            <img src="./assets/images/chatgpt.svg" alt="ChatGPT" class="w-6 h-6">
-            <span>ChatGPT (Pro)</span>
-          </div>
-          <div class="cost">$20</div>
-          <div>4 hours/week</div>
-          <div class="hidden lg:block text-green-600 font-semibold"> ✔️ Included</div>
-        </div>
-        <div class="grid grid-cols-3 lg:grid-cols-4 text-sm md:text-base border-b p-4 items-center">
-          <div class="flex items-center gap-2">
-            <img src="./assets/images/zoom.svg" alt="Zoom" class="w-6 h-6">
-            <span>Zoom</span>
-          </div>
-          <div class="cost">$15</div>
-          <div>5 hours/week</div>
-          <div class="hidden lg:block text-green-600 font-semibold"> ✔️Included</div>
-        </div>
-        <div class="grid grid-cols-3 lg:grid-cols-4 text-sm md:text-base border-b p-4 items-center">
-          <div class="flex items-center gap-2">
-            <img src="./assets/images/calendly.svg" alt="Calendly" class="w-6 h-6">
-            <span>Calendly</span>
-          </div>
-          <div class="cost">$10</div>
-          <div>2 hours/week</div>
-          <div class="hidden lg:block text-green-600 font-semibold"> ✔️ Included</div>
-        </div>
-        <div class="grid grid-cols-3 lg:grid-cols-4 text-sm md:text-base border-b p-4 items-center">
-          <div class="flex items-center gap-2">
-            <img src="./assets/images/dropbox.svg" alt="Dropbox" class="w-6 h-6">
-            <span>Dropbox</span>
-          </div>
-          <div class="cost">$12</div>
-          <div>3 hours/week</div>
-          <div class="hidden lg:block text-green-600 font-semibold"> ✔️ Included</div>
-        </div>
-        <div class="grid grid-cols-3 lg:grid-cols-4 text-sm md:text-base border-b p-4 items-center">
-          <div class="flex items-center gap-2">
-            <img src="./assets/images/mailchimp.svg" alt="Mailchimp" class="w-6 h-6">
-            <span>Mailchimp</span>
-          </div>
-          <div class="cost">$20</div>
-          <div>2 hours/week</div>
-          <div class="hidden lg:block text-green-600 font-semibold"> ✔️ Included</div>
-        </div>
-    
-        <div class="grid grid-cols-3 lg:grid-cols-4 font-bold text-lg p-4 bg-gray-100">
-          <div>Total</div>
-          <div id="total-cost">$107</div>
-          <div>20 hours/week</div>
-          <div class="hidden lg:block gradient-text font-semibold">Allwyse.io</div>
-        </div>
-      </div>
-    </div> -->
-    
-    
+         </div>
 <!-- BENEFITS -->
 
     <div class=" px-5 md:px-10 lg:px-20 xl:px-36 py-10 relative hidden sm:block">
@@ -2085,11 +2211,11 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
       No more scattered tools. No more administrative overwhelm. Just one seamless platform </br> where you can create, manage, and grow your coaching practice. </p>
    <!-- Add Audio Element -->
    <div class="audio-section flex justify-center items-center px-5 md:px-10 lg:px-20 xl:px-36 py-5">
-   <audio controls class="rounded-md border border-gray-300 shadow-md p-2
-                       hover:shadow-lg transition-shadow duration-300
-                       focus:outline-none focus:ring-2 focus:ring-blue-500">
-    <source src="assets/images/Welcomeaudio.mp3" type="audio/mpeg">
-    </audio>
+    <audio controls class="rounded-md border border-gray-300 shadow-md p-2 hover:shadow-lg transition-shadow duration-300 focus:outline-none focus:ring-2 focus:ring-blue-500">
+      <source src="assets/audio/Welcomeaudio.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+  </audio>
+
      </div>
 
 
@@ -2606,216 +2732,7 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
     </div>
   
 
-   <!-- integrations -->
-   <div class="mt-10 px-5 md:px-10 lg:px-20 py-16">
-   <div class="max-w-7xl mx-auto">
-    <!-- Header -->
-    <div class="text-center mb-16">
-      <h3 class="text-sm font-bold mb-2 text-center text-secondary">
-        FEATURES
-      </h3>
-      <h2 class="font-degular text-6xl lg:text-7xl font-medium mb-6">
-        Your library of features in one place
-      </h2>
-      <p class="text-xl text-gray-600 max-w-2xl mx-auto">
-        Easily manage your schedule with Google Calendar integration and unlock powerful, AI-driven insights with Open AI.
-      </p>
-    </div>
- 
-   <!-- Tabs Navigation -->
-   <div 
-   class="flex gap-4 mb-12 border-b border-gray-200 
-          overflow-x-auto whitespace-nowrap 
-          scrollbar-hide"
- >
-  <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="clients">
-   Clients Management
-   </button>
 
-    <button class="tab-button px-4 py-2 text-gray-900 font-medium relative" data-tab="integrations">
-   Integrations
-   <span class="absolute -bottom-px left-0 w-full h-0.5 bg-gray-900"></span>
- </button>
-
-  <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="ai">
-   AI Assistant
- </button>
-
-   <button class="tab-button px-4 py-2 text-gray-500 hover:text-gray-900 transition-colors" data-tab="analytics">
-    Analytics
-    </button>
-    </div>
-
- 
-    <!-- Integrations Content -->
-  <div data-state="integrations" class="tab-content active">
-    <div class="grid lg:grid-cols-3 gap-6">
-      <!-- Calendar Card -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/integra-calendar.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Google-Calendar Sync  📅</h3>
-          <p class="text-gray-600 mb-4">Automatically sync and manage all your client sessions in one place. Schedule and track appointments seamlessly between AIIwyse and Google Calendar.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <!-- Docs Card -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/integra-meet.svg" alt="Google Docs Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Google-Meet Linked 🔗  </h3>
-          <p class="text-gray-600 mb-4">Create and manage virtual meetings instantly. Join sessions, share documents, and collaborate with clients directly through your AIIwyse platform.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <!-- OpenAI Card -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/integra-openai.svg" alt="OpenAI Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Open-AI on allwyse 🤖</h3>
-          <p class="text-gray-600 mb-4">Enhance your services with advanced AI capabilities. Generate insights, create content, and deliver personalized experiences using OpenAI's powerful technology.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-    </div>
-  </div>
-
-  <!-- AI Assistant Content -->
-  <div data-state="ai" class="tab-content hidden">
-    <div class="grid lg:grid-cols-3 gap-6">
-      <!-- AI Assistant Cards aquí -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-       
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/ai-description.svg" 
-          alt="Ai description" 
-          class="w-full h-full object-contain" 
-          loading="lazy" />
-
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">AI-Description ✍️ </h3>
-          <p class="text-gray-600 mb-4">Craft a perfect description that capture what makes your coaching practice  unique and engaging. </p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/ai-questionary.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Client-Onboard Questionary ⭐ </h3>
-          <p class="text-gray-600 mb-4">Streamline your client communication. Get deeper insights and better understanding of your clients' needs automatically.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/ai-servicebuilder.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">AI-Service Builder 💡</h3>
-          <p class="text-gray-600 mb-4">AI guidance. Create structured, professional service packages that align with your business goals and client needs.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- client Management Content -->
-  <div data-state="clients" class="tab-content hidden">
-    <div class="grid lg:grid-cols-3 gap-6">
-      <!-- Client Management Cards aquí -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/clientmanagement-1.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3"> Client-Panel of Control 🌐 </h3>
-          <p class="text-gray-600 mb-4">Keep track of all your client interactions in one organized dashboard. Manage sessions, notes, and services effortlessly with our intuitive control panel.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/clientmanagement-2.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3"> Client-Data Centralize 👁️</h3>
-          <p class="text-gray-600 mb-4">Access and manage all your client data in a centralized hub. Track payments, sessions, and client progress with comprehensive data organization.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-    
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/clientmanagement-3.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Requests and Questions 👤</h3>
-          <p class="text-gray-600 mb-4">Handle client inquiries and requests efficiently in real-time. Respond to questions and manage communication seamlessly through a unified inbox.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-
-  <!-- Analytics Content -->
-  <div data-state="analytics" class="tab-content hidden">
-    <div class="grid lg:grid-cols-3 gap-6">
-      <!-- Analytics Cards aquí -->
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/analytics-1.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Complete Dashboard  📊</h3>
-          <p class="text-gray-600 mb-4">Get a comprehensive overview of your business performance at a glance. Track key metrics, client engagement, and growth statistics in one intuitive dashboard.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/analytics-2.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Advanced formula 🔮 </h3>
-          <p class="text-gray-600 mb-4">Unlock deeper insights with sophisticated analytics tools. Monitor service performance, trends, and client engagement with customizable metrics and reports.</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-      <a href="./product" class="group border border-gray-200 rounded-2xl overflow-hidden hover:border-gray-300 transition-colors">
-        <div class="aspect-[16/10] bg-gray-50 p-4">
-          <img src="./assets/images/analytics-3.svg" alt="Google Calendar Integration" class="w-full h-full object-contain" loading="lazy" />
-        </div>
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-3">Profile and Service 🔍</h3>
-          <p class="text-gray-600 mb-4">Analyze detailed metrics about your profile views and service performance. Track engagement, conversion rates, and client interactions to optimize your offerings</p>
-          <span class="text-link font-semibold group-hover:underline">Learn more →</span>
-        </div>
-      </a>
-
-    </div>
-  </div>
-    
-    </div>
-     </div>
-      </div>
 
     <!-- get started desktop -->
 

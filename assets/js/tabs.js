@@ -35,7 +35,7 @@ function createIndicator() {
 }
 
 // Initial state
-setState("ai");
+setState("clients");
 
 document.querySelectorAll(".tab-button").forEach((btn) => {
   btn.addEventListener("click", () => setState(btn.dataset.tab));

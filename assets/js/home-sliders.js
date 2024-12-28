@@ -32,7 +32,7 @@ document
     const billingType = document.getElementById("billing-type");
 
     const monthlyCosts = [20, 15, 10, 12, 20]; // Example: ChatGPT, Zoom, etc.
-    const annualCosts = monthlyCosts.map((cost) => cost * 12 * 0.8); // 20% discount
+    const annualCosts = monthlyCosts.map((cost) => cost * 12);
 
     const activeCosts = isAnnual ? annualCosts : monthlyCosts;
 
