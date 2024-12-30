@@ -66,11 +66,13 @@
 })(document, window.mixpanel || []);
 
 // Initialize Mixpanel
-mixpanel.init("13112c94b385f01f21edd6bc6eecd2ff", {
-  debug: false,
-  track_pageview: true,
-  persistence: "localStorage",
-});
+if (!window.location.href.includes("localhost")) {
+  mixpanel.init("13112c94b385f01f21edd6bc6eecd2ff", {
+    debug: false,
+    track_pageview: true,
+    persistence: "localStorage",
+  });
+}
 
 const trackMPEvent = (widget_name = "", event = "user_clicked") => {
   let isObj = typeof widget_name !== "string";
