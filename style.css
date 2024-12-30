@@ -75,6 +75,10 @@ body {
   background: linear-gradient(to right, #2dac7a  0, #50dd68 100%);
 }
 
+.green-gradient-bg-dark {
+  background: linear-gradient(to right, #2dac7a 70%, #50dd68 100%);
+ }
+
 .shadow-div {
   background: linear-gradient(152deg, #52bdaa 0, rgba(82, 189, 170, 0.15458683473389356) 100%);
 }

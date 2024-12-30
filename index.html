@@ -45,6 +45,16 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
 
   </head>
   <body class="overflow-x-hidden">
+    <!-- TOP BANNER START -->
+    <div 
+    onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','top-banner')"
+    class="cursor-pointer green-gradient-bg-dark px-8 py-3 text-white font-inter flex justify-center">
+      <h3 class="text-2xl sm:text-2xl  flex items-center gap-2 text-center pt-2 pb-2">
+        ✨ New Year. Big Goals. Bigger Savings. Try <u >Allwyse Expert Plan for free</u> 
+      </h3>
+    </div>
+    <!-- TOP BANNER END -->
+
     <div class="header-content overflow-x-hidden relative w-full h-full pb-8 lg:pb-0">
       <img
         src="./assets/images/green-shadow.png"
@@ -1307,6 +1317,18 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
     </div>
 
 
+    <img 
+onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','pricing-banner')"
+src="/assets/images/discount-banner.png"  
+alt="" 
+class="hidden lg:block w-full h-auto mt-10 cursor-pointer pl-20 pr-20" />
+<img 
+onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','pricing-banner')"
+src="/assets/images/discount-banner-mobile.png"  
+alt="Mobile Discount Banner" 
+class="block sm:hidden w-full h-auto cursor-pointer rounded-[10px] mb-10" />
+
+
 
     <!-- Plans -->
     <div>
@@ -1330,10 +1352,14 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
     
           <div class="mt-20 gap-20 flex">
             <div class="price w-full border-2  lg:w-[60%] py-8 px-8">
-              <div class="flex gap-5 items-end mb-4">
-                <h2 class="text-3xl text-black-800 font-bold">$0</h2>
-                <p class="text-grayText text-base">/month</p>
+              <div class="flex gap-4 items-end mb-3">
+                <div class="flex items-end gap-2">
+                  <h2 class="text-4xl text-gray-400 font-bold relative after:content-[''] after:absolute after:-left-2 after:-right-2 after:top-1/2 after:h-1 after:bg-gray-500 after:-rotate-12">$40</h2>
+                  <h2 class="text-4xl text-black font-bold">$0</h2>
+                </div>
+                <p class="text-grayText text-base monthText">/month</p>
               </div>
+    
     
               <h3 class="text-2.5xl font-bold">Starter Coach</h3>
               <p class="text-grayText text-lg">Built for Starters, Open soon*</p>
@@ -1439,7 +1465,10 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
               </div>
              
               <div class="flex gap-4 items-end mb-3">
-                <h2 class="text-3xl text-white font-bold">$0</h2>
+                <div class="flex items-end gap-2">
+                  <h2 class="text-4xl text-gray-400 font-bold relative after:content-[''] after:absolute after:-left-2 after:-right-2 after:top-1/2 after:h-1 after:bg-gray-500 after:-rotate-12">$49</h2>
+                  <h2 class="text-4xl text-white font-bold">$0</h2>
+                </div>
                 <p class="text-grayText text-base monthText">/month</p>
               </div>
               <h3 class="text-4.5xl font-bold text-white mb-30">Expert Coach</h3>
@@ -1683,9 +1712,12 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
               aria-labelledby="base-tab"
             >
               <div class="price bg-gray-50 w-full lg:w-1/3 p-5">
-                <div class="flex gap-10 items-end mb-12">
-                  <h2 class="text-3xl text-black-800 font-bold">$**</h2>
-                  <p class="text-grayText text-base">/month</p>
+                <div class="flex gap-5 items-end mb-12">
+                  <div class="flex items-end gap-2">
+                    <h2 class="text-4xl text-gray-400 font-bold relative after:content-[''] after:absolute after:-left-2 after:-right-2 after:top-1/2 after:h-1 after:bg-gray-500 after:-rotate-12">$40</h2>
+                    <h2 class="text-4xl text-black font-bold">$0</h2>
+                  </div>
+                  <p class="text-grayText text-base monthText">/month</p>
                 </div>
     
                 <h3 class="text-2.5xl font-bold text-start">Starter</h3>
@@ -1775,7 +1807,7 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
               onclick="onButtonClick(`https://app.allwyse.io/auth/register`,'register','expert-plan-section')"
             >
               <div  class="price-active relative w-full lg:w-1/3 p-5">
-                <div class="absolute top-4 right-3">
+                <div class="absolute top-4 right-3" style="top:0.4rem !important">
                   <h2
                     class="opacity-100 rounded-full bg-primary px-5 py-2 text-white text-xs md:text-sm font-bold w-max"
                   >
@@ -1783,7 +1815,10 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
                   </h2>
                 </div>
                 <div class="flex gap-4 items-end mb-3">
-                  <h2 class="text-3xl text-white font-bold">$ 0</h2>
+                  <div class="flex items-end gap-2">
+                    <h2 class="text-4xl text-gray-400 font-bold relative after:content-[''] after:absolute after:-left-2 after:-right-2 after:top-1/2 after:h-1 after:bg-gray-500 after:-rotate-12">$49</h2>
+                    <h2 class="text-4xl text-white font-bold">$0</h2>
+                  </div>
                   <p class="text-grayText text-base monthText">/month</p>
                 </div>
     
@@ -1857,7 +1892,7 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
                         alt=""
                         class="w-5 h-5"
                       />
-                      <p class="text-md font-semibold !text-primary">Data Analytics</p>
+                      <p class="text-md font-semibold !text-primary">Advanced Analytics</p>
                     </div>
                   </div>
 
@@ -1868,7 +1903,7 @@ Gain full visibility into your clients’ journey with Allwyse Analytics. Track 
                         alt=""
                         class="w-5 h-5"
                       />
-                      <p class="text-md font-semibold !text-primary">AI-Assistante </p>
+                      <p class="text-md font-semibold !text-primary">AI-Assistant </p>
                     </div>
                   </div>
            
