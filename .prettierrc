@@ -1,8 +1,11 @@
 {
-    "tabWidth": 2,
-    "useTabs": false,
-    "semi": true,
-    "singleQuote": false,
-    "htmlWhitespaceSensitivity": "css",
-    "printWidth": 80
-  }
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "htmlWhitespaceSensitivity": "strict", 
+  "printWidth": 80, 
+  "bracketSpacing": true, 
+  "proseWrap": "preserve",
+  "trailingComma": "none" 
+}
