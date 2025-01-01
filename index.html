@@ -38,6 +38,7 @@
     })(window, document, "clarity", "script", "ne79yr3z9b");
 </script>
 <script src="/assets/js/tracking.js"></script>
+<script src="/assets/js/animations.js"></script>
 <script
 type="text/javascript"
 src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23?autoBlock=on"
@@ -363,7 +364,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
       <!-- Desktop Version -->
 <!-- Desktop -->
 <div class="hidden md:block">
-  <div class="mt-10 flex items-center justify-center gap-4">
+  <div class="mt-10 flex items-center justify-center gap-4 animate-scale-in" >
     <!-- Avatars -->
     <div class="flex -space-x-2 overflow-hidden">
       <img class="inline-block h-12 w-12 rounded-full" src="./assets/images/avatars/avatar5.png" alt="User avatar" />
@@ -406,7 +407,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
       <span class="font-degular font-medium xl:text-7xl "> Atract more clients</span>  </br>
       <span class="font-degular font-medium"> Automate and Scale  </span>
      </br>
-   <span class="gradient-text font-degular font-medium" id="dynamicTextDesktop"></span>
+   <span class="gradient-text font-degular font-medium " id="dynamicTextDesktop"></span>
     </h2>
       
       <p class="flex justify-center text-start hidden md:flex justify-center text-start text-xl xl:px-28 py-6  leading-10 lg:leading-9 ">
@@ -440,15 +441,17 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
             <img
             src="./assets/images/homesmart.svg"
             alt="Allwyse Service Builder"
-            class="hidden md:block max-w-[120%]"
             style="z-index: 9;"
             loading="lazy"
+            class="hidden md:block max-w-[120%] invisible"
+             id="animatedImageHero"
           />
           <img
             src="./assets/images/Homemobile.png"
             alt="Allwyse Service Builder"
             class="md:hidden max-w-[100%]"
             loading="lazy"
+             id="animatedImageHero"
           />
           </div>
         </div>
@@ -480,7 +483,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
                   <div class="slide"><img src="/assets/images/gmail.svg" alt="Gmail" /></div>
                   
                   <!-- Third set for smoother transition -->
-                  <div class="slide"><img src="/assets/images/calendar.svg" alt="Google Calendar" /></div>
+                  <div class="slide"><img src="/assets/images/calendar-icon.svg" alt="Google Calendar" /></div>
                   <div class="slide"><img src="/assets/images/meet.svg" alt="Meet" /></div>
                   <div class="slide"><img src="/assets/images/stripe.svg" alt="Stripe" /></div>
                   <div class="slide"><img src="/assets/images/whatsapp.svg" alt="Whatsapp" /></div>
@@ -651,7 +654,7 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
           </div>
 
           <div class="flex items-center gap-3 bg-white rounded-xl p-3 shadow-sm">
-            <div class="p-2 rounded-lg bg-pink-50">
+            <div class="p-2 rounded-lg bg-pink-50" >
               <svg class="w-5 h-5 text-pink-500" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M13 2L3 14H12L11 22L21 10H12L13 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
@@ -701,7 +704,8 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
         <img
           src="./assets/images/ok.png"
           alt="Allwyse Service Builder"
-          class="w-[140%] h-auto object-contain"
+          id="services-image"
+          class="w-[140%] h-auto object-contain invisible"
           loading="lazy"
         />
       </div>
@@ -764,8 +768,9 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
         <img
           src="./assets/images/calendar.svg"
           alt="Allwyse Calendar Automation"
-          class=" h-auto object-contain"
+          class=" h-auto object-contain invisible"
           loading="lazy"
+          id="calendar-image"
         />
       </div>
 
@@ -920,7 +925,8 @@ src="https://app.termly.io/resource-blocker/d3204355-f081-49bd-96d9-b299842b4f23
        <img
          src="./assets/images/Analytics.png"
          alt="Allwyse Service Builder"
-         class="image-right"
+         class="image-right invisible"
+         id="analytics-image"
          loading="lazy"
        />
      </div>

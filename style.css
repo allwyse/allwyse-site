@@ -397,3 +397,63 @@ audio::-webkit-media-controls-volume-slider {
   background-color: #ffffff !important;
   color: #333333 !important; /* Ajusta el color del texto/iconos si lo deseas */
 }
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+ }
+ 
+ .animate-slide-right {
+  animation: slideRight 1s ease-out forwards;
+ }
+
+ @keyframes slideLeft {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+ }
+ 
+ .animate-slide-left {
+  animation: slideLeft 1s ease-out forwards;
+ }
+
+ @keyframes scaleIn {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+ }
+ 
+ .animate-scale-in {
+  animation: scaleIn 1s ease-out forwards;
+ }
