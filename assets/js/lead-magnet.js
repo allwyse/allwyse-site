@@ -3,8 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     document.getElementById("popup-modal").classList.remove("invisible");
     document.getElementById("popup-modal").classList.add("animate-slide-up");
-    console.log("Modal shown");
-  }, 10000);
+  }, 1000);
 
   document
     .getElementById("popup-modal")
