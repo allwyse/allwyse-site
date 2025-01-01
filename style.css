@@ -410,7 +410,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .animate-slide-up {
-  animation: slideUp 1s ease-out forwards;
+  animation: slideUp 0.2s ease-out forwards;
 }
 
 @keyframes slideRight {
