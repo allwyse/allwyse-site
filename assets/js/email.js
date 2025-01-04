@@ -36,6 +36,7 @@ async function sendEmail(elementToHide) {
     setTimeout(() => {
       if (elementToHide) {
         document.getElementById(elementToHide).classList.add("hidden");
+        window.localStorage.setItem("subscribed", "true");
       }
     }, 2000);
   } catch (s) {

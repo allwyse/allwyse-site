@@ -1,4 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
+  if (window.localStorage.getItem("subscribed")) {
+    return;
+  }
   // Show modal after 20 seconds
   setTimeout(() => {
     document.getElementById("popup-modal").classList.remove("invisible");
